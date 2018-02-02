@@ -4,2632 +4,2577 @@
     <string name="hintTo">To</string>
     <string name="buttonFind">Find</string>
     <string-array name="arrayStations">
-        <item>PNZ|Penzance</item>
-        <item>SIV|St Ives (Cornwall)</item>
-        <item>CBB|Carbis Bay</item>
-        <item>SER|St Erth</item>
-        <item>LTS|Lelant Saltings</item>
-        <item>LEL|Lelant</item>
-        <item>HYL|Hayle</item>
-        <item>CBN|Camborne</item>
-        <item>ARG|Arisaig</item>
-        <item>MLG|Mallaig</item>
-        <item>MRR|Morar</item>
-        <item>RED|Redruth</item>
-        <item>BSL|Beasdale</item>
-        <item>KYL|Kyle of Lochalsh</item>
-        <item>LCL|Lochailort</item>
-        <item>DRN|Duirinish</item>
-        <item>PYN|Penryn</item>
-        <item>PRW|Perranwell</item>
-        <item>PLK|Plockton</item>
-        <item>PNM|Penmere</item>
-        <item>FMT|Falmouth Town</item>
-        <item>DCG|Duncraig</item>
-        <item>NQY|Newquay</item>
-        <item>TRU|Truro</item>
-        <item>FAL|Falmouth Docks</item>
-        <item>QUI|Quintrell Downs</item>
-        <item>OBN|Oban</item>
-        <item>STF|Stromeferry</item>
-        <item>GLF|Glenfinnan</item>
-        <item>MFH|Milford Haven</item>
-        <item>SCR|St Columb Road</item>
-        <item>CON|Connel Ferry</item>
-        <item>ATT|Attadale</item>
-        <item>JOH|Johnston (Pembrokeshire)</item>
-        <item>STC|Strathcarron</item>
-        <item>FGW|Fishguard &amp; Goodwick</item>
-        <item>FGH|Fishguard Harbour</item>
-        <item>HVF|Haverfordwest</item>
-        <item>PMD|Pembroke Dock</item>
-        <item>ROC|Roche</item>
-        <item>PMB|Pembroke</item>
-        <item>LCS|Locheilside</item>
-        <item>ACH|Achnashellach</item>
-        <item>TAY|Taynuilt</item>
-        <item>LAM|Lamphey</item>
-        <item>CLR|Clarbeston Road</item>
-        <item>SAU|St Austell</item>
-        <item>BGL|Bugle</item>
-        <item>LUX|Luxulyan</item>
-        <item>LHE|Loch Eil Outward Bound</item>
-        <item>STR|Stranraer</item>
-        <item>MRB|Manorbier</item>
-        <item>PAR|Par</item>
-        <item>FOC|Falls of Cruachan</item>
-        <item>CPA|Corpach</item>
-        <item>FTW|Fort William</item>
-        <item>LOS|Lostwithiel</item>
-        <item>BOD|Bodmin Parkway</item>
-        <item>BNV|Banavie</item>
-        <item>PNA|Penally</item>
-        <item>CUW|Clunderwen</item>
-        <item>NAR|Narberth</item>
-        <item>LHA|Loch Awe</item>
-        <item>SDF|Saundersfoot</item>
-        <item>KGT|Kilgetty</item>
-        <item>TEN|Tenby</item>
-        <item>DAL|Dalmally</item>
-        <item>ACN|Achnasheen</item>
-        <item>GIR|Girvan</item>
-        <item>WMS|Wemyss Bay</item>
-        <item>WTL|Whitland</item>
-        <item>LAR|Largs</item>
-        <item>INP|Inverkip</item>
-        <item>WKB|West Kilbride</item>
-        <item>FRL|Fairlie</item>
-        <item>SBR|Spean Bridge</item>
-        <item>ADS|Ardrossan Harbour</item>
-        <item>BRL|Barrhill</item>
-        <item>ADN|Ardrossan Town</item>
-        <item>IBM|IBM (Greenock)</item>
-        <item>ASB|Ardrossan South Beach</item>
-        <item>COE|Coombe Junction Halt (Rail Station)</item>
-        <item>GCH|Garelochhead</item>
-        <item>GRK|Gourock</item>
-        <item>LSK|Liskeard</item>
-        <item>HHD|Holyhead</item>
-        <item>CAU|Causeland</item>
-        <item>SLT|Saltcoats</item>
-        <item>SDP|Sandplace</item>
-        <item>BCN|Branchton</item>
-        <item>SKN|St Keyne Wishing Well Halt (Rail Station)</item>
-        <item>LOO|Looe</item>
-        <item>FTM|Fort Matilda</item>
-        <item>AAT|Achanalt</item>
-        <item>DFR|Drumfrochar</item>
-        <item>STV|Stevenston</item>
-        <item>RYB|Roy Bridge</item>
-        <item>GKW|Greenock West</item>
-        <item>GKC|Greenock Central</item>
-        <item>WNL|Whinhill</item>
-        <item>MEN|Menheniot</item>
-        <item>VAL|Valley</item>
-        <item>CDY|Cartsdyke</item>
-        <item>KWN|Kilwinning</item>
-        <item>HLC|Helensburgh Central</item>
-        <item>DLY|Dalry</item>
-        <item>MAY|Maybole</item>
-        <item>HLU|Helensburgh Upper</item>
-        <item>BRO|Bridge of Orchy</item>
-        <item>BGS|Bogston</item>
-        <item>CGD|Craigendoran</item>
-        <item>ART|Arrochar &amp; Tarbet</item>
-        <item>IRV|Irvine</item>
-        <item>AUI|Ardlui</item>
-        <item>PTG|Port Glasgow</item>
-        <item>GLG|Glengarnock</item>
-        <item>LCC|Lochluichart</item>
-        <item>TRN|Troon</item>
-        <item>TYL|Tyndrum Lower</item>
-        <item>RHO|Rhosneigr</item>
-        <item>BSS|Barassie</item>
-        <item>UTY|Upper Tyndrum</item>
-        <item>AYR|Ayr</item>
-        <item>NOA|Newton-on-Ayr</item>
-        <item>WDL|Woodhall</item>
-        <item>CDR|Cardross</item>
-        <item>TYC|Ty Croes</item>
-        <item>PTW|Prestwick</item>
-        <item>PRA|Prestwick Intl Airport</item>
-        <item>TUL|Tulloch</item>
-        <item>CRR|Corrour</item>
-        <item>SGM|St Germans</item>
-        <item>LHW|Lochwinnoch</item>
-        <item>FYS|Ferryside</item>
-        <item>PWL|Pwllheli</item>
-        <item>CNR|Crianlarich</item>
-        <item>LGB|Langbank</item>
-        <item>BOR|Bodorgan</item>
-        <item>RTN|Renton</item>
-        <item>BHC|Balloch</item>
-        <item>DLR|Dalreoch</item>
-        <item>ALX|Alexandria</item>
-        <item>HOZ|Howwood (Renfrewshire)</item>
-        <item>GVE|Garve</item>
-        <item>DBC|Dumbarton Central</item>
-        <item>KWL|Kidwelly</item>
-        <item>ABH|Abererch</item>
-        <item>DBE|Dumbarton East</item>
-        <item>KLM|Kilmaurs</item>
-        <item>DNL|Dunlop</item>
-        <item>CMN|Carmarthen</item>
-        <item>MIN|Milliken Park</item>
-        <item>STT|Stewarton</item>
-        <item>RAN|Rannoch</item>
-        <item>KMK|Kilmarnock</item>
-        <item>GSL|Gunnislake</item>
-        <item>BPC|Penychain</item>
-        <item>STS|Saltash</item>
-        <item>JHN|Johnstone</item>
-        <item>CSK|Calstock</item>
-        <item>BPT|Bishopton</item>
-        <item>BAS|Bere Alston</item>
-        <item>BWG|Bowling</item>
-        <item>SBV|St Budeaux Victoria Road</item>
-        <item>SBF|St Budeaux Ferry Road</item>
-        <item>PBY|Pembrey &amp; Burry Port</item>
-        <item>KEY|Keyham</item>
-        <item>BFE|Bere Ferrers</item>
-        <item>DOC|Dockyard (Plymouth)</item>
-        <item>DPT|Devonport</item>
-        <item>KPT|Kilpatrick</item>
-        <item>PYJ|Paisley St James</item>
-        <item>PLY|Plymouth</item>
-        <item>NEI|Neilston</item>
-        <item>PCN|Paisley Canal</item>
-        <item>PYG|Paisley Gilmour Street</item>
-        <item>DMR|Dalmuir</item>
-        <item>CCC|Criccieth</item>
-        <item>SIN|Singer</item>
-        <item>CYK|Clydebank</item>
-        <item>BRR|Barrhead</item>
-        <item>HKH|Hawkhead</item>
-        <item>LLE|Llanelli</item>
-        <item>YOK|Yoker</item>
-        <item>DMY|Drumry</item>
-        <item>HLW|Hillington West</item>
-        <item>BEL|Beauly</item>
-        <item>CKT|Crookston</item>
-        <item>GRS|Garscadden</item>
-        <item>NIT|Nitshill</item>
-        <item>DMC|Drumchapel</item>
-        <item>LPG|Llanfairpwll</item>
-        <item>HLE|Hillington East</item>
-        <item>MOO|Muir of Ord</item>
-        <item>SCH|Scotstounhill</item>
-        <item>MPK|Mosspark</item>
-        <item>PTL|Priesthill &amp; Darnley</item>
-        <item>CDO|Cardonald</item>
-        <item>PTT|Patterton</item>
-        <item>CKH|Corkerhill</item>
-        <item>CBD|Conon Bridge</item>
-        <item>WES|Westerton</item>
-        <item>BRN|Bearsden</item>
-        <item>KNS|Kennishead</item>
-        <item>JOR|Jordanhill</item>
-        <item>ANL|Anniesland</item>
-        <item>BYE|Bynea</item>
-        <item>AUK|Auchinleck</item>
-        <item>HLF|Hillfoot</item>
-        <item>THB|Thornliebank</item>
-        <item>WCR|Whitecraigs</item>
-        <item>HYN|Hyndland</item>
-        <item>DIN|Dingwall</item>
-        <item>MLN|Milngavie</item>
-        <item>BNP|Barnstaple</item>
-        <item>PTK|Partick</item>
-        <item>KVD|Kelvindale</item>
-        <item>PWW|Pollokshaws West</item>
-        <item>DUM|Dumbreck</item>
-        <item>MYH|Maryhill</item>
-        <item>TNF|Tonfanau</item>
-        <item>GFN|Giffnock</item>
-        <item>LLH|Llangennech</item>
-        <item>WLM|Williamwood</item>
-        <item>SHL|Shawlands</item>
-        <item>PTM|Porthmadog</item>
-        <item>MAX|Maxwell Park</item>
-        <item>SUM|Summerston</item>
-        <item>PWE|Pollokshaws East</item>
-        <item>CMY|Crossmyloof</item>
-        <item>LDN|Llandanwg</item>
-        <item>PMG|Porthmadog Harbour Ffestiniog Railway Station</item>
-        <item>EXG|Exhibition Centre (Glasgow)</item>
-        <item>GSC|Gilshochill</item>
-        <item>CKS|Clarkston</item>
-        <item>LGS|Langside</item>
-        <item>BNG|Bangor (Gwynedd)</item>
-        <item>MUI|Muirend</item>
-        <item>PLW|Pollokshields West</item>
-        <item>CUA|Culrain</item>
-        <item>PES|Pensarn (Gwynedd)</item>
-        <item>LBR|Llanbedr</item>
-        <item>AND|Anderston</item>
-        <item>INH|Invershin</item>
-        <item>PLE|Pollokshields East</item>
-        <item>CHC|Charing Cross (Glasgow)</item>
-        <item>CPN|Chapelton (Devon)</item>
-        <item>HRL|Harlech</item>
-        <item>QPK|Queens Park (Glasgow)</item>
-        <item>DYF|Dyffryn Ardudwy</item>
-        <item>BUS|Busby</item>
-        <item>TYW|Tywyn</item>
-        <item>LRG|Lairg</item>
-        <item>MFL|Mount Florida</item>
-        <item>CCT|Cathcart</item>
-        <item>AYW|Aberystwyth</item>
-        <item>TLB|Talybont</item>
-        <item>GCL|Glasgow Central Low Level</item>
-        <item>COI|Crosshill</item>
-        <item>PTD|Pontarddulais</item>
-        <item>GLC|Glasgow Central</item>
-        <item>PPK|Possilpark &amp; Parkhouse</item>
-        <item>THT|Thorntonhall</item>
-        <item>LLW|Llwyngwril</item>
-        <item>GLQ|Glasgow Queen Street</item>
-        <item>AGS|Argyle Street</item>
-        <item>OKE|Okehampton</item>
-        <item>GWN|Gowerton</item>
-        <item>GQL|Glasgow Queen Street Low Level</item>
-        <item>KGP|Kings Park</item>
-        <item>ASF|Ashfield</item>
-        <item>LLA|Llanaber</item>
-        <item>HST|High Street (Glasgow)</item>
-        <item>MFF|Minffordd</item>
-        <item>MFD|Minffordd Ffestiniog Railway Station</item>
-        <item>ARD|Ardgay</item>
-        <item>TYG|Tygwyn</item>
-        <item>CFF|Croftfoot</item>
-        <item>SPR|Springburn</item>
-        <item>AVY|Aberdovey</item>
-        <item>BDG|Bridgeton</item>
-        <item>HMY|Hairmyres</item>
-        <item>BLG|Bellgrove</item>
-        <item>BRH|Borth</item>
-        <item>UMB|Umberleigh</item>
-        <item>BBG|Bishopbriggs</item>
-        <item>TAL|Talsarnau</item>
-        <item>BNL|Barnhill</item>
-        <item>BRM|Barmouth</item>
-        <item>DAK|Dalmarnock</item>
-        <item>PRH|Penrhyndeudraeth</item>
-        <item>RUT|Rutherglen</item>
-        <item>DST|Duke Street</item>
-        <item>FRB|Fairbourne</item>
-        <item>AXP|Alexandra Parade</item>
-        <item>NCK|New Cumnock</item>
-        <item>LLC|Llandecwyn</item>
-        <item>LLI|Llandybie</item>
-        <item>BUI|Burnside (Strathclyde)</item>
-        <item>PHG|Penhelig</item>
-        <item>PTF|Pantyffynnon</item>
-        <item>AMF|Ammanford</item>
-        <item>SMC|Sampford Courtenay</item>
-        <item>MFA|Morfa Mawddach</item>
-        <item>FFA|Ffairfach</item>
-        <item>PMA|Portsmouth Arms</item>
-        <item>EKL|East Kilbride</item>
-        <item>LLL|Llandeilo</item>
-        <item>DLW|Dalwhinnie</item>
-        <item>CAY|Carntyne</item>
-        <item>CBL|Cambuslang</item>
-        <item>KKH|Kirkhill</item>
-        <item>IVY|Ivybridge</item>
-        <item>SLS|Shettleston</item>
-        <item>CML|Carmyle</item>
-        <item>TYB|Tan-y-Bwlch Ffestiniog Railway Station</item>
-        <item>LNZ|Lenzie</item>
-        <item>SWA|Swansea</item>
-        <item>ASS|Alness</item>
-        <item>SPS|Stepps</item>
-        <item>KGN|Kings Nympton</item>
-        <item>NTN|Newton (S Lanarks)</item>
-        <item>MTV|Mount Vernon</item>
-        <item>INV|Inverness</item>
-        <item>GAR|Garrowhill</item>
-        <item>BIO|Baillieston</item>
-        <item>LLF|Llanfairfechan</item>
-        <item>EST|Easterhouse</item>
-        <item>EGG|Eggesford</item>
-        <item>BLT|Blantyre</item>
-        <item>UDD|Uddingston</item>
-        <item>DVY|Dovey Junction</item>
-        <item>LAS|Llansamlet</item>
-        <item>LLG|Llangadog</item>
-        <item>BFF|Blaenau Ffestiniog</item>
-        <item>GRH|Gartcosh</item>
-        <item>BGI|Bargeddie</item>
-        <item>IGD|Invergordon</item>
-        <item>HNW|Hamilton West</item>
-        <item>RMB|Roman Bridge</item>
-        <item>LNR|Llanwrda</item>
-        <item>NWR|Newtonmore</item>
-        <item>PMW|Penmaenmawr</item>
-        <item>KWD|Kirkwood</item>
-        <item>HNC|Hamilton Central</item>
-        <item>BAI|Blairhill</item>
-        <item>SKE|Skewen</item>
-        <item>ROG|Rogart</item>
-        <item>LAP|Lapford</item>
-        <item>CBC|Coatbridge Central</item>
-        <item>CRO|Croy</item>
-        <item>CBS|Coatbridge Sunnyside</item>
-        <item>BLH|Bellshill</item>
-        <item>KRK|Kirkconnel</item>
-        <item>WFF|Whifflet</item>
-        <item>DWD|Dolwyddelan</item>
-        <item>BNF|Briton Ferry</item>
-        <item>CTE|Chatelherault</item>
-        <item>MCN|Machynlleth</item>
-        <item>COA|Coatdyke</item>
-        <item>BAJ|Baglan</item>
-        <item>MRD|Morchard Road</item>
-        <item>AIR|Airbles</item>
-        <item>MTH|Motherwell</item>
-        <item>NTH|Neath</item>
-        <item>PYP|Pont-y-Pant</item>
-        <item>GRL|Greenfaulds</item>
-        <item>KIN|Kingussie</item>
-        <item>MEY|Merryton</item>
-        <item>ADR|Airdrie</item>
-        <item>LRH|Larkhall</item>
-        <item>LLV|Llandovery</item>
-        <item>HLY|Holytown</item>
-        <item>CUB|Cumbernauld</item>
-        <item>COP|Copplestone</item>
-        <item>PTA|Port Talbot Parkway</item>
-        <item>SDM|Shieldmuir</item>
-        <item>CRF|Carfin</item>
-        <item>DGY|Deganwy</item>
-        <item>CNW|Conwy</item>
-        <item>DBL|Dunblane</item>
-        <item>SQH|Sanquhar</item>
-        <item>DRU|Drumgelloch</item>
-        <item>TAI|Tain</item>
-        <item>DLG|Dolgarrog</item>
-        <item>YEO|Yeoford</item>
-        <item>LLD|Llandudno</item>
-        <item>BEA|Bridge of Allan</item>
-        <item>TLC|Tal-y-Cafn</item>
-        <item>WSH|Wishaw</item>
-        <item>LLJ|Llandudno Junction</item>
-        <item>BYC|Betws-y-Coed</item>
-        <item>NLR|North Llanrwst</item>
-        <item>STG|Stirling</item>
-        <item>LWR|Llanrwst</item>
-        <item>TOT|Totnes</item>
-        <item>GCW|Glan Conwy</item>
-        <item>CYN|Cynghordy</item>
-        <item>CEA|Cleland</item>
-        <item>FRN|Fearn</item>
-        <item>CAC|Caldercruix</item>
-        <item>PYL|Pyle</item>
-        <item>GOL|Golspie</item>
-        <item>CLU|Carluke</item>
-        <item>CDI|Crediton</item>
-        <item>SUG|Sugar Loaf</item>
-        <item>HTW|Hartwood</item>
-        <item>DNO|Dunrobin Castle</item>
-        <item>CWB|Colwyn Bay</item>
-        <item>MST|Maesteg</item>
-        <item>MEW|Maesteg (Ewenny Road)</item>
-        <item>LBT|Larbert</item>
-        <item>KBC|Kinbrace</item>
-        <item>GMG|Garth (Bridgend)</item>
-        <item>NTA|Newton Abbot</item>
-        <item>CMO|Camelon</item>
-        <item>BLA|Blair Atholl</item>
-        <item>SHS|Shotts</item>
-        <item>NTC|Newton St Cyres</item>
-        <item>NRN|Nairn</item>
-        <item>FKK|Falkirk High</item>
-        <item>LNW|Llanwrtyd</item>
-        <item>LNK|Lanark</item>
-        <item>FKG|Falkirk Grahamston</item>
-        <item>ALO|Alloa</item>
-        <item>PGN|Paignton</item>
-        <item>FRS|Forsinard</item>
-        <item>TDU|Tondu</item>
-        <item>AVM|Aviemore</item>
-        <item>SRR|Sarn</item>
-        <item>CAG|Carrbridge</item>
-        <item>KIL|Kildonan</item>
-        <item>TRR|Torre</item>
-        <item>WMI|Wildmill</item>
-        <item>TQY|Torquay</item>
-        <item>BKR|Blackridge</item>
-        <item>BRA|Brora</item>
-        <item>BGN|Bridgend</item>
-        <item>EXD|Exeter St Davids</item>
-        <item>EXT|Exeter St Thomas</item>
-        <item>EXC|Exeter Central</item>
-        <item>FLD|Fauldhouse</item>
-        <item>SJP|St James Park (Devon)</item>
-        <item>GLE|Gleneagles</item>
-        <item>PMT|Polmont</item>
-        <item>LLM|Llangammarch</item>
-        <item>PIT|Pitlochry</item>
-        <item>TRB|Treherbert</item>
-        <item>ARM|Armadale (W Lothian)</item>
-        <item>POL|Polsloe Bridge</item>
-        <item>TGM|Teignmouth</item>
-        <item>AGL|Abergele &amp; Pensarn</item>
-        <item>YNW|Ynyswen</item>
-        <item>CRS|Carstairs</item>
-        <item>GTH|Garth (Powys)</item>
-        <item>BRC|Breich</item>
-        <item>TRY|Treorchy</item>
-        <item>PCD|Pencoed</item>
-        <item>DIG|Digby &amp; Sowton</item>
-        <item>NCO|Newcourt</item>
-        <item>DWL|Dawlish</item>
-        <item>PIN|Pinhoe</item>
-        <item>TOP|Topsham</item>
-        <item>SBS|St Bees</item>
-        <item>LWM|Llantwit Major</item>
-        <item>TPN|Ton Pentre</item>
-        <item>WTH|Whitehaven</item>
-        <item>DMF|Dumfries</item>
-        <item>SCS|Starcross</item>
-        <item>CKL|Corkickle</item>
-        <item>BHG|Bathgate</item>
-        <item>PRN|Parton</item>
-        <item>DWW|Dawlish Warren</item>
-        <item>EXN|Exton</item>
-        <item>LYC|Lympstone Commando</item>
-        <item>NRT|Nethertown</item>
-        <item>YSR|Ystrad Rhondda</item>
-        <item>LYM|Lympstone Village</item>
-        <item>HRR|Harrington</item>
-        <item>ADW|Addiewell</item>
-        <item>LLY|Llwynypia</item>
-        <item>WKG|Workington</item>
-        <item>TNP|Tonypandy</item>
-        <item>CBK|Cranbrook</item>
-        <item>EXM|Exmouth</item>
-        <item>BYS|Braystones</item>
-        <item>LLR|Llanharan</item>
-        <item>ABC|Altnabreac</item>
-        <item>ABA|Aberdare</item>
-        <item>CIM|Cilmeri</item>
-        <item>LIN|Linlithgow</item>
-        <item>DMG|Dinas (Rhondda)</item>
-        <item>RHL|Rhyl</item>
-        <item>WCL|West Calder</item>
-        <item>FLM|Flimby</item>
-        <item>SEL|Sellafield</item>
-        <item>HMS|Helmsdale</item>
-        <item>CMH|Cwmbach</item>
-        <item>BHR|Builth Road</item>
-        <item>POR|Porth</item>
-        <item>CWS|Caersws</item>
-        <item>FOR|Forres</item>
-        <item>DKD|Dunkeld &amp; Birnam</item>
-        <item>PYC|Pontyclun</item>
-        <item>LSN|Livingston North</item>
-        <item>FER|Fernhill</item>
-        <item>SSC|Seascale</item>
-        <item>MRY|Maryport</item>
-        <item>TRH|Trehafod</item>
-        <item>TVP|Tiverton Parkway</item>
-        <item>WHM|Whimple</item>
-        <item>MTA|Mountain Ash</item>
-        <item>MER|Merthyr Tydfil</item>
-        <item>LLO|Llandrindod</item>
-        <item>PTB|Pentre-Bach</item>
-        <item>PER|Penrhiwceiber</item>
-        <item>LVG|Livingston South</item>
-        <item>RIA|Rhoose</item>
-        <item>UHA|Uphall</item>
-        <item>DRI|Drigg</item>
-        <item>PRT|Prestatyn</item>
-        <item>TRD|Troed-y-Rhiw</item>
-        <item>PPD|Pontypridd</item>
-        <item>MEV|Merthyr Vale</item>
-        <item>ACY|Abercynon</item>
-        <item>TRF|Trefforest</item>
-        <item>RAV|Ravenglass</item>
-        <item>QYD|Quakers Yard</item>
-        <item>BOC|Bootle (Cumbria)</item>
-        <item>FNT|Feniton</item>
-        <item>SCT|Scotscalder</item>
-        <item>DFE|Dunfermline Town</item>
-        <item>PNY|Pen-y-Bont</item>
-        <item>KKN|Kirknewton</item>
-        <item>TRE|Trefforest Estate</item>
-        <item>BRY|Barry</item>
-        <item>NWT|Newtown (Powys)</item>
-        <item>RHY|Rhymney</item>
-        <item>ROS|Rosyth</item>
-        <item>PTH|Perth</item>
-        <item>THS|Thurso</item>
-        <item>BYI|Barry Island</item>
-        <item>DFL|Dunfermline Queen Margaret</item>
-        <item>PLT|Pontlottyn</item>
-        <item>BYD|Barry Docks</item>
-        <item>TAF|Taffs Well</item>
-        <item>INK|Inverkeithing</item>
-        <item>SIC|Silecroft</item>
-        <item>NQU|North Queensferry</item>
-        <item>CAD|Cadoxton</item>
-        <item>RDR|Radyr</item>
-        <item>LOC|Lockerbie</item>
-        <item>DAM|Dalmeny</item>
-        <item>DOL|Dolau</item>
-        <item>TIR|Tir-phil</item>
-        <item>YSM|Ystrad Mynach</item>
-        <item>ASP|Aspatria</item>
-        <item>FRW|Fairwater</item>
-        <item>DCT|Danescourt</item>
-        <item>COY|Coryton</item>
-        <item>LNB|Llanbradach</item>
-        <item>WNG|Waun-gron Park</item>
-        <item>LLN|Llandaf</item>
+
+        <item>ABW|Abbey Wood</item>
         <item>ABE|Aber</item>
-        <item>DAG|Dalgety Bay</item>
-        <item>ECP|Energlyn &amp; Churchill Park</item>
-        <item>PGM|Pengam</item>
-        <item>BGD|Bargoed</item>
-        <item>BHD|Brithdir</item>
-        <item>WHT|Whitchurch (Cardiff)</item>
-        <item>GFF|Gilfach Fargoed</item>
-        <item>DNS|Dinas Powys</item>
-        <item>HNG|Hengoed</item>
-        <item>GGJ|Georgemas Junction</item>
-        <item>CPH|Caerphilly</item>
-        <item>RHI|Rhiwbina</item>
-        <item>EBK|Eastbrook</item>
-        <item>BIB|Bishop's Lydeard</item>
-        <item>HON|Honiton</item>
-        <item>COW|Cowdenbeath</item>
-        <item>NNP|Ninian Park</item>
-        <item>BCG|Birchgrove</item>
-        <item>TGS|Ty Glas</item>
-        <item>EBB|Ebbw Vale Town</item>
-        <item>MLM|Millom</item>
-        <item>LLT|Llanbister Road</item>
-        <item>GTN|Grangetown (Cardiff)</item>
-        <item>CGN|Cogan</item>
-        <item>EBV|Ebbw Vale Parkway</item>
-        <item>EGY|Edinburgh Gateway</item>
-        <item>CUH|Curriehill</item>
-        <item>LVT|Lisvane &amp; Thornhill</item>
-        <item>DGL|Dingle Road</item>
-        <item>HLL|Heath Low Level</item>
-        <item>LLS|Llanishen</item>
-        <item>HHL|Heath High Level</item>
-        <item>CDF|Cardiff Central</item>
-        <item>CYS|Cathays</item>
-        <item>EDP|Edinburgh Park</item>
-        <item>PEN|Penarth</item>
-        <item>LCG|Lochgelly</item>
-        <item>CDQ|Cardiff Queen Street</item>
-        <item>SGL|South Gyle</item>
-        <item>GNR|Green Road</item>
-        <item>CDB|Cardiff Bay</item>
-        <item>AUR|Aberdour</item>
-        <item>ANN|Annan</item>
-        <item>WTA|Wester Hailes</item>
-        <item>BIF|Barrow-in-Furness</item>
-        <item>FOX|Foxfield</item>
-        <item>LGO|Llangynllo</item>
-        <item>KGE|Kingsknowe</item>
-        <item>NBE|Newbridge</item>
-        <item>WKI|West Kirby</item>
-        <item>ASK|Askam</item>
-        <item>LTH|Llanhilleth</item>
-        <item>CDD|Cardenden</item>
-        <item>HYK|Hoylake</item>
-        <item>ELG|Elgin</item>
-        <item>ROO|Roose</item>
-        <item>CKY|Crosskeys</item>
-        <item>MNR|Manor Road</item>
-        <item>SLA|Slateford</item>
-        <item>KBF|Kirkby-in-Furness</item>
-        <item>TAU|Taunton</item>
-        <item>WLP|Welshpool</item>
-        <item>DLT|Dalton</item>
-        <item>BTS|Burntisland</item>
-        <item>MEO|Meols</item>
-        <item>HYM|Haymarket</item>
-        <item>RCA|Risca &amp; Pontymister</item>
-        <item>FLN|Flint</item>
-        <item>WGT|Wigton</item>
-        <item>KNU|Knucklas</item>
-        <item>EDB|Edinburgh</item>
-        <item>MRT|Moreton (Merseyside)</item>
-        <item>ROR|Rogerstone</item>
-        <item>KGH|Kinghorn</item>
-        <item>LSW|Leasowe</item>
-        <item>KDY|Kirkcaldy</item>
-        <item>PYE|Pye Corner</item>
-        <item>UPT|Upton</item>
-        <item>BID|Bidston</item>
-        <item>ULV|Ulverston</item>
-        <item>CRK|Chirk</item>
-        <item>HSW|Heswall</item>
-        <item>WLG|Wallasey Grove Road</item>
-        <item>WLV|Wallasey Village</item>
-        <item>KNI|Knighton</item>
-        <item>FRE|Freshfield</item>
-        <item>GLT|Glenrothes with Thornton</item>
-        <item>FBY|Formby</item>
-        <item>NES|Neston</item>
-        <item>AXM|Axminster</item>
-        <item>BCK|Buckley</item>
-        <item>PNF|Penyffordd</item>
-        <item>BKN|Birkenhead North</item>
-        <item>CWM|Cwmbran</item>
-        <item>MNC|Markinch</item>
-        <item>PPL|Pontypool &amp; New Inn</item>
-        <item>HTO|Hightown</item>
-        <item>RUA|Ruabon</item>
-        <item>GOB|Gobowen</item>
-        <item>HLR|Hall Road</item>
-        <item>NBN|New Brighton</item>
-        <item>AGV|Abergavenny</item>
-        <item>LDY|Ladybank</item>
-        <item>BPB|Blackpool Pleasure Beach</item>
-        <item>HPE|Hope (Flintshire)</item>
-        <item>SHT|Shotton</item>
-        <item>NWP|Newport (S Wales)</item>
-        <item>BWT|Bridgwater</item>
-        <item>SHT|Shotton High Level</item>
-        <item>SQU|Squires Gate</item>
-        <item>CGW|Caergwrle</item>
-        <item>BKP|Birkenhead Park</item>
-        <item>BPS|Blackpool South</item>
-        <item>BPN|Blackpool North</item>
-        <item>CYB|Cefn-y-Bedd</item>
-        <item>BLN|Blundellsands &amp; Crosby</item>
-        <item>ANS|Ainsdale</item>
-        <item>HWD|Hawarden</item>
-        <item>HWB|Hawarden Bridge</item>
-        <item>BSU|Brunstane</item>
-        <item>GWE|Gwersyllt</item>
-        <item>NEW|Newcraighall</item>
-        <item>GEA|Gretna Green</item>
-        <item>WLO|Waterloo (Merseyside)</item>
-        <item>CNP|Conway Park</item>
-        <item>HIG|Highbridge &amp; Burnham-on-Sea</item>
-        <item>BKC|Birkenhead Central</item>
-        <item>SAS|St Annes-on-the-Sea</item>
-        <item>LAY|Layton (Lancs)</item>
-        <item>HIL|Hillside</item>
-        <item>EKB|Eskbank</item>
-        <item>WSM|Weston-super-Mare</item>
-        <item>GNL|Green Lane</item>
-        <item>SFI|Shawfair</item>
-        <item>BKQ|Birkenhead Hamilton Square</item>
-        <item>RFY|Rock Ferry</item>
-        <item>WRX|Wrexham General</item>
-        <item>BDL|Birkdale</item>
-        <item>MUB|Musselburgh</item>
-        <item>WXC|Wrexham Central</item>
-        <item>NEG|Newtongrange</item>
-        <item>BEB|Bebington</item>
-        <item>SFL|Seaforth &amp; Litherland</item>
-        <item>PSL|Port Sunlight</item>
-        <item>SOP|Southport</item>
-        <item>SPI|Spital</item>
-        <item>BOT|Bootle Oriel Road</item>
-        <item>BNW|Bootle New Strand</item>
-        <item>LVJ|Liverpool James Street</item>
-        <item>BMR|Bromborough Rake</item>
-        <item>SDL|Sandhills</item>
-        <item>MRF|Moorfields</item>
-        <item>MRF|Moorfields</item>
-        <item>BOM|Bromborough</item>
-        <item>WNM|Weston Milton</item>
-        <item>BAH|Bank Hall</item>
-        <item>GBG|Gorebridge</item>
-        <item>AFV|Ansdell &amp; Fairhaven</item>
-        <item>ERA|Eastham Rake</item>
-        <item>KKD|Kirkdale</item>
-        <item>PFY|Poulton-le-Fylde</item>
-        <item>ING|Invergowrie</item>
-        <item>SPF|Springfield</item>
-        <item>HOO|Hooton</item>
-        <item>LVC|Liverpool Central</item>
-        <item>LVC|Liverpool Central Loop Line</item>
-        <item>LIV|Liverpool Lime Street</item>
-        <item>LVL|Liverpool Lime Street Low Level</item>
-        <item>BRW|Brunswick</item>
-        <item>BUK|Bucknell</item>
-        <item>MEC|Meols Cop</item>
-        <item>WAO|Walton (Merseyside)</item>
-        <item>WCK|Wick</item>
-        <item>OPK|Orrell Park</item>
-        <item>RIL|Rice Lane</item>
-        <item>LTM|Lytham</item>
-        <item>CAK|Cark</item>
-        <item>DLS|Dalston (Cumbria)</item>
-        <item>AIN|Aintree</item>
-        <item>WAF|Wallyford</item>
-        <item>STM|St Michaels</item>
-        <item>WOR|Worle</item>
-        <item>ORN|Old Roan</item>
-        <item>EDG|Edge Hill</item>
-        <item>LTT|Little Sutton</item>
-        <item>CPU|Capenhurst</item>
-        <item>CUP|Cupar</item>
-        <item>FAZ|Fazakerley</item>
-        <item>MOS|Moss Side</item>
-        <item>HPT|Hopton Heath</item>
-        <item>MAG|Maghull</item>
-        <item>AIG|Aigburth</item>
-        <item>OVE|Overpool</item>
-        <item>WAV|Wavertree Technology Park</item>
-        <item>MSH|Mossley Hill</item>
-        <item>PST|Prestonpans</item>
-        <item>CSG|Cressington</item>
-        <item>BES|Bescar Lane</item>
-        <item>KBK|Kents Bank</item>
-        <item>WSA|West Allerton</item>
-        <item>BME|Broome</item>
-        <item>TWN|Town Green</item>
-        <item>KIR|Kirkby</item>
-        <item>CAR|Carlisle</item>
-        <item>DEE|Dundee</item>
-        <item>HHB|Heysham Port</item>
-        <item>ELP|Ellesmere Port</item>
-        <item>BAC|Bache</item>
-        <item>BGE|Broad Green</item>
-        <item>AUG|Aughton Park</item>
-        <item>LPY|Liverpool South Parkway</item>
-        <item>LPY|Liverpool South Parkway</item>
-        <item>GOS|Grange-over-Sands</item>
-        <item>CTR|Chester</item>
-        <item>WDM|Windermere</item>
-        <item>OMS|Ormskirk</item>
-        <item>KKM|Kirkham &amp; Wesham</item>
-        <item>YAT|Yatton</item>
-        <item>NLN|New Lane</item>
-        <item>KEH|Keith</item>
-        <item>HNX|Hunts Cross</item>
-        <item>CRV|Craven Arms</item>
-        <item>ROB|Roby</item>
-        <item>MCM|Morecambe</item>
-        <item>SNT|Stanlow &amp; Thornton</item>
-        <item>HUY|Huyton</item>
-        <item>BCB|Burscough Bridge</item>
-        <item>BCJ|Burscough Junction</item>
-        <item>LND|Longniddry</item>
-        <item>HED|Halewood</item>
-        <item>LEU|Leuchars</item>
-        <item>CKN|Crewkerne</item>
-        <item>BAR|Bare Lane</item>
-        <item>CTT|Church Stretton</item>
-        <item>INE|Ince &amp; Elton</item>
-        <item>SOI|Stow</item>
-        <item>ARN|Arnside</item>
-        <item>STJ|Severn Tunnel Junction</item>
-        <item>SLW|Salwick</item>
-        <item>BYF|Broughty Ferry</item>
-        <item>RUF|Rufford</item>
-        <item>WRL|Wetheral</item>
-        <item>HSC|Hoscar</item>
-        <item>SVL|Staveley</item>
-        <item>PSC|Prescot</item>
-        <item>WHN|Whiston</item>
-        <item>LAN|Lancaster</item>
-        <item>CDT|Caldicot</item>
-        <item>SVR|Silverdale</item>
-        <item>RNF|Rainford</item>
-        <item>NLS|Nailsea &amp; Backwell</item>
-        <item>ECL|Eccleston Park</item>
-        <item>BSI|Balmossie</item>
-        <item>HGN|Hough Green</item>
-        <item>HSB|Helsby</item>
-        <item>CSO|Croston</item>
-        <item>PBL|Parbold</item>
-        <item>RNH|Rainhill</item>
-        <item>GAL|Galashiels</item>
-        <item>SHR|Shrewsbury</item>
-        <item>THH|Thatto Heath</item>
-        <item>CNF|Carnforth</item>
-        <item>MON|Monifieth</item>
-        <item>LEO|Leominster</item>
-        <item>BUD|Burneside (Cumbria)</item>
-        <item>YRT|Yorton</item>
-        <item>AWT|Armathwaite</item>
-        <item>RUN|Runcorn</item>
-        <item>UPL|Upholland</item>
-        <item>DRM|Drem</item>
-        <item>PNR|Penrith North Lakes</item>
-        <item>MLD|Mouldsworth</item>
-        <item>WID|Widnes</item>
-        <item>LUD|Ludlow</item>
-        <item>HFD|Hereford</item>
-        <item>AVN|Avonmouth</item>
-        <item>SNH|St Helens Central</item>
-        <item>WEM|Wem</item>
-        <item>SAR|St Andrews Road</item>
-        <item>FRD|Frodsham</item>
-        <item>LEG|Lea Green</item>
-        <item>KEN|Kendal</item>
-        <item>TWB|Tweedbank</item>
-        <item>APB|Appley Bridge</item>
-        <item>SHH|Shirehampton</item>
-        <item>ORR|Orrell</item>
-        <item>OXN|Oxenholme Lake District</item>
-        <item>PRE|Preston</item>
-        <item>HNT|Huntly</item>
-        <item>SHJ|St Helens Junction</item>
-        <item>CPW|Chepstow</item>
-        <item>PRS|Prees</item>
-        <item>SVB|Severn Beach</item>
-        <item>GST|Gathurst</item>
-        <item>BYL|Barry Links</item>
-        <item>NBW|North Berwick</item>
-        <item>LEY|Leyland</item>
-        <item>LOH|Lostock Hall</item>
-        <item>LZB|Lazonby &amp; Kirkoswald</item>
-        <item>SML|Sea Mills</item>
-        <item>WTC|Whitchurch (Shrops)</item>
-        <item>BMP|Brampton (Cumbria)</item>
-        <item>GSW|Garswood</item>
-        <item>DLM|Delamere</item>
-        <item>PEM|Pemberton</item>
-        <item>EBA|Euxton Balshaw Lane</item>
-        <item>RUE|Runcorn East</item>
-        <item>GOF|Golf Street</item>
-        <item>BSV|Buckshaw Parkway</item>
-        <item>BMB|Bamber Bridge</item>
-        <item>CAN|Carnoustie</item>
-        <item>PIL|Pilning</item>
-        <item>SNK|Sankey for Penketh</item>
-        <item>YVP|Yeovil Pen Mill</item>
-        <item>YVJ|Yeovil Junction</item>
-        <item>BYN|Bryn</item>
-        <item>LGW|Langwathby</item>
-        <item>CFN|Clifton Down</item>
-        <item>ERL|Earlestown</item>
-        <item>PSN|Parson Street</item>
-        <item>WGN|Wigan North Western</item>
-        <item>WGW|Wigan Wallgate</item>
-        <item>RDA|Redland</item>
-        <item>CRL|Chorley</item>
-        <item>BMT|Bedminster</item>
-        <item>MTP|Montpelier</item>
-        <item>NLW|Newton-le-Willows</item>
-        <item>THO|Thornford</item>
-        <item>INC|Ince (Manchester)</item>
-        <item>BRI|Bristol Temple Meads</item>
-        <item>YET|Yetminster</item>
-        <item>CNO|Chetnole</item>
-        <item>ACB|Acton Bridge</item>
-        <item>MDN|Maiden Newton</item>
-        <item>WBQ|Warrington Bank Quay</item>
-        <item>CUD|Cuddington</item>
-        <item>WRE|Wrenbury</item>
-        <item>ADL|Adlington (Lancs)</item>
-        <item>WAC|Warrington Central</item>
-        <item>SRD|Stapleton Road</item>
-        <item>LWH|Lawrence Hill</item>
-        <item>FIT|Filton Abbey Wood</item>
-        <item>PWY|Patchway</item>
-        <item>WNN|Wennington</item>
-        <item>HIN|Hindley</item>
-        <item>BLK|Blackrod</item>
-        <item>BPW|Bristol Parkway</item>
-        <item>INS|Insch</item>
-        <item>PDG|Padgate</item>
-        <item>HTF|Hartford</item>
-        <item>LYD|Lydney</item>
-        <item>CLC|Castle Cary</item>
-        <item>ARB|Arbroath</item>
-        <item>SHE|Sherborne</item>
-        <item>PLS|Pleasington</item>
-        <item>HWI|Horwich Parkway</item>
-        <item>GBK|Greenbank</item>
-        <item>WLN|Wellington (Shropshire)</item>
-        <item>BWD|Birchwood</item>
-        <item>NAN|Nantwich</item>
-        <item>WHG|Westhoughton</item>
-        <item>KYN|Keynsham</item>
-        <item>CYT|Cherry Tree</item>
-        <item>DSY|Daisy Hill</item>
-        <item>BEN|Bentham</item>
-        <item>NWI|Northwich</item>
-        <item>MLH|Mill Hill (Lancs)</item>
-        <item>WSF|Winsford</item>
-        <item>UPW|Upwey</item>
-        <item>HGF|Hag Fold</item>
-        <item>LOT|Lostock</item>
-        <item>WEY|Weymouth</item>
-        <item>DUN|Dunbar</item>
-        <item>ATN|Atherton</item>
-        <item>BBN|Blackburn</item>
-        <item>RGW|Ramsgreave &amp; Wilpshire</item>
-        <item>APP|Appleby</item>
-        <item>ZZT|Lintley</item>
-        <item>BRU|Bruton</item>
-        <item>DCW|Dorchester West</item>
-        <item>LTG|Lostock Gralam</item>
-        <item>DCH|Dorchester South</item>
-        <item>DWN|Darwen</item>
-        <item>ZZT|Kirkhaugh</item>
-        <item>GLZ|Glazebrook</item>
-        <item>OKN|Oakengates</item>
-        <item>YAE|Yate</item>
-        <item>TFC|Telford Central</item>
-        <item>HWH|Haltwhistle</item>
-        <item>LHO|Langho</item>
-        <item>TMC|Templecombe</item>
-        <item>LED|Ledbury</item>
-        <item>CRE|Crewe</item>
-        <item>MTS|Montrose</item>
-        <item>IRL|Irlam</item>
-        <item>LAU|Laurencekirk</item>
-        <item>ZZT|Alston</item>
-        <item>BON|Bolton</item>
-        <item>PLM|Plumley</item>
-        <item>RIS|Rishton</item>
-        <item>ENT|Entwistle</item>
-        <item>HID|Hall i' th' Wood</item>
-        <item>BMC|Bromley Cross</item>
-        <item>WHE|Whalley</item>
-        <item>CPY|Clapham (N Yorks)</item>
-        <item>MSS|Moses Gate</item>
-        <item>OLF|Oldfield Park</item>
-        <item>SDB|Sandbach</item>
-        <item>WKD|Walkden</item>
-        <item>CLH|Clitheroe</item>
-        <item>CTW|Church &amp; Oswaldtwistle</item>
-        <item>FNW|Farnworth</item>
-        <item>FLI|Flixton</item>
-        <item>SFN|Shifnal</item>
-        <item>KSL|Kearsley</item>
-        <item>BTH|Bath Spa</item>
-        <item>CDU|Cam &amp; Dursley</item>
-        <item>KNF|Knutsford</item>
-        <item>CWL|Colwall</item>
-        <item>CSR|Chassen Road</item>
-        <item>ACR|Accrington</item>
-        <item>KSW|Kirkby Stephen</item>
-        <item>PAT|Patricroft</item>
-        <item>DNT|Dent</item>
-        <item>RHD|Ribblehead</item>
-        <item>URM|Urmston</item>
-        <item>HCH|Holmes Chapel</item>
-        <item>MSD|Moorside</item>
-        <item>HAL|Hale</item>
-        <item>ALT|Altrincham</item>
-        <item>HCT|Huncoat</item>
-        <item>NVR|Navigation Road</item>
-        <item>ASY|Ashley</item>
-        <item>INR|Inverurie</item>
-        <item>SNN|Swinton (Manchester)</item>
-        <item>MOB|Mobberley</item>
-        <item>ECC|Eccles</item>
-        <item>BLL|Bardon Mill</item>
-        <item>MTN|Moreton (Dorset)</item>
-        <item>MVL|Malvern Link</item>
-        <item>GTR|Goostrey</item>
-        <item>GMV|Great Malvern</item>
-        <item>HUP|Humphrey Park</item>
-        <item>FRO|Frome</item>
-        <item>GSD|Garsdale</item>
-        <item>FFD|Freshford</item>
-        <item>HPN|Hapton</item>
-        <item>CLI|Clifton (Manchester)</item>
-        <item>TRA|Trafford Park</item>
-        <item>COS|Cosford</item>
-        <item>ASG|Alsager</item>
-        <item>GIG|Giggleswick</item>
-        <item>HIR|Horton-in-Ribblesdale</item>
-        <item>AVF|Avoncliff</item>
-        <item>MUF|Manchester United FC</item>
-        <item>SHU|Stonehouse</item>
-        <item>GIL|Gillingham (Dorset)</item>
-        <item>CEL|Chelford</item>
-        <item>RSG|Rose Grove</item>
-        <item>SET|Settle</item>
-        <item>SLD|Salford Crescent</item>
-        <item>ALB|Albrighton</item>
-        <item>MIA|Manchester Airport</item>
-        <item>BOA|Bradford-on-Avon</item>
-        <item>BUB|Burnley Barracks</item>
-        <item>SFD|Salford Central</item>
-        <item>LPR|Long Preston</item>
-        <item>DGT|Deansgate</item>
-        <item>GCR|Gloucester</item>
-        <item>BYM|Burnley Manchester Road</item>
-        <item>KDG|Kidsgrove</item>
-        <item>KID|Kidderminster</item>
-        <item>BNC|Burnley Central</item>
-        <item>MCV|Manchester Victoria</item>
-        <item>MCO|Manchester Oxford Road</item>
-        <item>SYA|Styal</item>
-        <item>HDB|Haydon Bridge</item>
-        <item>ALD|Alderley Edge</item>
-        <item>HDG|Heald Green</item>
-        <item>WOO|Wool</item>
-        <item>BRF|Brierfield</item>
-        <item>GTY|Gatley</item>
-        <item>MAN|Manchester Piccadilly</item>
-        <item>STD|Stroud (Glos)</item>
-        <item>WOF|Worcester Foregate Street</item>
-        <item>WML|Wilmslow</item>
-        <item>HBY|Hartlebury</item>
-        <item>TRO|Trowbridge</item>
-        <item>HLD|Hellifield</item>
-        <item>EDY|East Didsbury</item>
-        <item>DMH|Dilton Marsh</item>
-        <item>LPT|Longport</item>
-        <item>BNA|Burnage</item>
-        <item>WOS|Worcester Shrub Hill</item>
-        <item>HTH|Handforth</item>
-        <item>ADK|Ardwick</item>
-        <item>NEL|Nelson</item>
-        <item>MAU|Mauldeth Road</item>
-        <item>WSB|Westbury (Wilts)</item>
-        <item>STN|Stonehaven</item>
-        <item>CSL|Codsall</item>
-        <item>ABY|Ashburys</item>
-        <item>CNG|Congleton</item>
-        <item>NTB|Norton Bridge</item>
-        <item>LVM|Levenshulme</item>
-        <item>BBK|Bilbrook</item>
-        <item>CHU|Cheadle Hulme</item>
-        <item>WMN|Warminster</item>
-        <item>SOT|Stoke-on-Trent</item>
-        <item>BKD|Blakedown</item>
-        <item>BLV|Belle Vue</item>
-        <item>CNE|Colne</item>
-        <item>HTC|Heaton Chapel</item>
-        <item>CAS|Castleton (Manchester)</item>
-        <item>DYC|Dyce</item>
-        <item>RRB|Ryder Brow</item>
-        <item>WED|Wedgwood</item>
-        <item>MIH|Mills Hill (Manchester)</item>
-        <item>MSO|Moston</item>
-        <item>BRT|Barlaston</item>
-        <item>GTO|Gorton</item>
-        <item>BML|Bramhall</item>
-        <item>SPT|Stockport</item>
-        <item>DTW|Droitwich Spa</item>
-        <item>RDS|Reddish South</item>
-        <item>SNE|Stone</item>
-        <item>RDN|Reddish North</item>
-        <item>DVN|Davenport</item>
-        <item>RCD|Rochdale</item>
-        <item>MKM|Melksham</item>
-        <item>HAG|Hagley</item>
-        <item>PRB|Prestbury</item>
-        <item>FRF|Fairfield</item>
-        <item>SBT|Stourbridge Town</item>
-        <item>WSR|Woodsmoor</item>
-        <item>LGN|Longton</item>
-        <item>SBJ|Stourbridge Junction</item>
-        <item>SBJ|Stourbridge Junction</item>
-        <item>BNT|Brinnington</item>
-        <item>PYT|Poynton</item>
-        <item>ADC|Adlington (Cheshire)</item>
-        <item>DTN|Denton</item>
-        <item>STA|Stafford</item>
-        <item>WRM|Wareham</item>
-        <item>MAC|Macclesfield</item>
-        <item>HAZ|Hazel Grove</item>
-        <item>WVH|Wolverhampton</item>
-        <item>PKG|Penkridge</item>
-        <item>CPM|Chippenham</item>
-        <item>LYE|Lye (West Midlands)</item>
-        <item>PLN|Portlethen</item>
-        <item>GUI|Guide Bridge</item>
-        <item>SMB|Smithy Bridge</item>
-        <item>ASC|Ashchurch for Tewkesbury</item>
-        <item>BDY|Bredbury</item>
-        <item>GGV|Gargrave</item>
-        <item>WDN|Walsden</item>
-        <item>CNM|Cheltenham Spa</item>
-        <item>TOD|Todmorden</item>
-        <item>AHN|Ashton-under-Lyne</item>
-        <item>LTL|Littleborough</item>
-        <item>WLY|Woodley</item>
-        <item>CRA|Cradley Heath</item>
-        <item>HEX|Hexham</item>
+        <item>ACY|Abercynon</item>
+        <item>ABA|Aberdare</item>
         <item>ABD|Aberdeen</item>
-        <item>RML|Romiley</item>
-        <item>CSY|Coseley</item>
-        <item>HYT|Hyde North</item>
-        <item>HYC|Hyde Central</item>
-        <item>MDL|Middlewood</item>
-        <item>TIS|Tisbury</item>
-        <item>HOL|Holton Heath</item>
-        <item>FLF|Flowery Field</item>
-        <item>RSH|Rose Hill Marple</item>
-        <item>PSH|Pershore</item>
-        <item>BYB|Blythe Bridge</item>
-        <item>NWN|Newton for Hyde</item>
-        <item>TIP|Tipton</item>
-        <item>SYB|Stalybridge</item>
-        <item>OHL|Old Hill</item>
-        <item>MPL|Marple</item>
-        <item>GDL|Godley</item>
-        <item>DDP|Dudley Port</item>
-        <item>BMV|Bromsgrove</item>
-        <item>DSL|Disley</item>
-        <item>MSL|Mossley (Manchester)</item>
-        <item>HTY|Hattersley</item>
-        <item>SRN|Strines</item>
-        <item>ROW|Rowley Regis</item>
-        <item>SKI|Skipton</item>
-        <item>KEM|Kemble</item>
-        <item>CAO|Cannock</item>
-        <item>LAW|Landywood</item>
-        <item>HAM|Hamworthy</item>
-        <item>BWN|Bloxwich North</item>
-        <item>CRB|Corbridge</item>
-        <item>BDB|Broadbottom</item>
-        <item>GNF|Greenfield</item>
-        <item>CEY|Cononley</item>
-        <item>SAD|Sandwell &amp; Dudley</item>
-        <item>BLX|Bloxwich</item>
-        <item>BWK|Berwick-upon-Tweed</item>
-        <item>HBD|Hebden Bridge</item>
-        <item>NMN|New Mills Newtown</item>
-        <item>NMC|New Mills Central</item>
-        <item>LGG|Langley Green</item>
-        <item>SNP|Stanhope</item>
-        <item>HNF|Hednesford</item>
-        <item>BTG|Barnt Green</item>
-        <item>BSC|Bescot Stadium</item>
-        <item>FNV|Furness Vale</item>
-        <item>WBR|Whaley Bridge</item>
-        <item>WSL|Walsall</item>
-        <item>POO|Poole</item>
-        <item>MYT|Mytholmroyd</item>
-        <item>LOB|Longbridge</item>
-        <item>SGB|Smethwick Galton Bridge</item>
-        <item>SGB|Smethwick Galton Bridge High Level</item>
-        <item>TAB|Tame Bridge Parkway</item>
-        <item>RDM|Riding Mill</item>
-        <item>DTG|Dinting</item>
-        <item>SMR|Smethwick Rolfe Street</item>
+        <item>AUR|Aberdour</item>
+        <item>AVY|Aberdovey</item>
+        <item>ABH|Abererch</item>
+        <item>AGV|Abergavenny</item>
+        <item>AGL|Abergele &amp; Pensarn</item>
+        <item>AYW|Aberystwyth</item>
+        <item>ACR|Accrington</item>
+        <item>AAT|Achanalt</item>
+        <item>ACN|Achnasheen</item>
+        <item>ACH|Achnashellach</item>
+        <item>ACK|Acklington</item>
+        <item>ACL|Acle</item>
+        <item>ACG|Acocks Green</item>
+        <item>ACB|Acton Bridge (Cheshire)</item>
+        <item>ACC|Acton Central</item>
+        <item>AML|Acton Main Line</item>
+        <item>ADD|Adderley Park</item>
+        <item>ADW|Addiewell</item>
+        <item>ASN|Addlestone</item>
+        <item>ADM|Adisham</item>
+        <item>ADC|Adlington (Cheshire)</item>
+        <item>ADL|Adlington (Lancs)</item>
+        <item>AWK|Adwick</item>
+        <item>AIG|Aigburth</item>
+        <item>ANS|Ainsdale</item>
+        <item>AIN|Aintree</item>
+        <item>AIR|Airbles</item>
+        <item>ADR|Airdrie</item>
+        <item>AYP|Albany Park</item>
+        <item>ALB|Albrighton</item>
+        <item>ALD|Alderley Edge</item>
+        <item>AMT|Aldermaston</item>
+        <item>AHT|Aldershot</item>
+        <item>AGT|Aldrington</item>
+        <item>AAP|Alexandra Palace</item>
+        <item>AXP|Alexandra Parade</item>
+        <item>ALX|Alexandria</item>
+        <item>ALF|Alfreton</item>
+        <item>ALW|Allens West</item>
+        <item>ALO|Alloa</item>
+        <item>ASS|Alness</item>
+        <item>ALM|Alnmouth</item>
+        <item>ALR|Alresford (Essex)</item>
+        <item>ASG|Alsager</item>
+        <item>ALN|Althorne (Essex)</item>
+        <item>ALP|Althorpe</item>
+        <item>ABC|Altnabreac</item>
+        <item>AON|Alton</item>
+        <item>ALT|Altrincham</item>
         <item>ALV|Alvechurch</item>
-        <item>FRR|Frosterley</item>
-        <item>HDF|Hadfield</item>
-        <item>NFD|Northfield</item>
-        <item>THW|The Hawthorns</item>
-        <item>GLO|Glossop</item>
-        <item>EVE|Evesham</item>
-        <item>SON|Steeton &amp; Silsden</item>
-        <item>PKS|Parkstone (Dorset)</item>
-        <item>CLY|Chinley</item>
-        <item>RDC|Redditch</item>
-        <item>RGT|Rugeley Town</item>
-        <item>UNI|University</item>
-        <item>SLY|Selly Oak</item>
-        <item>MSN|Marsden</item>
-        <item>KNN|Kings Norton</item>
-        <item>RGL|Rugeley Trent Valley</item>
-        <item>HSD|Hamstead (Birmingham)</item>
-        <item>BRV|Bournville</item>
-        <item>SKS|Stocksfield</item>
-        <item>CEF|Chapel-en-le-Frith</item>
-        <item>BSM|Branksome</item>
-        <item>BUX|Buxton</item>
-        <item>JEQ|Jewellery Quarter</item>
-        <item>FWY|Five Ways</item>
-        <item>SOW|Sowerby Bridge</item>
-        <item>KEI|Keighley</item>
-        <item>PRY|Perry Barr</item>
+        <item>AMB|Ambergate</item>
+        <item>AMY|Amberley</item>
+        <item>AMR|Amersham</item>
+        <item>AMF|Ammanford</item>
+        <item>ANC|Ancaster</item>
+        <item>AND|Anderston</item>
+        <item>ADV|Andover</item>
+        <item>ANZ|Anerley</item>
+        <item>AGR|Angel Road</item>
+        <item>ANG|Angmering</item>
+        <item>ANN|Annan</item>
+        <item>ANL|Anniesland</item>
+        <item>AFV|Ansdell &amp; Fairhaven</item>
+        <item>APY|Apperley Bridge</item>
+        <item>APP|Appleby</item>
+        <item>APD|Appledore (Kent)</item>
+        <item>APF|Appleford</item>
+        <item>APB|Appley Bridge</item>
+        <item>APS|Apsley</item>
+        <item>ARB|Arbroath</item>
+        <item>ARD|Ardgay</item>
+        <item>AUI|Ardlui</item>
+        <item>ADS|Ardrossan Harbour</item>
+        <item>ASB|Ardrossan South Beach</item>
+        <item>ADN|Ardrossan Town</item>
+        <item>ADK|Ardwick</item>
+        <item>AGS|Argyle Street</item>
+        <item>ARG|Arisaig</item>
+        <item>ARL|Arlesey</item>
+        <item>ARM|Armadale (West Lothian)</item>
+        <item>AWT|Armathwaite</item>
+        <item>ARN|Arnside</item>
+        <item>ARR|Arram</item>
+        <item>ART|Arrochar &amp; Tarbet</item>
+        <item>ARU|Arundel</item>
+        <item>ACT|Ascot (Berks)</item>
+        <item>AUW|Ascott-under-Wychwood</item>
+        <item>ASH|Ash</item>
+        <item>AHV|Ash Vale</item>
+        <item>ABY|Ashburys</item>
+        <item>ASC|Ashchurch for Tewkesbury</item>
+        <item>ASF|Ashfield</item>
+        <item>AFS|Ashford (Surrey)</item>
+        <item>AFK|Ashford International</item>
+        <item>ASI|Ashford International (Eurostar)</item>
+        <item>ASY|Ashley</item>
+        <item>AHD|Ashtead</item>
+        <item>AHN|Ashton-under-Lyne</item>
+        <item>AHS|Ashurst (Kent)</item>
+        <item>ANF|Ashurst New Forest</item>
+        <item>AWM|Ashwell &amp; Morden</item>
+        <item>ASK|Askam</item>
+        <item>ALK|Aslockton</item>
+        <item>ASP|Aspatria</item>
+        <item>APG|Aspley Guise</item>
+        <item>AST|Aston</item>
+        <item>ATH|Atherstone</item>
+        <item>ATN|Atherton</item>
+        <item>ATT|Attadale</item>
+        <item>ATB|Attenborough</item>
+        <item>ATL|Attleborough</item>
+        <item>AUK|Auchinleck</item>
+        <item>AUD|Audley End</item>
+        <item>AUG|Aughton Park</item>
+        <item>AVM|Aviemore</item>
+        <item>AVF|Avoncliff</item>
+        <item>AVN|Avonmouth</item>
+        <item>AXM|Axminster</item>
+        <item>AYS|Aylesbury</item>
+        <item>AVP|Aylesbury Vale Parkway</item>
+        <item>AYL|Aylesford</item>
+        <item>AYH|Aylesham</item>
+        <item>AYR|Ayr</item>
+        <item>BAC|Bache</item>
+        <item>BAJ|Baglan</item>
+        <item>BAG|Bagshot</item>
+        <item>BLD|Baildon</item>
+        <item>BIO|Baillieston</item>
+        <item>BAB|Balcombe</item>
+        <item>BDK|Baldock</item>
+        <item>BAL|Balham</item>
+        <item>BHC|Balloch</item>
+        <item>BSI|Balmossie</item>
+        <item>BMB|Bamber Bridge</item>
+        <item>BAM|Bamford</item>
+        <item>BNV|Banavie</item>
+        <item>BAN|Banbury</item>
+        <item>BNG|Bangor (Gwynedd)</item>
+        <item>BAH|Bank Hall</item>
+        <item>BAD|Banstead</item>
+        <item>BSS|Barassie</item>
+        <item>ZBB|Barbican</item>
+        <item>BLL|Bardon Mill</item>
+        <item>BAR|Bare Lane</item>
+        <item>BGI|Bargeddie</item>
+        <item>BGD|Bargoed</item>
+        <item>BKG|Barking</item>
+        <item>BRT|Barlaston</item>
+        <item>BMG|Barming</item>
+        <item>BRM|Barmouth</item>
+        <item>BNH|Barnehurst</item>
+        <item>BNS|Barnes</item>
+        <item>BNI|Barnes Bridge</item>
+        <item>BTB|Barnetby</item>
+        <item>BAA|Barnham</item>
+        <item>BNL|Barnhill</item>
+        <item>BNY|Barnsley</item>
+        <item>BNP|Barnstaple</item>
+        <item>BTG|Barnt Green</item>
+        <item>BRR|Barrhead</item>
+        <item>BRL|Barrhill</item>
+        <item>BAV|Barrow Haven</item>
+        <item>BIF|Barrow-in-Furness</item>
+        <item>BWS|Barrow-Upon-Soar</item>
+        <item>BRY|Barry</item>
+        <item>BYD|Barry Docks</item>
+        <item>BYI|Barry Island</item>
+        <item>BYL|Barry Links</item>
+        <item>BAU|Barton-on-Humber</item>
+        <item>BSO|Basildon</item>
+        <item>BSK|Basingstoke</item>
+        <item>BBL|Bat &amp; Ball</item>
+        <item>BTH|Bath Spa</item>
+        <item>BHG|Bathgate</item>
+        <item>BTL|Batley</item>
+        <item>BTT|Battersby</item>
+        <item>BAK|Battersea Park</item>
+        <item>BAT|Battle</item>
+        <item>BLB|Battlesbridge</item>
+        <item>BAY|Bayford</item>
+        <item>BCF|Beaconsfield</item>
+        <item>BER|Bearley</item>
+        <item>BRN|Bearsden</item>
+        <item>BSD|Bearsted</item>
+        <item>BSL|Beasdale</item>
+        <item>BEU|Beaulieu Road</item>
+        <item>BEL|Beauly</item>
+        <item>BEB|Bebington</item>
+        <item>BCC|Beccles</item>
+        <item>BEC|Beckenham Hill</item>
+        <item>BKJ|Beckenham Junction</item>
+        <item>BDM|Bedford</item>
+        <item>BSJ|Bedford St Johns</item>
+        <item>BDH|Bedhampton</item>
+        <item>BMT|Bedminster</item>
+        <item>BEH|Bedworth</item>
+        <item>BDW|Bedwyn</item>
+        <item>BEE|Beeston</item>
+        <item>BKS|Bekesbourne</item>
+        <item>BLV|Belle Vue</item>
+        <item>BLG|Bellgrove</item>
+        <item>BGM|Bellingham</item>
+        <item>BLH|Bellshill</item>
+        <item>BLM|Belmont</item>
+        <item>BLP|Belper</item>
+        <item>BEG|Beltring</item>
+        <item>BVD|Belvedere</item>
+        <item>BEM|Bempton</item>
+        <item>BEY|Ben Rhydding</item>
+        <item>BEF|Benfleet</item>
+        <item>BEN|Bentham</item>
+        <item>BTY|Bentley (Hants)</item>
+        <item>BYK|Bentley (South Yorks)</item>
+        <item>BAS|Bere Alston</item>
+        <item>BFE|Bere Ferrers</item>
+        <item>BKM|Berkhamsted</item>
+        <item>BKW|Berkswell</item>
+        <item>BEP|Bermuda Park</item>
+        <item>BYA|Berney Arms</item>
+        <item>BBW|Berry Brow</item>
+        <item>BRS|Berrylands</item>
+        <item>BRK|Berwick (Sussex)</item>
+        <item>BWK|Berwick-upon-Tweed</item>
+        <item>BES|Bescar Lane</item>
+        <item>BSC|Bescot Stadium</item>
+        <item>BTO|Betchworth</item>
+        <item>BET|Bethnal Green</item>
+        <item>BYC|Betws-y-Coed</item>
+        <item>BEV|Beverley</item>
+        <item>BEX|Bexhill</item>
+        <item>BXY|Bexley</item>
+        <item>BXH|Bexleyheath</item>
+        <item>BCS|Bicester North</item>
+        <item>BIT|Bicester Village</item>
+        <item>BKL|Bickley</item>
+        <item>BID|Bidston</item>
+        <item>BIW|Biggleswade</item>
+        <item>BBK|Bilbrook</item>
+        <item>BIC|Billericay</item>
+        <item>BIL|Billingham (Cleveland)</item>
+        <item>BIG|Billingshurst</item>
+        <item>BIN|Bingham</item>
+        <item>BIY|Bingley</item>
+        <item>BCG|Birchgrove</item>
+        <item>BCH|Birchington-on-sea</item>
+        <item>BWD|Birchwood</item>
+        <item>BIK|Birkbeck</item>
+        <item>BDL|Birkdale</item>
+        <item>BKC|Birkenhead Central</item>
+        <item>BKQ|Birkenhead Hamilton Square</item>
+        <item>BKN|Birkenhead North</item>
+        <item>BKP|Birkenhead Park</item>
+        <item>BHI|Birmingham International</item>
+        <item>BMO|Birmingham Moor Street</item>
         <item>BHM|Birmingham New Street</item>
         <item>BSW|Birmingham Snow Hill</item>
-        <item>BMO|Birmingham Moor Street</item>
-        <item>DVH|Dove Holes</item>
-        <item>WLH|Wolsingham</item>
-        <item>SWT|Slaithwaite</item>
-        <item>WTT|Witton (West Midlands)</item>
-        <item>BBS|Bordesley</item>
-        <item>PRU|Prudhoe</item>
-        <item>AST|Aston</item>
-        <item>DUD|Duddeston</item>
-        <item>WYT|Wythall</item>
-        <item>EWD|Earlswood (West Midlands)</item>
-        <item>SMA|Small Heath</item>
-        <item>BMH|Bournemouth</item>
-        <item>UTT|Uttoxeter</item>
-        <item>HFX|Halifax</item>
-        <item>ADD|Adderley Park</item>
-        <item>YRD|Yardley Wood</item>
-        <item>GVH|Gravelly Hill</item>
-        <item>WTE|Whitlocks End</item>
-        <item>CFL|Crossflatts</item>
-        <item>HLG|Hall Green</item>
-        <item>BKT|Blake Street</item>
-        <item>SRL|Shirley</item>
-        <item>SEN|Shenstone</item>
-        <item>TLK|The Lakes</item>
-        <item>WDE|Wood End</item>
-        <item>BIY|Bingley</item>
-        <item>ERD|Erdington</item>
-        <item>TYS|Tyseley</item>
-        <item>BUL|Butlers Lane</item>
-        <item>SRI|Spring Road</item>
-        <item>CRD|Chester Road</item>
-        <item>HYB|Honeybourne</item>
-        <item>WYL|Wylde Green</item>
-        <item>FOK|Four Oaks</item>
-        <item>ILK|Ilkley</item>
-        <item>LIC|Lichfield City</item>
-        <item>SUT|Sutton Coldfield</item>
-        <item>WYM|Wylam</item>
-        <item>EDL|Edale</item>
-        <item>DZY|Danzey</item>
-        <item>ACG|Acocks Green</item>
-        <item>POK|Pokesdown</item>
-        <item>SCF|Stechford</item>
-        <item>LCK|Lockwood</item>
-        <item>BEY|Ben Rhydding</item>
-        <item>OLT|Olton</item>
-        <item>LIF|Lichfield Trent Valley High Level</item>
-        <item>LTV|Lichfield Trent Valley</item>
-        <item>SAL|Salisbury</item>
-        <item>BBW|Berry Brow</item>
-        <item>SAE|Saltaire</item>
-        <item>HUD|Huddersfield</item>
-        <item>SOL|Solihull</item>
-        <item>HOY|Honley</item>
-        <item>LEH|Lea Hall</item>
-        <item>BGH|Brighouse</item>
-        <item>WWW|Wootton Wawen</item>
-        <item>HNL|Henley-in-Arden</item>
-        <item>SWI|Swindon</item>
-        <item>SHY|Shipley</item>
-        <item>CHR|Christchurch</item>
-        <item>FZH|Frizinghall</item>
-        <item>BHS|Brockholes</item>
-        <item>WMR|Widney Manor</item>
-        <item>PEW|Pewsey</item>
-        <item>BUW|Burley-in-Wharfedale</item>
-        <item>BLD|Baildon</item>
-        <item>LMR|Low Moor</item>
-        <item>BDQ|Bradford Forster Square</item>
-        <item>DHN|Deighton</item>
-        <item>BDI|Bradford Interchange</item>
-        <item>MGN|Marston Green</item>
-        <item>WMC|Wilmcote</item>
-        <item>DDG|Dorridge</item>
-        <item>BER|Bearley</item>
-        <item>MNN|Menston</item>
-        <item>WTO|Water Orton</item>
-        <item>HOP|Hope (Derbyshire)</item>
-        <item>SSM|Stocksmoor</item>
-        <item>STY|Stratford-upon-Avon Parkway</item>
-        <item>BLO|Blaydon</item>
-        <item>APN|Newcastle Airport Metro</item>
-        <item>CHT|Chathill</item>
-        <item>BHI|Birmingham International</item>
-        <item>LPW|Lapworth</item>
-        <item>GSY|Guiseley</item>
-        <item>APY|Apperley Bridge</item>
-        <item>SAV|Stratford-upon-Avon</item>
-        <item>SPY|Shepley</item>
-        <item>CEH|Coleshill Parkway</item>
-        <item>HNA|Hinton Admiral</item>
-        <item>MPT|Morpeth</item>
-        <item>MIR|Mirfield</item>
-        <item>HIA|Hampton-in-Arden</item>
-        <item>MIM|Moreton-in-Marsh</item>
-        <item>BAM|Bamford</item>
-        <item>CLV|Claverdon</item>
         <item>BIA|Bishop Auckland</item>
-        <item>BIA|Bishop Auckland</item>
-        <item>NPD|New Pudsey</item>
-        <item>TAM|Tamworth</item>
-        <item>TAH|Tamworth High Level</item>
-        <item>TUT|Tutbury &amp; Hatton</item>
-        <item>MCE|Metrocentre</item>
-        <item>WNE|Wilnecote (Staffs)</item>
-        <item>ACK|Acklington</item>
-        <item>DBD|Denby Dale</item>
-        <item>HTN|Hatton (Warks)</item>
-        <item>PEG|Pegswood</item>
-        <item>RVN|Ravensthorpe</item>
-        <item>DOT|Dunston</item>
-        <item>ALM|Alnmouth</item>
-        <item>HSG|Hathersage</item>
-        <item>SHD|Shildon</item>
-        <item>BLE|Bramley (West Yorks)</item>
-        <item>BUT|Burton-on-Trent</item>
-        <item>NWM|New Milton</item>
-        <item>DEW|Dewsbury</item>
-        <item>BKW|Berkswell</item>
-        <item>HRS|Horsforth</item>
-        <item>WDD|Widdrington</item>
-        <item>NCL|Newcastle</item>
-        <item>KLF|Kirkstall Forge</item>
-        <item>BTL|Batley</item>
-        <item>GRN|Grindleford</item>
-        <item>PNS|Penistone</item>
-        <item>MAS|Manors</item>
-        <item>KGM|Kingham</item>
-        <item>DEN|Dean</item>
-        <item>CRM|Cramlington</item>
-        <item>PSW|Polesworth</item>
-        <item>WRP|Warwick Parkway</item>
-        <item>NAY|Newton Aycliffe</item>
-        <item>GRT|Grateley</item>
-        <item>HDY|Headingley</item>
-        <item>DHM|Durham</item>
-        <item>MLY|Morley</item>
-        <item>HEI|Heighington</item>
-        <item>CLS|Chester-le-Street</item>
-        <item>COT|Cottingley</item>
-        <item>THL|Tile Hill</item>
-        <item>SWY|Sway</item>
-        <item>WET|Weeton</item>
-        <item>BUY|Burley Park</item>
-        <item>BDW|Bedwyn</item>
-        <item>SIP|Shipton</item>
-        <item>HEW|Heworth</item>
-        <item>WRW|Warwick</item>
-        <item>NRD|North Road</item>
-        <item>SLK|Silkstone Common</item>
-        <item>DAR|Darlington</item>
-        <item>WIL|Willington</item>
-        <item>MAT|Matlock</item>
-        <item>MTB|Matlock Bath</item>
-        <item>LDS|Leeds</item>
-        <item>AUW|Ascott-under-Wychwood</item>
-        <item>BCU|Brockenhurst</item>
-        <item>CMF|Cromford</item>
-        <item>ATH|Atherstone</item>
-        <item>HGT|Harrogate</item>
-        <item>PNL|Pannal</item>
-        <item>CNL|Canley</item>
-        <item>DRT|Darton</item>
-        <item>DOD|Dodworth</item>
-        <item>HBP|Hornbeam Park</item>
-        <item>LMS|Leamington Spa</item>
-        <item>DBG|Mottisfont &amp; Dunbridge</item>
-        <item>DOR|Dore &amp; Totley</item>
-        <item>OUT|Outwood</item>
-        <item>WKF|Wakefield Westgate</item>
-        <item>LYT|Lymington Town</item>
-        <item>SBE|Starbeck</item>
-        <item>COV|Coventry</item>
-        <item>LYP|Lymington Pier</item>
-        <item>WTS|Whatstandwell</item>
-        <item>ANF|Ashurst New Forest</item>
-        <item>WKK|Wakefield Kirkgate</item>
-        <item>HGD|Hungerford</item>
-        <item>SNA|Sandal &amp; Agbrigg</item>
-        <item>CAA|Coventry Arena</item>
-        <item>BNR|Brockley Whins</item>
-        <item>DND|Dinsdale</item>
-        <item>DFI|Duffield</item>
-        <item>BNY|Barnsley</item>
-        <item>KNA|Knaresborough</item>
-        <item>BLP|Belper</item>
-        <item>AMB|Ambergate</item>
-        <item>BEU|Beaulieu Road</item>
-        <item>CBY|Charlbury</item>
-        <item>DRO|Dronfield</item>
-        <item>CLN|Chapeltown</item>
-        <item>PEA|Peartree</item>
-        <item>ADV|Andover</item>
-        <item>ROM|Romsey</item>
-        <item>SHF|Sheffield</item>
-        <item>BEP|Bermuda Park</item>
-        <item>DBY|Derby</item>
-        <item>CRG|Cross Gates</item>
-        <item>BEH|Bedworth</item>
-        <item>NTR|Northallerton</item>
-        <item>NUN|Nuneaton</item>
-        <item>TTN|Totton</item>
-        <item>FIN|Finstock</item>
-        <item>WDS|Woodlesford</item>
-        <item>EBL|East Boldon</item>
-        <item>TEA|Tees-side Airport</item>
-        <item>RDB|Redbridge (Hants)</item>
-        <item>ELR|Elsecar</item>
-        <item>NOR|Normanton</item>
-        <item>KIT|Kintbury</item>
-        <item>CHD|Chesterfield</item>
-        <item>WOM|Wombwell</item>
-        <item>MHS|Meadowhall</item>
-        <item>DAN|Darnall</item>
-        <item>SEB|Seaburn</item>
-        <item>STZ|St Peters</item>
-        <item>SPO|Spondon</item>
-        <item>SUN|Sunderland</item>
-        <item>SHC|Streethouse</item>
-        <item>MBK|Millbrook (Hants)</item>
-        <item>GRF|Garforth</item>
-        <item>THI|Thirsk</item>
-        <item>SOU|Southampton Central</item>
-        <item>ALW|Allens West</item>
-        <item>FZW|Fitzwilliam</item>
-        <item>EGF|East Garforth</item>
-        <item>CME|Combe (Oxon)</item>
-        <item>STQ|Southampton Town Quay</item>
-        <item>SEA|Seaham</item>
-        <item>YRM|Yarm</item>
-        <item>EAG|Eaglescliffe</item>
-        <item>ALF|Alfreton</item>
-        <item>FEA|Featherstone</item>
-        <item>RMC|Rotherham Central</item>
-        <item>CFD|Castleford</item>
-        <item>HNK|Hinckley</item>
-        <item>WDH|Woodhouse</item>
-        <item>SDN|St Denys</item>
-        <item>CFR|Chandlers Ford</item>
-        <item>HND|Hanborough</item>
-        <item>GLH|Glasshoughton</item>
-        <item>BTE|Bitterne</item>
-        <item>WLS|Woolston</item>
-        <item>SWG|Swaythling</item>
-        <item>STK|Stockton</item>
-        <item>MIK|Micklefield</item>
-        <item>CTL|Cattal</item>
-        <item>SHO|Sholing</item>
-        <item>SOA|Southampton Airport Parkway</item>
-        <item>LGM|Langley Mill</item>
-        <item>POT|Pontefract Tanshelf</item>
-        <item>TBY|Thornaby</item>
-        <item>GOE|Goldthorpe</item>
-        <item>ESL|Eastleigh</item>
-        <item>BTD|Bolton-Upon-Dearne</item>
-        <item>THC|Thurnscoe</item>
-        <item>PFM|Pontefract Monkhill</item>
-        <item>MRP|Moorthorpe</item>
-        <item>PFR|Pontefract Baghill</item>
-        <item>BAN|Banbury</item>
-        <item>SWN|Swinton (South Yorks)</item>
-        <item>WCH|Whitchurch (Hants)</item>
-        <item>NTL|Netley</item>
-        <item>BIL|Billingham</item>
-        <item>HMM|Hammerton</item>
-        <item>NBY|Newbury</item>
-        <item>SHW|Shawford</item>
-        <item>HME|Hamble</item>
-        <item>MEX|Mexborough</item>
-        <item>SES|South Elmsall</item>
-        <item>ILN|Ilkeston</item>
-        <item>WIN|Winchester</item>
-        <item>LGE|Long Eaton</item>
-        <item>NRC|Newbury Racecourse</item>
-        <item>HYD|Heyford</item>
-        <item>TAC|Tackley</item>
-        <item>KIV|Kiveton Bridge</item>
-        <item>BUO|Bursledon</item>
-        <item>KNO|Knottingley</item>
-        <item>KGS|Kings Sutton</item>
-        <item>SOM|South Milford</item>
-        <item>MBR|Middlesbrough</item>
-        <item>HDE|Hedge End</item>
-        <item>EMD|East Midlands Parkway</item>
-        <item>KKB|Kirkby in Ashfield</item>
-        <item>OPY|Oxford Parkway</item>
-        <item>OXF|Oxford</item>
-        <item>SPK|Sutton Parkway</item>
-        <item>SIE|Sherburn-in-Elmet</item>
-        <item>KVP|Kiveton Park</item>
-        <item>CNS|Conisbrough</item>
-        <item>CHF|Church Fenton</item>
-        <item>RUG|Rugby</item>
-        <item>HPL|Hartlepool</item>
-        <item>JCH|James Cook University Hospital</item>
-        <item>SEC|Seaton Carew</item>
-        <item>SNW|Swanwick</item>
-        <item>MIC|Micheldever</item>
-        <item>ATB|Attenborough</item>
-        <item>OVR|Overton</item>
-        <item>ULL|Ulleskelf</item>
-        <item>MTO|Marton</item>
-        <item>BOE|Botley</item>
-        <item>NSD|Newstead</item>
-        <item>CWD|Creswell (Derbys)</item>
-        <item>DID|Didcot Parkway</item>
-        <item>APF|Appleford</item>
-        <item>ISP|Islip</item>
-        <item>RAD|Radley</item>
-        <item>THA|Thatcham</item>
-        <item>LAG|Langwith - Whaley Thorns</item>
-        <item>CUM|Culham</item>
-        <item>GYP|Gypsy Lane</item>
-        <item>SBK|South Bank</item>
-        <item>BEE|Beeston</item>
-        <item>SHB|Shirebrook</item>
-        <item>WWL|Whitwell (Derbys)</item>
-        <item>MSW|Mansfield Woodhouse</item>
-        <item>MFT|Mansfield</item>
-        <item>NNT|Nunthorpe</item>
-        <item>HKN|Hucknall</item>
-        <item>BLW|Bulwell</item>
-        <item>NBR|Narborough</item>
-        <item>LBO|Loughborough (Leics)</item>
-        <item>AWK|Adwick</item>
-        <item>SRO|Shireoaks</item>
-        <item>WBD|Whitley Bridge</item>
-        <item>POP|Poppleton</item>
-        <item>BYK|Bentley (S Yorks)</item>
-        <item>FRM|Fareham</item>
-        <item>DON|Doncaster</item>
-        <item>MDG|Midgham</item>
-        <item>GTA|Great Ayton</item>
-        <item>RBS|British Steel Redcar</item>
-        <item>NOT|Nottingham</item>
-        <item>BWS|Barrow upon Soar</item>
-        <item>SHN|Shanklin</item>
-        <item>CHO|Cholsey</item>
-        <item>WRK|Worksop</item>
-        <item>BCS|Bicester North</item>
-        <item>HEL|Hensall</item>
-        <item>BIT|Bicester Village</item>
-        <item>SWS|South Wigston</item>
-        <item>BTT|Battersby</item>
-        <item>LKE|Lake (Isle of Wight)</item>
-        <item>LEI|Leicester</item>
-        <item>SAN|Sandown</item>
-        <item>RYP|Ryde Pier Head</item>
-        <item>RYD|Ryde Esplanade</item>
-        <item>YRK|York</item>
-        <item>RYR|Ryde St Johns Road</item>
-        <item>SAB|Smallbrook Junction</item>
-        <item>AMT|Aldermaston</item>
-        <item>RCC|Redcar Central</item>
-        <item>SIL|Sileby</item>
-        <item>GOR|Goring &amp; Streatley</item>
-        <item>KLD|Kildale</item>
-        <item>BDN|Brading</item>
-        <item>RCE|Redcar East</item>
-        <item>KKS|Kirk Sandall</item>
-        <item>PTC|Portchester</item>
-        <item>SBY|Selby</item>
-        <item>NET|Netherfield</item>
-        <item>CTO|Carlton</item>
-        <item>SYS|Syston</item>
-        <item>LBK|Long Buckby</item>
-        <item>LGK|Longbeck</item>
-        <item>PMH|Portsmouth Harbour</item>
-        <item>PAN|Pangbourne</item>
-        <item>MSK|Marske</item>
-        <item>SHV|Southsea Hoverport</item>
-        <item>BSK|Basingstoke</item>
-        <item>PMS|Portsmouth &amp; Southsea</item>
-        <item>SNI|Snaith</item>
-        <item>THE|Theale</item>
-        <item>BUJ|Burton Joyce</item>
-        <item>HFS|Hatfield &amp; Stainforth</item>
-        <item>RDF|Radcliffe (Notts)</item>
-        <item>FTN|Fratton</item>
-        <item>BMY|Bramley (Hants)</item>
-        <item>CSA|Cosham</item>
-        <item>HLS|Hilsea</item>
-        <item>SLB|Saltburn</item>
-        <item>COM|Commondale</item>
-        <item>MOR|Mortimer</item>
-        <item>LOW|Lowdham</item>
-        <item>TLH|Tilehurst</item>
-        <item>TNN|Thorne North</item>
-        <item>CSM|Castleton Moor</item>
-        <item>RWC|Rawcliffe</item>
-        <item>TNS|Thorne South</item>
-        <item>THU|Thurgarton</item>
-        <item>RET|Retford</item>
-        <item>RDW|Reading West</item>
-        <item>REL|Retford Low Level</item>
-        <item>BIN|Bingham</item>
-        <item>DNY|Danby</item>
-        <item>BDH|Bedhampton</item>
-        <item>BSB|Bleasby</item>
-        <item>WRS|Wressle</item>
-        <item>RDG|Reading</item>
-        <item>RDG|Reading</item>
-        <item>RBU|Reading</item>
-        <item>HAV|Havant</item>
-        <item>AON|Alton</item>
-        <item>HOK|Hook</item>
-        <item>WBL|Warblington</item>
-        <item>FSK|Fiskerton</item>
-        <item>HDM|Haddenham &amp; Thame Parkway</item>
-        <item>RLN|Rowlands Castle</item>
-        <item>ROL|Rolleston</item>
-        <item>ALK|Aslockton</item>
-        <item>MHR|Market Harborough</item>
-        <item>PTR|Petersfield</item>
-        <item>GOO|Goole</item>
-        <item>NMP|Northampton</item>
-        <item>EMS|Emsworth</item>
-        <item>HOW|Howden</item>
-        <item>MMO|Melton Mowbray</item>
-        <item>EAR|Earley</item>
-        <item>LHM|Lealholm</item>
-        <item>WNF|Winchfield</item>
-        <item>HOT|Henley-on-Thames</item>
-        <item>SOB|Southbourne</item>
-        <item>ELO|Elton &amp; Orston</item>
-        <item>WTI|Winnersh Triangle</item>
-        <item>SHI|Shiplake</item>
-        <item>LIS|Liss</item>
-        <item>WGV|Wargrave</item>
-        <item>WNS|Winnersh</item>
-        <item>GLS|Glaisdale</item>
-        <item>CWE|Crowle</item>
-        <item>AVP|Aylesbury Vale Parkway</item>
-        <item>SAM|Saltmarshe</item>
-        <item>MLT|Malton</item>
-        <item>NUT|Nutbourne</item>
-        <item>TWY|Twyford</item>
-        <item>BTY|Bentley (Hants)</item>
-        <item>NCT|Newark Castle</item>
-        <item>PRR|Princes Risborough</item>
-        <item>EGN|Eastrington</item>
-        <item>EGT|Egton</item>
-        <item>NNG|Newark North Gate</item>
-        <item>WKM|Wokingham</item>
-        <item>MRS|Monks Risborough</item>
-        <item>BTF|Bottesford</item>
-        <item>BOH|Bosham</item>
-        <item>SDR|Saunderton</item>
-        <item>FLE|Fleet</item>
-        <item>AYS|Aylesbury</item>
-        <item>GNB|Gainsborough Central</item>
-        <item>GBL|Gainsborough Lea Road</item>
-        <item>WOL|Wolverton</item>
-        <item>CRN|Crowthorne</item>
-        <item>LTK|Little Kimble</item>
-        <item>GMT|Grosmont</item>
-        <item>SND|Sandhurst</item>
-        <item>FSB|Fishbourne</item>
-        <item>CLM|Collingham</item>
-        <item>GBD|Gilberdyke</item>
-        <item>ALP|Althorpe</item>
-        <item>SKM|Stoke Mandeville</item>
-        <item>LIP|Liphook</item>
-        <item>MKC|Milton Keynes Central</item>
-        <item>FNH|Farnham</item>
-        <item>BAW|Blackwater</item>
-        <item>MLW|Marlow</item>
-        <item>OKM|Oakham</item>
-        <item>CCH|Chichester</item>
-        <item>KET|Kettering</item>
-        <item>WND|Wendover</item>
-        <item>AHT|Aldershot</item>
-        <item>SLH|Sleights</item>
-        <item>SWD|Swinderby</item>
-        <item>FNB|Farnborough (Main)</item>
-        <item>BLY|Bletchley</item>
-        <item>BCE|Bracknell</item>
-        <item>HWY|High Wycombe</item>
-        <item>FML|Frimley</item>
-        <item>CAM|Camberley</item>
-        <item>BMF|Broomfleet</item>
-        <item>FNN|Farnborough North</item>
-        <item>FEN|Fenny Stratford</item>
-        <item>FZP|Furze Platt</item>
-        <item>NCM|North Camp</item>
-        <item>COO|Cookham</item>
-        <item>MAI|Maidenhead</item>
-        <item>MAO|Martins Heron</item>
-        <item>RUS|Ruswarp</item>
-        <item>COR|Corby</item>
-        <item>SXY|Saxilby</item>
-        <item>AHV|Ash Vale</item>
-        <item>GMN|Great Missenden</item>
-        <item>SCU|Scunthorpe</item>
-        <item>BNE|Bourne End</item>
-        <item>BWB|Bow Brickhill</item>
-        <item>WTB|Whitby</item>
-        <item>HSL|Haslemere</item>
-        <item>ASH|Ash</item>
-        <item>WEL|Wellingborough</item>
-        <item>LBZ|Leighton Buzzard</item>
-        <item>BAG|Bagshot</item>
-        <item>GRA|Grantham</item>
-        <item>TAP|Taplow</item>
-        <item>ACT|Ascot</item>
-        <item>CED|Cheddington</item>
-        <item>WOB|Woburn Sands</item>
-        <item>WAN|Wanborough</item>
-        <item>KTL|Kirton Lindsey</item>
-        <item>BOG|Bognor Regis</item>
-        <item>HKM|Hykeham</item>
-        <item>BUH|Brough</item>
-        <item>APG|Aspley Guise</item>
-        <item>BCF|Beaconsfield</item>
-        <item>BNM|Burnham (Berks)</item>
-        <item>WTY|Witley</item>
-        <item>TRI|Tring</item>
-        <item>BKO|Brookwood</item>
-        <item>SNG|Sunningdale</item>
-        <item>MLF|Milford (Surrey)</item>
-        <item>BAA|Barnham</item>
-        <item>AMR|Amersham</item>
-        <item>SRG|Seer Green</item>
-        <item>RID|Ridgmont</item>
-        <item>WNC|Windsor &amp; Eton Central</item>
-        <item>GOD|Godalming</item>
-        <item>WNR|Windsor &amp; Eton Riverside</item>
-        <item>LCN|Lincoln Central</item>
-        <item>FNC|Farncombe</item>
-        <item>SLO|Slough</item>
-        <item>LNG|Longcross</item>
-        <item>ANC|Ancaster</item>
-        <item>FRY|Ferriby</item>
-        <item>DAT|Datchet</item>
-        <item>LID|Lidlington</item>
-        <item>WPL|Worplesdon</item>
-        <item>GLD|Guildford</item>
-        <item>BKM|Berkhamsted</item>
-        <item>CFO|Chalfont &amp; Latimer</item>
-        <item>VIR|Virginia Water</item>
-        <item>SNY|Sunnymeads</item>
-        <item>GER|Gerrards Cross</item>
-        <item>SFR|Shalford (Surrey)</item>
-        <item>FOD|Ford</item>
-        <item>LRD|London Road (Guildford)</item>
-        <item>BGG|Brigg</item>
-        <item>WOK|Woking</item>
-        <item>MLB|Millbrook (Beds)</item>
-        <item>EGH|Egham</item>
-        <item>LNY|Langley (Berks)</item>
-        <item>WRY|Wraysbury</item>
-        <item>SWR|Stewartby</item>
-        <item>ARU|Arundel</item>
-        <item>LIT|Littlehampton</item>
-        <item>KMH|Kempston Hardwick</item>
-        <item>CLW|Chorleywood</item>
-        <item>AMY|Amberley</item>
-        <item>DRF|Driffield</item>
-        <item>DGC|Denham Golf Club</item>
-        <item>HUT|Hutton Cranswick</item>
-        <item>BAU|Barton-on-Humber</item>
-        <item>HES|Hessle</item>
-        <item>SMD|Stamford</item>
-        <item>CHL|Chilworth</item>
-        <item>SEM|Seamer</item>
-        <item>FLT|Flitwick</item>
-        <item>HLN|Harlington (Beds)</item>
-        <item>ARR|Arram</item>
-        <item>RAU|Rauceby</item>
-        <item>IVR|Iver</item>
-        <item>CHY|Chertsey</item>
-        <item>BEV|Beverley</item>
-        <item>SCA|Scarborough</item>
-        <item>SNS|Staines</item>
-        <item>BDM|Bedford</item>
-        <item>WBY|West Byfleet</item>
-        <item>DNM|Denham</item>
-        <item>PUL|Pulborough</item>
-        <item>HML|Hemel Hempstead</item>
-        <item>CLA|Clandon</item>
-        <item>HWV|Heathrow Terminal 5</item>
-        <item>BSJ|Bedford St Johns</item>
-        <item>HWX|Heathrow Airport Terminal 5</item>
-        <item>CGM|Cottingham</item>
-        <item>BTB|Barnetby</item>
-        <item>ASN|Addlestone</item>
-        <item>RIC|Rickmansworth</item>
-        <item>BFN|Byfleet &amp; New Haw</item>
-        <item>NFN|Nafferton</item>
-        <item>WDT|West Drayton</item>
-        <item>LEA|Leagrave</item>
-        <item>BAV|Barrow Haven</item>
-        <item>APS|Apsley</item>
-        <item>ANG|Angmering</item>
-        <item>AFS|Ashford (Surrey)</item>
-        <item>SLR|Sleaford</item>
-        <item>LHR|Heathrow Terminals 1&#8211;3</item>
-        <item>WYB|Weybridge</item>
-        <item>WYB|Weybridge</item>
-        <item>HTR|Heathrow Airport Central Bus Stn (Rail-Air)</item>
-        <item>MGM|Metheringham</item>
-        <item>HWF|Heathrow Terminal 4 (Rail-Air)</item>
-        <item>KGL|Kings Langley</item>
-        <item>HAF|Heathrow Terminal 4</item>
-        <item>SHP|Shepperton</item>
-        <item>NHL|New Holland</item>
-        <item>WRU|West Ruislip</item>
-        <item>RKT|Ruskington</item>
-        <item>BIG|Billingshurst</item>
-        <item>GOM|Gomshall</item>
-        <item>HUL|Hull</item>
-        <item>UPH|Upper Halliford</item>
-        <item>HSY|Horsley</item>
-        <item>LUT|Luton</item>
-        <item>HAY|Hayes &amp; Harlington</item>
-        <item>GOX|Goxhill</item>
-        <item>HUB|Hunmanby</item>
-        <item>SUU|Sunbury</item>
-        <item>EFF|Effingham Junction</item>
-        <item>WAL|Walton-on-Thames</item>
-        <item>GBS|Goring-by-Sea</item>
-        <item>LTN|Luton Airport Parkway</item>
-        <item>FEL|Feltham</item>
-        <item>KMP|Kempton Park</item>
-        <item>MKR|Market Rasen</item>
-        <item>TNA|Thornton Abbey</item>
-        <item>WFJ|Watford Junction</item>
-        <item>WFJ|Watford Junction</item>
-        <item>SRU|South Ruislip</item>
-        <item>WFH|Watford High Street</item>
-        <item>FIL|Filey</item>
-        <item>WFN|Watford North</item>
-        <item>BSH|Bushey</item>
-        <item>CPK|Carpenders Park</item>
-        <item>BSH|Bushey</item>
-        <item>GSN|Garston (Herts)</item>
-        <item>DUR|Durrington-on-Sea</item>
-        <item>HER|Hersham</item>
-        <item>CSD|Cobham &amp; Stoke d'Abernon</item>
-        <item>ULC|Ulceby</item>
-        <item>STL|Southall</item>
-        <item>BKA|Bookham</item>
-        <item>HTE|Hatch End</item>
-        <item>HMP|Hampton (London)</item>
-        <item>WWO|West Worthing</item>
-        <item>BWO|Bricket Wood</item>
-        <item>HPD|Harpenden</item>
-        <item>NLT|Northolt Park</item>
-        <item>HDL|Headstone Lane</item>
-        <item>HOU|Hounslow</item>
-        <item>OXS|Oxshott</item>
-        <item>WTN|Whitton</item>
-        <item>HWW|How Wood (Herts)</item>
-        <item>WRH|Worthing</item>
-        <item>SAA|St Albans Abbey</item>
-        <item>HAB|Habrough</item>
-        <item>HEC|Heckington</item>
-        <item>ESH|Esher</item>
-        <item>PKT|Park Street</item>
-        <item>CHH|Christs Hospital</item>
-        <item>GFD|Greenford</item>
-        <item>FLW|Fulwell</item>
-        <item>CLG|Claygate</item>
-        <item>HOH|Harrow-on-the-Hill</item>
-        <item>HMC|Hampton Court</item>
-        <item>HAN|Hanwell</item>
-        <item>HRW|Harrow &amp; Wealdstone</item>
-        <item>HRW|Harrow &amp; Wealdstone</item>
-        <item>SDH|Sudbury Hill Harrow</item>
-        <item>SGN|South Greenford</item>
-        <item>STW|Strawberry Hill</item>
-        <item>SAC|St Albans City</item>
-        <item>HYW|Hinchley Wood</item>
-        <item>ISL|Isleworth</item>
-        <item>THD|Thames Ditton</item>
-        <item>CBP|Castle Bar Park</item>
-        <item>DRG|Drayton Green</item>
-        <item>EWR|East Worthing</item>
-        <item>DKT|Dorking West</item>
-        <item>TED|Teddington</item>
-        <item>TWI|Twickenham</item>
-        <item>LHD|Leatherhead</item>
-        <item>SYL|Syon Lane</item>
-        <item>RDT|Radlett</item>
-        <item>OLY|Ockley</item>
-        <item>WEA|West Ealing</item>
-        <item>KNT|Kenton</item>
-        <item>BXW|Box Hill &amp; Westhumble</item>
-        <item>SMG|St Margarets (London)</item>
-        <item>SUD|Sudbury &amp; Harrow Road</item>
-        <item>DPD|Dorking Deepdene</item>
-        <item>DKG|Dorking</item>
-        <item>WNH|Warnham</item>
-        <item>SOK|South Kenton</item>
-        <item>HMW|Hampton Wick</item>
-        <item>BFD|Brentford</item>
-        <item>HLM|Holmwood</item>
-        <item>NWB|North Wembley</item>
-        <item>SDY|Sandy</item>
-        <item>HRH|Horsham</item>
-        <item>CSS|Chessington South</item>
-        <item>BDT|Bridlington</item>
-        <item>EAL|Ealing Broadway</item>
-        <item>AHD|Ashtead</item>
-        <item>RMD|Richmond (London)</item>
-        <item>RMD|Richmond NLL</item>
-        <item>SUR|Surbiton</item>
-        <item>LAC|Lancing</item>
-        <item>WMB|Wembley Central</item>
-        <item>WMB|Wembley Central</item>
-        <item>KNG|Kingston</item>
-        <item>CSN|Chessington North</item>
-        <item>LVN|Littlehaven</item>
-        <item>PBO|Peterborough</item>
-        <item>WCX|Wembley Stadium</item>
-        <item>BEM|Bempton</item>
-        <item>KWB|Kew Bridge</item>
-        <item>NSH|North Sheen</item>
-        <item>ARL|Arlesey</item>
-        <item>ELS|Elstree &amp; Borehamwood</item>
-        <item>KWG|Kew Gardens</item>
-        <item>BIW|Biggleswade</item>
-        <item>HIT|Hitchin</item>
-        <item>NBT|Norbiton</item>
-        <item>SBP|Stonebridge Park</item>
-        <item>BRS|Berrylands</item>
-        <item>SNO|St Neots</item>
-        <item>GUN|Gunnersbury</item>
-        <item>TOL|Tolworth</item>
-        <item>SAT|South Acton</item>
-        <item>SLL|Stallingborough</item>
-        <item>AML|Acton Main Line</item>
-        <item>CHK|Chiswick</item>
-        <item>MTL|Mortlake</item>
-        <item>ACC|Acton Central</item>
-        <item>EPS|Epsom</item>
-        <item>HDN|Harlesden</item>
-        <item>BTO|Betchworth</item>
-        <item>MAL|Malden Manor</item>
-        <item>MIL|Mill Hill Broadway</item>
-        <item>NEM|New Malden</item>
-        <item>BNI|Barnes Bridge</item>
-        <item>EWW|Ewell West</item>
-        <item>LET|Letchworth</item>
-        <item>FGT|Faygate</item>
-        <item>SSE|Shoreham-by-Sea (Sussex)</item>
-        <item>SWE|Swineshead</item>
-        <item>WIJ|Willesden Junction</item>
-        <item>HLI|Healing</item>
-        <item>WIJ|Willesden Junction Low Level</item>
-        <item>SNL|Stoneleigh</item>
-        <item>HEN|Hendon</item>
-        <item>BNS|Barnes</item>
-        <item>WCP|Worcester Park</item>
-        <item>EWE|Ewell East</item>
-        <item>MOT|Motspur Park</item>
-        <item>TAT|Tattenham Corner</item>
-        <item>EPD|Epsom Downs</item>
-        <item>TAD|Tadworth</item>
-        <item>RAY|Raynes Park</item>
-        <item>KNL|Kensal Green</item>
-        <item>HAT|Hatfield (Herts)</item>
-        <item>HUN|Huntingdon</item>
-        <item>SVG|Stevenage</item>
-        <item>KNR|Kensal Rise</item>
-        <item>WMG|Welham Green</item>
-        <item>SPB|Shepherds Bush</item>
-        <item>GCT|Great Coates</item>
-        <item>WGC|Welwyn Garden City</item>
-        <item>CRI|Cricklewood</item>
-        <item>PUT|Putney</item>
-        <item>BPK|Brookmans Park</item>
-        <item>BSP|Brondesbury Park</item>
-        <item>WBO|Wimbledon Chase</item>
-        <item>SWK|Southwick</item>
-        <item>KPA|Kensington (Olympia)</item>
-        <item>SPA|Spalding</item>
-        <item>CHE|Cheam</item>
-        <item>BDK|Baldock</item>
-        <item>BAD|Banstead</item>
-        <item>QPW|Queens Park (London)</item>
-        <item>WLW|Welwyn North</item>
-        <item>BSY|Brondesbury</item>
-        <item>WIM|Wimbledon</item>
-        <item>WIM|Wimbledon</item>
-        <item>KND|Kingswood</item>
-        <item>KBW|Knebworth</item>
-        <item>SMO|South Merton</item>
-        <item>PBR|Potters Bar</item>
-        <item>WSU|West Sutton</item>
-        <item>IFI|Ifield</item>
-        <item>MDS|Morden South</item>
-        <item>WBP|West Brompton</item>
-        <item>SIH|St Helier (London)</item>
-        <item>WHP|West Hampstead Thameslink</item>
-        <item>KBN|Kilburn High Road</item>
-        <item>REI|Reigate</item>
-        <item>FSG|Fishersgate</item>
-        <item>WHD|West Hampstead</item>
-        <item>BLM|Belmont</item>
-        <item>SUC|Sutton Common</item>
-        <item>WNT|Wandsworth Town</item>
-        <item>HYR|Haydons Road</item>
-        <item>SUO|Sutton (London)</item>
-        <item>EAD|Earlsfield</item>
-        <item>FNY|Finchley Road &amp; Frognal</item>
-        <item>HDW|Hadley Wood</item>
-        <item>IMW|Imperial Wharf</item>
-        <item>SOH|South Hampstead</item>
-        <item>PLD|Portslade</item>
-        <item>NBA|New Barnet</item>
-        <item>PAD|London Paddington</item>
-        <item>GMB|Grimsby Town</item>
-        <item>HBB|Hubberts Bridge</item>
-        <item>OKL|Oakleigh Park</item>
-        <item>CRW|Crawley</item>
-        <item>CLJ|Clapham Junction</item>
-        <item>CLJ|Clapham Junction</item>
-        <item>CLJ|Clapham Junction</item>
-        <item>CLJ|Clapham Junction</item>
-        <item>CLJ|Clapham Junction</item>
-        <item>HDH|Hampstead Heath</item>
-        <item>GMD|Grimsby Docks</item>
-        <item>CSB|Carshalton Beeches</item>
-        <item>MYB|London Marylebone</item>
-        <item>WLE|Whittlesea</item>
-        <item>CHP|Chipstead</item>
-        <item>WSW|Wandsworth Common</item>
-        <item>CSH|Carshalton</item>
-        <item>ELD|Earlswood (Surrey)</item>
-        <item>TOO|Tooting</item>
-        <item>AGT|Aldrington</item>
-        <item>RDH|Redhill</item>
-        <item>MIJ|Mitcham Junction</item>
-        <item>GPO|Gospel Oak</item>
-        <item>MTC|Mitcham Eastfields</item>
-        <item>SAF|Salfords (Surrey)</item>
-        <item>BAL|Balham</item>
-        <item>NCE|New Clee</item>
-        <item>HCB|Hackbridge</item>
-        <item>KTW|Kentish Town West</item>
-        <item>HOR|Horley</item>
-        <item>NSG|New Southgate</item>
-        <item>GTW|Gatwick Airport</item>
-        <item>WME|Woodmansterne</item>
-        <item>BAK|Battersea Park</item>
-        <item>TBD|Three Bridges</item>
-        <item>QRB|Queenstown Road (Battersea)</item>
-        <item>WLT|Wallington</item>
-        <item>VIC|London Victoria</item>
-        <item>VIC|London Victoria</item>
-        <item>HOV|Hove</item>
-        <item>KTN|Kentish Town</item>
-        <item>MHM|Merstham</item>
-        <item>CMD|Camden Road</item>
-        <item>WWR|Wandsworth Road</item>
-        <item>EUS|London Euston</item>
-        <item>WAS|Watton-at-Stone</item>
-        <item>SRC|Streatham Common</item>
-        <item>UHL|Upper Holloway</item>
-        <item>AWM|Ashwell &amp; Morden</item>
-        <item>CLP|Clapham High Street</item>
-        <item>CDS|Coulsdon South</item>
-        <item>PRP|Preston Park</item>
-        <item>SPL|London St Pancras International LL</item>
-        <item>STP|London St Pancras International</item>
-        <item>STE|Streatham</item>
-        <item>STP|London St Pancras International</item>
-        <item>CDN|Coulsdon Town</item>
-        <item>CHX|London Charing Cross</item>
-        <item>BOP|Bowes Park</item>
-        <item>SRH|Streatham Hill</item>
-        <item>AAP|Alexandra Palace</item>
-        <item>KGX|London Kings Cross</item>
-        <item>HSK|Hassocks</item>
-        <item>VXH|Vauxhall</item>
-        <item>VXH|Vauxhall</item>
-        <item>NUF|Nutfield</item>
-        <item>CRH|Crouch Hill</item>
-        <item>CLE|Cleethorpes</item>
-        <item>BAB|Balcombe</item>
-        <item>CIR|Caledonian Road &amp; Barnsbury</item>
-        <item>CUF|Cuffley</item>
-        <item>NRB|Norbury</item>
-        <item>RHM|Reedham (Surrey)</item>
-        <item>HRN|Hornsey</item>
-        <item>PAL|Palmers Green</item>
-        <item>CWH|Crews Hill</item>
-        <item>BTN|Brighton</item>
-        <item>WAT|London Waterloo</item>
-        <item>BRX|Brixton</item>
-        <item>WDO|Waddon</item>
-        <item>LRB|London Road (Brighton)</item>
-        <item>WAE|London Waterloo East</item>
-        <item>FPK|Finsbury Park</item>
-        <item>HGY|Harringay</item>
-        <item>DYP|Drayton Park</item>
-        <item>PUR|Purley</item>
-        <item>WIH|Winchmore Hill</item>
-        <item>BAY|Bayford</item>
-        <item>ZFD|Farringdon (London)</item>
-        <item>HHY|Highbury &amp; Islington</item>
-        <item>HII|Highbury &amp; Islington</item>
-        <item>BUG|Burgess Hill</item>
-        <item>HFN|Hertford North</item>
-        <item>CTK|City Thameslink</item>
-        <item>BFR|London Blackfriars</item>
-        <item>GPK|Grange Park</item>
-        <item>TUH|Tulse Hill</item>
-        <item>GDH|Gordon Hill</item>
-        <item>HRY|Harringay Green Lanes</item>
-        <item>WNW|West Norwood</item>
-        <item>LGJ|Loughborough Junction</item>
-        <item>HNH|Herne Hill</item>
-        <item>WVF|Wivelsfield</item>
-        <item>EPH|Elephant &amp; Castle</item>
-        <item>EXR|Essex Road</item>
-        <item>WCY|West Croydon</item>
-        <item>ENC|Enfield Chase</item>
-        <item>TTH|Thornton Heath</item>
-        <item>BSN|Boston</item>
-        <item>CNN|Canonbury</item>
-        <item>KLY|Kenley</item>
-        <item>PUO|Purley Oaks</item>
-        <item>RDD|Riddlesdown</item>
-        <item>MCB|Moulsecoomb</item>
-        <item>CST|London Cannon Street</item>
-        <item>MOG|Moorgate</item>
-        <item>OLD|Old Street</item>
-        <item>WDU|West Dulwich</item>
-        <item>DMK|Denmark Hill</item>
-        <item>SCY|South Croydon</item>
-        <item>ECR|East Croydon</item>
-        <item>SNR|Sanderstead</item>
-        <item>LBG|London Bridge</item>
-        <item>LBG|London Bridge</item>
-        <item>NDL|North Dulwich</item>
-        <item>ENF|Enfield Town</item>
-        <item>HFE|Hertford East</item>
-        <item>HHE|Haywards Heath</item>
-        <item>SRS|Selhurst</item>
-        <item>LST|London Liverpool Street</item>
-        <item>GIP|Gipsy Hill</item>
-        <item>SMH|Stamford Hill</item>
-        <item>FST|London Fenchurch Street</item>
-        <item>EDW|East Dulwich</item>
-        <item>SVS|Seven Sisters</item>
-        <item>DLK|Dalston Kingsland</item>
-        <item>SYH|Sydenham Hill</item>
-        <item>HGG|Haggerston</item>
-        <item>DLJ|Dalston Junction</item>
-        <item>HOX|Hoxton</item>
-        <item>SDC|Shoreditch High Street</item>
-        <item>SKW|Stoke Newington</item>
-        <item>STO|South Tottenham</item>
-        <item>WHL|White Hart Lane</item>
-        <item>BHK|Bush Hill Park</item>
-        <item>BCV|Bruce Grove</item>
-        <item>WHY|Whyteleafe</item>
-        <item>SLV|Silver Street</item>
-        <item>NWD|Norwood Junction</item>
-        <item>REC|Rectory Road</item>
-        <item>UWL|Upper Warlingham</item>
-        <item>CAT|Caterham</item>
-        <item>CYP|Crystal Palace</item>
-        <item>WHS|Whyteleafe South</item>
-        <item>PMR|Peckham Rye</item>
-        <item>PMR|Peckham Rye</item>
-        <item>EDR|Edmonton Green</item>
-        <item>TOM|Tottenham Hale</item>
-        <item>HAC|Hackney Downs</item>
-        <item>ANZ|Anerley</item>
-        <item>FMR|Falmer</item>
-        <item>BET|Bethnal Green</item>
-        <item>ZWL|Whitechapel</item>
-        <item>CPT|Clapton</item>
-        <item>LOF|London Fields</item>
-        <item>SBU|Southbury</item>
-        <item>CBH|Cambridge Heath (London)</item>
-        <item>NUM|Northumberland Park</item>
-        <item>HKC|Hackney Central</item>
-        <item>SDE|Shadwell</item>
-        <item>PNW|Penge West</item>
-        <item>QRP|Queens Road Peckham</item>
-        <item>WPE|Wapping</item>
-        <item>TUR|Turkey Street</item>
-        <item>SBM|South Bermondsey</item>
-        <item>AGR|Angel Road</item>
-        <item>ROE|Rotherhithe</item>
-        <item>BIK|Birkbeck</item>
-        <item>SYD|Sydenham</item>
-        <item>RYS|Royston</item>
-        <item>NHD|Nunhead</item>
-        <item>PNE|Penge East</item>
-        <item>FOH|Forest Hill</item>
-        <item>ZCW|Canada Water</item>
-        <item>SQE|Surrey Quays</item>
-        <item>ELE|Elmers End</item>
-        <item>BHO|Blackhorse Road</item>
-        <item>HMN|Homerton</item>
-        <item>HPA|Honor Oak Park</item>
-        <item>TEO|Theobalds Grove</item>
-        <item>WOH|Woldingham</item>
-        <item>WAR|Ware</item>
-        <item>KTH|Kent House</item>
-        <item>PON|Ponders End</item>
-        <item>LHS|Limehouse</item>
-        <item>LEB|Lea Bridge</item>
-        <item>NXG|New Cross Gate ELL</item>
-        <item>NXG|New Cross Gate</item>
-        <item>GDN|Godstone</item>
-        <item>BMD|Brimsdown</item>
-        <item>CLK|Clock House</item>
-        <item>SJS|St James Street (London)</item>
-        <item>BCY|Brockley</item>
-        <item>PMP|Plumpton</item>
-        <item>ENL|Enfield Lock</item>
-        <item>CFT|Crofton Park</item>
-        <item>WLC|Waltham Cross</item>
-        <item>CHN|Cheshunt</item>
-        <item>NBC|New Beckenham</item>
-        <item>NWX|New Cross ELL</item>
-        <item>NWX|New Cross</item>
-        <item>LSY|Lower Sydenham</item>
-        <item>WMW|Walthamstow Queens Road</item>
-        <item>HKW|Hackney Wick</item>
-        <item>DEP|Deptford</item>
-        <item>CTF|Catford</item>
-        <item>WHC|Walthamstow Central</item>
-        <item>CFB|Catford Bridge</item>
-        <item>BKJ|Beckenham Junction</item>
-        <item>BKJ|Beckenham Junction</item>
-        <item>BXB|Broxbourne</item>
-        <item>EDN|Eden Park</item>
-        <item>SAJ|St Johns (London)</item>
-        <item>LAD|Ladywell</item>
-        <item>MEL|Meldreth</item>
-        <item>BGM|Bellingham</item>
-        <item>BEC|Beckenham Hill</item>
-        <item>LEW|Lewisham</item>
-        <item>GNW|Greenwich</item>
-        <item>SMT|St Margarets (Herts)</item>
-        <item>LEM|Leyton Midland Road</item>
-        <item>SFA|Stratford International</item>
-        <item>WWI|West Wickham</item>
-        <item>RYH|Rye House</item>
-        <item>WST|Wood Street</item>
-        <item>SRA|Stratford (London)</item>
-        <item>HIP|Highams Park</item>
-        <item>RVB|Ravensbourne</item>
-        <item>EGR|East Grinstead</item>
-        <item>HGR|Hither Green</item>
-        <item>MZH|Maze Hill</item>
-        <item>MYL|Maryland</item>
-        <item>STH|Shepreth</item>
-        <item>CHI|Chingford</item>
-        <item>WEH|West Ham</item>
-        <item>LER|Leytonstone High Road</item>
-        <item>OXT|Oxted</item>
-        <item>OXT|Oxted</item>
-        <item>SRT|Shortlands</item>
-        <item>LFD|Lingfield</item>
-        <item>BKH|Blackheath</item>
-        <item>DMS|Dormans</item>
-        <item>HUR|Hurst Green</item>
-        <item>LEE|Lee</item>
-        <item>HYS|Hayes (Kent)</item>
-        <item>CBR|Cooksbridge</item>
-        <item>WCB|Westcombe Park</item>
-        <item>BMN|Bromley North</item>
-        <item>BMS|Bromley South</item>
-        <item>FOG|Forest Gate</item>
-        <item>WNP|Wanstead Park</item>
-        <item>RYN|Roydon</item>
-        <item>GRP|Grove Park</item>
-        <item>SUP|Sundridge Park</item>
-        <item>FXN|Foxton</item>
-        <item>KDB|Kidbrooke</item>
-        <item>CTN|Charlton</item>
-        <item>LWS|Lewes</item>
-        <item>WGR|Woodgrange Park</item>
-        <item>MCH|March</item>
-        <item>MNP|Manor Park</item>
-        <item>ZBU|Southease - Piddinghoe Road</item>
-        <item>ESD|Elmstead Woods</item>
-        <item>BKL|Bickley</item>
-        <item>MTG|Mottingham</item>
-        <item>ELW|Eltham</item>
-        <item>WWD|Woolwich Dockyard</item>
-        <item>SEE|Southease</item>
-        <item>CIT|Chislehurst</item>
-        <item>IFD|Ilford</item>
-        <item>WWA|Woolwich Arsenal</item>
-        <item>NEH|New Eltham</item>
-        <item>EBR|Edenbridge</item>
-        <item>BKG|Barking</item>
-        <item>PET|Petts Wood</item>
-        <item>EBT|Edenbridge Town</item>
-        <item>FCN|Falconwood</item>
-        <item>HWN|Harlow Town</item>
-        <item>PLU|Plumstead</item>
-        <item>NRC|Newbury Park Station</item>
-        <item>NVN|Newhaven Town</item>
-        <item>NVH|Newhaven Harbour</item>
-        <item>SVK|Seven Kings</item>
-        <item>ORP|Orpington</item>
-        <item>GLY|Glynde</item>
-        <item>WLI|Welling</item>
-        <item>CBG|Cambridge</item>
-        <item>SID|Sidcup</item>
-        <item>GMY|Goodmayes</item>
-        <item>SED|Shelford (Cambs)</item>
-        <item>HEV|Hever</item>
-        <item>SMY|St Mary Cray</item>
-        <item>BIP|Bishopstone</item>
-        <item>CLD|Chelsfield</item>
-        <item>HWM|Harlow Mill</item>
-        <item>TPC|Thorpe Culvert</item>
-        <item>UCK|Uckfield</item>
-        <item>ABW|Abbey Wood (London)</item>
-        <item>CMB|Cambridge North</item>
-        <item>CTH|Chadwell Heath</item>
-        <item>CWN|Cowden</item>
-        <item>AYP|Albany Park</item>
-        <item>MNE|Manea</item>
-        <item>SEF|Seaford</item>
-        <item>BXH|Bexleyheath</item>
-        <item>WLF|Whittlesford Parkway</item>
-        <item>KCK|Knockholt</item>
-        <item>DDK|Dagenham Dock</item>
-        <item>SAW|Sawbridgeworth</item>
+        <item>BBG|Bishopbriggs</item>
         <item>BIS|Bishops Stortford</item>
-        <item>BXY|Bexley</item>
-        <item>BVD|Belvedere</item>
-        <item>BXD|Buxted</item>
-        <item>WFL|Wainfleet</item>
-        <item>WBC|Waterbeach</item>
-        <item>BNH|Barnehurst</item>
-        <item>GRC|Great Chesterford</item>
-        <item>AHS|Ashurst (Kent)</item>
-        <item>SAY|Swanley</item>
-        <item>ERH|Erith</item>
-        <item>RMF|Romford</item>
-        <item>SST|Stansted Mountfitchet</item>
-        <item>DNG|Dunton Green</item>
-        <item>CRY|Crayford</item>
-        <item>AUD|Audley End</item>
-        <item>PHR|Penshurst</item>
-        <item>RNM|Rainham (London)</item>
-        <item>NWE|Newport (Essex)</item>
-        <item>HVN|Havenhouse</item>
-        <item>SGR|Slade Green</item>
-        <item>SEV|Sevenoaks</item>
-        <item>SEH|Shoreham (Kent)</item>
-        <item>BRK|Berwick (Sussex)</item>
-        <item>GDP|Gidea Park</item>
-        <item>BBL|Bat &amp; Ball</item>
-        <item>OTF|Otford</item>
-        <item>ESM|Elsenham</item>
-        <item>COH|Crowborough</item>
-        <item>EYN|Eynsford</item>
-        <item>EMP|Emerson Park</item>
-        <item>ERI|Eridge</item>
-        <item>DFD|Dartford</item>
-        <item>ELY|Ely</item>
-        <item>LIH|Leigh (Kent)</item>
-        <item>HRO|Harold Wood</item>
-        <item>PFL|Purfleet</item>
-        <item>FNR|Farningham Road</item>
-        <item>HLB|Hildenborough</item>
-        <item>SSD|Stansted Airport</item>
-        <item>UPM|Upminster</item>
-        <item>UPM|Upminster</item>
-        <item>SKG|Skegness</item>
-        <item>KMS|Kemsing</item>
-        <item>SCG|Stone Crossing</item>
-        <item>LTP|Littleport</item>
-        <item>PLG|Polegate</item>
-        <item>TBW|Tunbridge Wells</item>
-        <item>GNH|Greenhithe for Bluewater</item>
-        <item>TON|Tonbridge</item>
-        <item>CFH|Chafford Hundred</item>
-        <item>OCK|Ockendon</item>
-        <item>BRE|Brentwood</item>
-        <item>HIB|High Brooms</item>
-        <item>LGF|Longfield</item>
-        <item>DOW|Downham Market</item>
-        <item>SWM|Swanscombe</item>
-        <item>HMD|Hampden Park (Sussex)</item>
-        <item>FRT|Frant</item>
+        <item>BIP|Bishopstone (Sussex)</item>
+        <item>BPT|Bishopton (Strathclyde)</item>
+        <item>BTE|Bitterne</item>
+        <item>BBN|Blackburn</item>
+        <item>BKH|Blackheath</item>
+        <item>BHO|Blackhorse Road</item>
+        <item>BPN|Blackpool North</item>
+        <item>BPB|Blackpool Pleasure Beach</item>
+        <item>BPS|Blackpool South</item>
+        <item>BKR|Blackridge</item>
+        <item>BLK|Blackrod</item>
+        <item>BAW|Blackwater</item>
+        <item>BFF|Blaenau Ffestiniog</item>
+        <item>BLA|Blair Atholl</item>
+        <item>BAI|Blairhill</item>
+        <item>BKT|Blake Street</item>
+        <item>BKD|Blakedown</item>
+        <item>BLT|Blantyre</item>
+        <item>BLO|Blaydon</item>
+        <item>BSB|Bleasby</item>
+        <item>BLY|Bletchley</item>
+        <item>BLX|Bloxwich</item>
+        <item>BWN|Bloxwich North</item>
+        <item>BLN|Blundellsands &amp; Crosby</item>
+        <item>BYB|Blythe Bridge</item>
+        <item>BOD|Bodmin Parkway</item>
+        <item>BOR|Bodorgan</item>
+        <item>BOG|Bognor Regis</item>
+        <item>BGS|Bogston</item>
+        <item>BON|Bolton</item>
+        <item>BTD|Bolton-Upon-Dearne</item>
+        <item>BKA|Bookham</item>
+        <item>BOC|Bootle (Cumbria)</item>
+        <item>BNW|Bootle New Strand</item>
+        <item>BOT|Bootle Oriel Road</item>
+        <item>BBS|Bordesley</item>
         <item>BRG|Borough Green &amp; Wrotham</item>
-        <item>EBN|Eastbourne</item>
-        <item>WTG|Watlington</item>
-        <item>GRY|Grays</item>
-        <item>SNF|Shenfield</item>
-        <item>EBD|Ebbsfleet International</item>
-        <item>NFL|Northfleet</item>
-        <item>DUL|Dullingham</item>
-        <item>WAD|Wadhurst</item>
-        <item>KLN|Kings Lynn</item>
-        <item>WHR|West Horndon</item>
-        <item>TIL|Tilbury Town</item>
-        <item>PEV|Pevensey &amp; Westham</item>
-        <item>MEP|Meopham</item>
-        <item>SPP|Shippea Hill</item>
-        <item>NMK|Newmarket</item>
-        <item>GRV|Gravesend</item>
-        <item>INT|Ingatestone</item>
-        <item>PEB|Pevensey Bay</item>
-        <item>SOR|Sole Street</item>
-        <item>SOG|Stonegate</item>
-        <item>PDW|Paddock Wood</item>
-        <item>BIC|Billericay</item>
-        <item>ETL|East Tilbury</item>
-        <item>BEG|Beltring</item>
-        <item>LAI|Laindon</item>
-        <item>SFO|Stanford-le-Hope</item>
-        <item>NSB|Normans Bay</item>
-        <item>YAL|Yalding</item>
-        <item>WMA|West Malling</item>
-        <item>WTR|Wateringbury</item>
-        <item>KNE|Kennett</item>
-        <item>EML|East Malling</item>
-        <item>HAI|Halling</item>
-        <item>BSO|Basildon</item>
-        <item>CHM|Chelmsford</item>
-        <item>SDA|Snodland</item>
-        <item>COB|Cooden Beach</item>
-        <item>NHE|New Hythe</item>
-        <item>ETC|Etchingham</item>
-        <item>CUX|Cuxton</item>
-        <item>HGM|Higham</item>
-        <item>AYL|Aylesford</item>
-        <item>LAK|Lakenheath</item>
-        <item>BMG|Barming</item>
-        <item>CLL|Collington</item>
-        <item>RBR|Robertsbridge</item>
-        <item>EFL|East Farleigh</item>
-        <item>PSE|Pitsea</item>
-        <item>SOO|Strood</item>
-        <item>MRN|Marden</item>
-        <item>BEX|Bexhill</item>
-        <item>WIC|Wickford</item>
-        <item>RTR|Rochester</item>
-        <item>MDB|Maidstone Barracks</item>
-        <item>BAT|Battle</item>
-        <item>CTM|Chatham</item>
-        <item>MDW|Maidstone West</item>
-        <item>MDE|Maidstone East</item>
-        <item>CWU|Crowhurst</item>
+        <item>BRH|Borth</item>
+        <item>BOH|Bosham</item>
+        <item>BSN|Boston</item>
+        <item>BOE|Botley</item>
+        <item>BTF|Bottesford</item>
+        <item>BNE|Bourne End</item>
+        <item>BMH|Bournemouth</item>
+        <item>BRV|Bournville</item>
+        <item>BWB|Bow Brickhill</item>
+        <item>BOP|Bowes Park</item>
+        <item>BWG|Bowling</item>
+        <item>BXW|Box Hill &amp; Westhumble</item>
+        <item>BCE|Bracknell</item>
+        <item>BDQ|Bradford Forster Square</item>
+        <item>BDI|Bradford Interchange</item>
+        <item>BOA|Bradford-on-Avon</item>
+        <item>BDN|Brading</item>
         <item>BTR|Braintree</item>
         <item>BTP|Braintree Freeport</item>
-        <item>GLM|Gillingham (Kent)</item>
-        <item>CES|Cressing</item>
-        <item>BLB|Battlesbridge</item>
-        <item>BEF|Benfleet</item>
-        <item>SPU|Staplehurst</item>
+        <item>BML|Bramhall</item>
+        <item>BMY|Bramley (Hants)</item>
+        <item>BLE|Bramley (W Yorks)</item>
+        <item>BMP|Brampton (Cumbria)</item>
+        <item>BRP|Brampton (Suffolk)</item>
+        <item>BCN|Branchton</item>
         <item>BND|Brandon</item>
-        <item>WLD|West St Leonards</item>
-        <item>HAP|Hatfield Peverel</item>
-        <item>WNY|White Notley</item>
-        <item>BSD|Bearsted</item>
-        <item>RLG|Rayleigh</item>
-        <item>SLQ|St Leonards Warrior Square</item>
-        <item>SOF|South Woodham Ferrers</item>
-        <item>HGS|Hastings</item>
-        <item>RAI|Rainham (Kent)</item>
-        <item>WTM|Witham (Essex)</item>
-        <item>ORE|Ore</item>
-        <item>LES|Leigh-on-Sea</item>
-        <item>HBN|Hollingbourne</item>
-        <item>DLH|Doleham</item>
-        <item>HCN|Headcorn</item>
-        <item>TOK|Three Oaks</item>
-        <item>HOC|Hockley</item>
-        <item>BSE|Bury St Edmunds</item>
-        <item>CHW|Chalkwell</item>
-        <item>NFA|North Fambridge</item>
-        <item>NGT|Newington</item>
-        <item>KEL|Kelvedon</item>
-        <item>HRM|Harrietsham</item>
-        <item>WCF|Westcliff-on-Sea</item>
-        <item>TTF|Thetford</item>
-        <item>RFD|Rochford</item>
-        <item>SIA|Southend Airport</item>
-        <item>SUY|Sudbury (Suffolk)</item>
-        <item>PRL|Prittlewell</item>
-        <item>SOV|Southend Victoria</item>
-        <item>SOC|Southend Central</item>
-        <item>LEN|Lenham</item>
-        <item>SOE|Southend East</item>
-        <item>CWC|Chappel &amp; Wakes Colne</item>
-        <item>WSE|Winchelsea</item>
+        <item>BSM|Branksome</item>
+        <item>BYS|Braystones (Cumbria)</item>
+        <item>BDY|Bredbury</item>
+        <item>BRC|Breich</item>
+        <item>BFD|Brentford</item>
+        <item>BRE|Brentwood</item>
+        <item>BWO|Bricket Wood</item>
+        <item>BEA|Bridge of Allan</item>
+        <item>BRO|Bridge of Orchy</item>
+        <item>BGN|Bridgend</item>
+        <item>BDG|Bridgeton</item>
+        <item>BWT|Bridgwater</item>
+        <item>BDT|Bridlington</item>
+        <item>BRF|Brierfield</item>
+        <item>BGG|Brigg</item>
+        <item>BGH|Brighouse</item>
+        <item>BTN|Brighton (East Sussex)</item>
+        <item>BMD|Brimsdown</item>
+        <item>BNT|Brinnington</item>
+        <item>BPW|Bristol Parkway</item>
+        <item>BRI|Bristol Temple Meads</item>
+        <item>BHD|Brithdir</item>
+        <item>BNF|Briton Ferry</item>
+        <item>BRX|Brixton</item>
+        <item>BGE|Broad Green</item>
+        <item>BDB|Broadbottom</item>
+        <item>BSR|Broadstairs</item>
+        <item>BCU|Brockenhurst</item>
+        <item>BHS|Brockholes</item>
+        <item>BCY|Brockley</item>
+        <item>BOM|Bromborough</item>
+        <item>BMR|Bromborough Rake</item>
+        <item>BMC|Bromley Cross (Lancs)</item>
+        <item>BMN|Bromley North</item>
+        <item>BMS|Bromley South</item>
+        <item>BMV|Bromsgrove</item>
+        <item>BSY|Brondesbury</item>
+        <item>BSP|Brondesbury Park</item>
+        <item>BPK|Brookmans Park</item>
+        <item>BKO|Brookwood</item>
+        <item>BME|Broome</item>
+        <item>BMF|Broomfleet</item>
+        <item>BRA|Brora</item>
+        <item>BUH|Brough</item>
+        <item>BYF|Broughty Ferry</item>
+        <item>BXB|Broxbourne</item>
+        <item>BCV|Bruce Grove</item>
+        <item>BDA|Brundall</item>
+        <item>BGA|Brundall Gardens</item>
+        <item>BSU|Brunstane</item>
+        <item>BRW|Brunswick</item>
+        <item>BRU|Bruton</item>
+        <item>BYN|Bryn</item>
+        <item>BUC|Buckenham (Norfolk)</item>
+        <item>BCK|Buckley</item>
+        <item>BUK|Bucknell</item>
+        <item>BSV|Buckshaw Parkway</item>
+        <item>BGL|Bugle</item>
+        <item>BHR|Builth Road</item>
+        <item>BLW|Bulwell</item>
         <item>BUE|Bures</item>
-        <item>ALN|Althorne</item>
-        <item>KML|Kemsley</item>
-        <item>SIT|Sittingbourne</item>
-        <item>SWL|Swale</item>
-        <item>QBR|Queenborough</item>
-        <item>TPB|Thorpe Bay</item>
-        <item>MKT|Marks Tey</item>
-        <item>SSS|Sheerness-on-Sea</item>
-        <item>TRS|Thurston</item>
-        <item>RYE|Rye</item>
-        <item>PLC|Pluckley</item>
-        <item>SRY|Shoeburyness</item>
+        <item>BUG|Burgess Hill</item>
+        <item>BUY|Burley Park</item>
+        <item>BUW|Burley-in-Wharfedale</item>
+        <item>BNA|Burnage</item>
+        <item>BUD|Burneside (Cumbria)</item>
+        <item>BNM|Burnham (Bucks)</item>
         <item>BUU|Burnham-on-Crouch</item>
+        <item>BUB|Burnley Barracks</item>
+        <item>BNC|Burnley Central</item>
+        <item>BYM|Burnley Manchester Road</item>
+        <item>BUI|Burnside (Strathclyde)</item>
+        <item>BTS|Burntisland</item>
+        <item>BCB|Burscough Bridge</item>
+        <item>BCJ|Burscough Junction</item>
+        <item>BUO|Bursledon</item>
+        <item>BUJ|Burton Joyce</item>
+        <item>BUT|Burton-on-Trent</item>
+        <item>BSE|Bury St Edmunds</item>
+        <item>BUS|Busby</item>
+        <item>BHK|Bush Hill Park</item>
+        <item>BSH|Bushey</item>
+        <item>BUL|Butlers Lane</item>
+        <item>BXD|Buxted</item>
+        <item>BUX|Buxton</item>
+        <item>BFN|Byfleet &amp; New Haw</item>
+        <item>BYE|Bynea</item>
+        <item>CAD|Cadoxton</item>
+        <item>CGW|Caergwrle</item>
+        <item>CPH|Caerphilly</item>
+        <item>CWS|Caersws</item>
+        <item>CAC|Caldercruix</item>
+        <item>CDT|Caldicot</item>
+        <item>CIR|Caledonian Rd &amp; Barnsbury</item>
+        <item>CSK|Calstock</item>
+        <item>CDU|Cam &amp; Dursley</item>
+        <item>CAM|Camberley</item>
+        <item>CBN|Camborne</item>
+        <item>CBG|Cambridge</item>
+        <item>CBH|Cambridge Heath</item>
+        <item>CBL|Cambuslang</item>
+        <item>CMD|Camden Road</item>
+        <item>CMO|Camelon</item>
+        <item>ZCW|Canada Water</item>
+        <item>CNL|Canley</item>
+        <item>CAO|Cannock</item>
+        <item>CNN|Canonbury</item>
+        <item>CBE|Canterbury East</item>
+        <item>CBW|Canterbury West</item>
+        <item>CNY|Cantley</item>
+        <item>CPU|Capenhurst</item>
+        <item>CBB|Carbis Bay</item>
+        <item>CDD|Cardenden</item>
+        <item>CDB|Cardiff Bay</item>
+        <item>CDF|Cardiff Central</item>
+        <item>CDQ|Cardiff Queen Street</item>
+        <item>CDO|Cardonald</item>
+        <item>CDR|Cardross</item>
+        <item>CRF|Carfin</item>
+        <item>CAK|Cark &amp; Cartmel</item>
+        <item>CAR|Carlisle</item>
+        <item>CTO|Carlton</item>
+        <item>CLU|Carluke</item>
+        <item>CMN|Carmarthen</item>
+        <item>CML|Carmyle</item>
+        <item>CNF|Carnforth</item>
+        <item>CAN|Carnoustie</item>
+        <item>CAY|Carntyne</item>
+        <item>CPK|Carpenders Park</item>
+        <item>CAG|Carrbridge</item>
+        <item>CSH|Carshalton</item>
+        <item>CSB|Carshalton Beeches</item>
+        <item>CRS|Carstairs</item>
+        <item>CDY|Cartsdyke</item>
+        <item>CBP|Castle Bar Park</item>
+        <item>CLC|Castle Cary</item>
+        <item>CFD|Castleford</item>
+        <item>CAS|Castleton (Manchester)</item>
+        <item>CSM|Castleton Moor</item>
+        <item>CAT|Caterham</item>
+        <item>CTF|Catford</item>
+        <item>CFB|Catford Bridge</item>
+        <item>CYS|Cathays</item>
+        <item>CCT|Cathcart</item>
+        <item>CTL|Cattal</item>
+        <item>CAU|Causeland</item>
+        <item>CYB|Cefn-y-Bedd</item>
+        <item>CTH|Chadwell Heath</item>
+        <item>CFH|Chafford Hundred Lakeside</item>
+        <item>CFO|Chalfont &amp; Latimer</item>
+        <item>CHW|Chalkwell</item>
+        <item>CFR|Chandlers Ford</item>
+        <item>CEF|Chapel-en-le-Frith</item>
+        <item>CPN|Chapelton (Devon)</item>
+        <item>CLN|Chapeltown (South Yorks)</item>
+        <item>CWC|Chappel &amp; Wakes Colne</item>
         <item>CHG|Charing (Kent)</item>
-        <item>TEY|Teynham</item>
-        <item>SMN|Southminster</item>
-        <item>APD|Appledore (Kent)</item>
-        <item>HRD|Harling Road</item>
-        <item>ESW|Elmswell</item>
+        <item>CHC|Charing Cross (Glasgow)</item>
+        <item>CBY|Charlbury</item>
+        <item>CTN|Charlton</item>
+        <item>CRT|Chartham</item>
+        <item>CSR|Chassen Road</item>
+        <item>CTE|Chatelherault</item>
+        <item>CTM|Chatham</item>
+        <item>CHT|Chathill</item>
+        <item>CHU|Cheadle Hulme</item>
+        <item>CHE|Cheam</item>
+        <item>CED|Cheddington</item>
+        <item>CEL|Chelford (Cheshire)</item>
+        <item>CHM|Chelmsford</item>
+        <item>CLD|Chelsfield</item>
+        <item>CNM|Cheltenham Spa</item>
+        <item>CPW|Chepstow</item>
+        <item>CYT|Cherry Tree</item>
+        <item>CHY|Chertsey</item>
+        <item>CHN|Cheshunt</item>
+        <item>CSN|Chessington North</item>
+        <item>CSS|Chessington South</item>
+        <item>CTR|Chester</item>
+        <item>CRD|Chester Road</item>
+        <item>CHD|Chesterfield</item>
+        <item>CLS|Chester-le-Street</item>
+        <item>CSW|Chestfield &amp; Swalecliffe</item>
+        <item>CNO|Chetnole</item>
+        <item>CCH|Chichester</item>
+        <item>CIL|Chilham</item>
+        <item>CHL|Chilworth</item>
+        <item>CHI|Chingford</item>
+        <item>CLY|Chinley</item>
+        <item>CPM|Chippenham</item>
+        <item>CHP|Chipstead</item>
+        <item>CRK|Chirk</item>
+        <item>CIT|Chislehurst</item>
+        <item>CHK|Chiswick</item>
+        <item>CHO|Cholsey</item>
+        <item>CRL|Chorley</item>
+        <item>CLW|Chorleywood</item>
+        <item>CHR|Christchurch</item>
+        <item>CHH|Christs Hospital</item>
+        <item>CTW|Church &amp; Oswaldtwistle</item>
+        <item>CHF|Church Fenton</item>
+        <item>CTT|Church Stretton</item>
+        <item>CIM|Cilmeri</item>
+        <item>CTK|City Thameslink</item>
+        <item>CLT|Clacton-on-Sea</item>
+        <item>CLA|Clandon</item>
+        <item>CPY|Clapham (North Yorkshire)</item>
+        <item>CLP|Clapham High Street</item>
+        <item>CLJ|Clapham Junction</item>
+        <item>CPT|Clapton</item>
+        <item>CLR|Clarbeston Road</item>
+        <item>CKS|Clarkston</item>
+        <item>CLV|Claverdon</item>
+        <item>CLG|Claygate</item>
+        <item>CLE|Cleethorpes</item>
+        <item>CEA|Cleland</item>
+        <item>CLI|Clifton (Manchester)</item>
+        <item>CFN|Clifton Down</item>
+        <item>CLH|Clitheroe</item>
+        <item>CLK|Clock House</item>
+        <item>CUW|Clunderwen</item>
+        <item>CYK|Clydebank</item>
+        <item>CBC|Coatbridge Central</item>
+        <item>CBS|Coatbridge Sunnyside</item>
+        <item>COA|Coatdyke</item>
+        <item>CSD|Cobham &amp; Stoke d'Abernon</item>
+        <item>CSL|Codsall</item>
+        <item>CGN|Cogan</item>
         <item>COL|Colchester</item>
         <item>CET|Colchester Town</item>
-        <item>HMT|Ham Street</item>
-        <item>AFK|Ashford International</item>
-        <item>HYH|Hythe (Essex)</item>
-        <item>FAV|Faversham</item>
-        <item>ECS|Eccles Road</item>
-        <item>WIV|Wivenhoe</item>
-        <item>WYE|Wye</item>
-        <item>SMK|Stowmarket</item>
-        <item>ATL|Attleborough</item>
-        <item>SEG|Selling</item>
-        <item>ALR|Alresford (Essex)</item>
-        <item>CIL|Chilham</item>
-        <item>NMT|Needham Market</item>
-        <item>MNG|Manningtree</item>
-        <item>SPN|Spooner Row</item>
-        <item>CRT|Chartham</item>
-        <item>GRB|Great Bentley</item>
-        <item>WHI|Whitstable</item>
-        <item>WMD|Wymondham</item>
-        <item>MIS|Mistley</item>
-        <item>DIS|Diss</item>
-        <item>WHA|Westenhanger</item>
-        <item>CSW|Chestfield &amp; Swalecliffe</item>
-        <item>CBW|Canterbury West</item>
-        <item>CBE|Canterbury East</item>
-        <item>WEE|Weeley</item>
-        <item>SDG|Sandling</item>
-        <item>IPS|Ipswich</item>
-        <item>SHM|Sheringham</item>
-        <item>WFI|Westerfield</item>
-        <item>HNB|Herne Bay</item>
-        <item>CLT|Clacton-on-Sea</item>
-        <item>STU|Sturry</item>
-        <item>TLS|Thorpe-le-Soken</item>
-        <item>WRB|Wrabness</item>
-        <item>WRN|West Runton</item>
-        <item>DBR|Derby Road (Ipswich)</item>
-        <item>BKS|Bekesbourne</item>
-        <item>FKW|Folkestone West</item>
+        <item>CEH|Coleshill Parkway</item>
+        <item>CLM|Collingham</item>
+        <item>CLL|Collington</item>
+        <item>CNE|Colne</item>
+        <item>CWL|Colwall</item>
+        <item>CWB|Colwyn Bay</item>
+        <item>CME|Combe (Oxon)</item>
+        <item>COM|Commondale</item>
+        <item>CNG|Congleton</item>
+        <item>CNS|Conisbrough</item>
+        <item>CON|Connel Ferry</item>
+        <item>CBD|Conon Bridge</item>
+        <item>CEY|Cononley</item>
+        <item>CNP|Conway Park</item>
+        <item>CNW|Conwy</item>
+        <item>COB|Cooden Beach</item>
+        <item>COO|Cookham</item>
+        <item>CBR|Cooksbridge</item>
+        <item>COE|Coombe Junction Halt</item>
+        <item>COP|Copplestone</item>
+        <item>CRB|Corbridge</item>
+        <item>COR|Corby</item>
+        <item>CKH|Corkerhill</item>
+        <item>CKL|Corkickle</item>
+        <item>CPA|Corpach</item>
+        <item>CRR|Corrour</item>
+        <item>COY|Coryton</item>
+        <item>CSY|Coseley</item>
+        <item>COS|Cosford</item>
+        <item>CSA|Cosham</item>
+        <item>CGM|Cottingham</item>
+        <item>COT|Cottingley</item>
+        <item>CDS|Coulsdon South</item>
+        <item>CDN|Coulsdon Town</item>
+        <item>COV|Coventry</item>
+        <item>CAA|Coventry Arena</item>
+        <item>CWN|Cowden (Kent)</item>
+        <item>COW|Cowdenbeath</item>
+        <item>CRA|Cradley Heath</item>
+        <item>CGD|Craigendoran</item>
+        <item>CRM|Cramlington</item>
+        <item>CBK|Cranbrook (Devon)</item>
+        <item>CRV|Craven Arms</item>
+        <item>CRW|Crawley</item>
+        <item>CRY|Crayford</item>
+        <item>CDI|Crediton</item>
+        <item>CES|Cressing (Essex)</item>
+        <item>CSG|Cressington</item>
+        <item>CWD|Creswell</item>
+        <item>CRE|Crewe</item>
+        <item>CKN|Crewkerne</item>
+        <item>CWH|Crews Hill</item>
+        <item>CNR|Crianlarich</item>
+        <item>CCC|Criccieth</item>
+        <item>CRI|Cricklewood</item>
+        <item>CFF|Croftfoot</item>
+        <item>CFT|Crofton Park</item>
         <item>CMR|Cromer</item>
-        <item>KBX|Kirby Cross</item>
-        <item>RNR|Roughton Road</item>
-        <item>FKC|Folkestone Central</item>
-        <item>ADM|Adisham</item>
-        <item>FRI|Frinton-on-Sea</item>
-        <item>HPQ|Harwich International</item>
-        <item>NRW|Norwich</item>
-        <item>AYH|Aylesham</item>
-        <item>SWO|Snowdown</item>
-        <item>WON|Walton-on-the-Naze</item>
-        <item>GNT|Gunton</item>
-        <item>DVC|Dovercourt</item>
-        <item>SPH|Shepherds Well</item>
-        <item>HWC|Harwich Town</item>
-        <item>WDB|Woodbridge</item>
-        <item>TRM|Trimley</item>
-        <item>NWA|North Walsham</item>
-        <item>MES|Melton (Suffolk)</item>
-        <item>KSN|Kearsney</item>
-        <item>SAH|Salhouse</item>
-        <item>WRT|Worstead</item>
-        <item>BCH|Birchington-on-Sea</item>
-        <item>FLX|Felixstowe</item>
-        <item>HXM|Hoveton &amp; Wroxham</item>
-        <item>MSR|Minster</item>
-        <item>DVP|Dover Priory</item>
-        <item>BGA|Brundall Gardens</item>
-        <item>WGA|Westgate-on-Sea</item>
-        <item>WCM|Wickham Market</item>
-        <item>BDA|Brundall</item>
-        <item>SDW|Sandwich</item>
-        <item>MTM|Martin Mill</item>
-        <item>MAR|Margate</item>
-        <item>BUC|Buckenham</item>
-        <item>LGD|Lingwood</item>
-        <item>WAM|Walmer</item>
-        <item>RAM|Ramsgate</item>
-        <item>DEA|Deal</item>
-        <item>CNY|Cantley</item>
-        <item>SAX|Saxmundham</item>
-        <item>DMP|Dumpton Park</item>
-        <item>HAS|Halesworth</item>
-        <item>BSR|Broadstairs</item>
-        <item>ACL|Acle</item>
+        <item>CMF|Cromford</item>
+        <item>CKT|Crookston</item>
+        <item>CRG|Cross Gates</item>
+        <item>CFL|Crossflatts</item>
+        <item>COI|Crosshill</item>
+        <item>CKY|Crosskeys</item>
+        <item>CMY|Crossmyloof</item>
+        <item>CSO|Croston</item>
+        <item>CRH|Crouch Hill</item>
+        <item>COH|Crowborough</item>
+        <item>CWU|Crowhurst</item>
+        <item>CWE|Crowle</item>
+        <item>CRN|Crowthorne</item>
+        <item>CRO|Croy</item>
+        <item>CYP|Crystal Palace</item>
+        <item>CUD|Cuddington</item>
+        <item>CUF|Cuffley</item>
+        <item>CUM|Culham</item>
+        <item>CUA|Culrain</item>
+        <item>CUB|Cumbernauld</item>
+        <item>CUP|Cupar</item>
+        <item>CUH|Curriehill</item>
+        <item>CUX|Cuxton</item>
+        <item>CMH|Cwmbach</item>
+        <item>CWM|Cwmbran</item>
+        <item>CYN|Cynghordy</item>
+        <item>DDK|Dagenham Dock</item>
+        <item>DSY|Daisy Hill</item>
+        <item>DAG|Dalgety Bay</item>
+        <item>DAL|Dalmally</item>
+        <item>DAK|Dalmarnock</item>
+        <item>DAM|Dalmeny</item>
+        <item>DMR|Dalmuir</item>
+        <item>DLR|Dalreoch</item>
+        <item>DLY|Dalry</item>
+        <item>DLS|Dalston (Cumbria)</item>
+        <item>DLJ|Dalston Junction</item>
+        <item>DLK|Dalston Kingsland</item>
+        <item>DLT|Dalton (Cumbria)</item>
+        <item>DLW|Dalwhinnie</item>
+        <item>DNY|Danby</item>
+        <item>DCT|Danescourt</item>
+        <item>DZY|Danzey</item>
+        <item>DAR|Darlington</item>
+        <item>DAN|Darnall</item>
         <item>DSM|Darsham</item>
-        <item>BRP|Brampton (Suffolk)</item>
-        <item>REE|Reedham (Norfolk)</item>
-        <item>BCC|Beccles</item>
-        <item>HAD|Haddiscoe</item>
-        <item>BYA|Berney Arms</item>
-        <item>SYT|Somerleyton</item>
-        <item>OUS|Oulton Broad South</item>
+        <item>DFD|Dartford</item>
+        <item>DRT|Darton</item>
+        <item>DWN|Darwen</item>
+        <item>DAT|Datchet</item>
+        <item>DVN|Davenport</item>
+        <item>DWL|Dawlish</item>
+        <item>DWW|Dawlish Warren</item>
+        <item>DEA|Deal</item>
+        <item>DEN|Dean (Wilts)</item>
+        <item>DGT|Deansgate</item>
+        <item>DGY|Deganwy</item>
+        <item>DHN|Deighton</item>
+        <item>DLM|Delamere</item>
+        <item>DBD|Denby Dale</item>
+        <item>DNM|Denham</item>
+        <item>DGC|Denham Golf Club</item>
+        <item>DMK|Denmark Hill</item>
+        <item>DNT|Dent</item>
+        <item>DTN|Denton</item>
+        <item>DEP|Deptford</item>
+        <item>DBY|Derby</item>
+        <item>DBR|Derby Road (Ipswich)</item>
+        <item>DPT|Devonport (Devon)</item>
+        <item>DOC|Devonport Dockyard</item>
+        <item>DEW|Dewsbury</item>
+        <item>DID|Didcot Parkway</item>
+        <item>DIG|Digby &amp; Sowton</item>
+        <item>DMH|Dilton Marsh</item>
+        <item>DMG|Dinas (Rhondda)</item>
+        <item>DNS|Dinas Powys</item>
+        <item>DGL|Dingle Road</item>
+        <item>DIN|Dingwall</item>
+        <item>DND|Dinsdale</item>
+        <item>DTG|Dinting</item>
+        <item>DSL|Disley</item>
+        <item>DIS|Diss</item>
+        <item>DOD|Dodworth</item>
+        <item>DOL|Dolau</item>
+        <item>DLH|Doleham</item>
+        <item>DLG|Dolgarrog</item>
+        <item>DWD|Dolwyddelan</item>
+        <item>DON|Doncaster</item>
+        <item>DCH|Dorchester South</item>
+        <item>DCW|Dorchester West</item>
+        <item>DOR|Dore &amp; Totley</item>
+        <item>DKG|Dorking (Main)</item>
+        <item>DPD|Dorking Deepdene</item>
+        <item>DKT|Dorking West</item>
+        <item>DMS|Dormans</item>
+        <item>DDG|Dorridge</item>
+        <item>DVH|Dove Holes</item>
+        <item>DVP|Dover Priory</item>
+        <item>DVC|Dovercourt</item>
+        <item>DVY|Dovey Junction</item>
+        <item>DOW|Downham Market</item>
+        <item>DRG|Drayton Green</item>
+        <item>DYP|Drayton Park</item>
+        <item>DRM|Drem</item>
+        <item>DRF|Driffield</item>
+        <item>DRI|Drigg</item>
+        <item>DTW|Droitwich Spa</item>
+        <item>DRO|Dronfield</item>
+        <item>DMC|Drumchapel</item>
+        <item>DFR|Drumfrochar</item>
+        <item>DRU|Drumgelloch</item>
+        <item>DMY|Drumry</item>
+        <item>DFP|Dublin Ferryport</item>
+        <item>DPS|Dublin Port - Stena</item>
+        <item>DUD|Duddeston</item>
+        <item>DDP|Dudley Port</item>
+        <item>DFI|Duffield</item>
+        <item>DRN|Duirinish</item>
+        <item>DST|Duke Street</item>
+        <item>DUL|Dullingham</item>
+        <item>DBC|Dumbarton Central</item>
+        <item>DBE|Dumbarton East</item>
+        <item>DUM|Dumbreck</item>
+        <item>DMF|Dumfries</item>
+        <item>DMP|Dumpton Park</item>
+        <item>DUN|Dunbar</item>
+        <item>DBL|Dunblane</item>
+        <item>DCG|Duncraig</item>
+        <item>DEE|Dundee</item>
+        <item>DFL|Dunfermline Queen Margaret</item>
+        <item>DFE|Dunfermline Town</item>
+        <item>DKD|Dunkeld &amp; Birnam</item>
+        <item>DNL|Dunlop</item>
+        <item>DNO|Dunrobin Castle</item>
+        <item>DOT|Dunston</item>
+        <item>DNG|Dunton Green</item>
+        <item>DHM|Durham</item>
+        <item>DUR|Durrington-on-Sea</item>
+        <item>DYC|Dyce</item>
+        <item>DYF|Dyffryn Ardudwy</item>
+        <item>EAG|Eaglescliffe</item>
+        <item>EAL|Ealing Broadway</item>
+        <item>ERL|Earlestown</item>
+        <item>EAR|Earley</item>
+        <item>EAD|Earlsfield</item>
+        <item>ELD|Earlswood (Surrey)</item>
+        <item>EWD|Earlswood (West Midlands)</item>
+        <item>ECR|East Croydon</item>
+        <item>EDY|East Didsbury</item>
+        <item>EDW|East Dulwich</item>
+        <item>EFL|East Farleigh</item>
+        <item>EGF|East Garforth</item>
+        <item>EGR|East Grinstead</item>
+        <item>EKL|East Kilbride</item>
+        <item>EML|East Malling</item>
+        <item>EMD|East Midlands Parkway</item>
+        <item>ETL|East Tilbury</item>
+        <item>EWR|East Worthing</item>
+        <item>EBN|Eastbourne</item>
+        <item>EBK|Eastbrook</item>
+        <item>EST|Easterhouse</item>
+        <item>ERA|Eastham Rake</item>
+        <item>ESL|Eastleigh</item>
+        <item>EGN|Eastrington</item>
+        <item>EBD|Ebbsfleet International</item>
+        <item>EBV|Ebbw Vale Parkway</item>
+        <item>EBB|Ebbw Vale Town</item>
+        <item>ECC|Eccles (Manchester)</item>
+        <item>ECS|Eccles Road</item>
+        <item>ECL|Eccleston Park</item>
+        <item>EDL|Edale</item>
+        <item>EDN|Eden Park</item>
+        <item>EBR|Edenbridge</item>
+        <item>EBT|Edenbridge Town</item>
+        <item>EDG|Edge Hill</item>
+        <item>EDB|Edinburgh</item>
+        <item>EGY|Edinburgh Gateway</item>
+        <item>EDP|Edinburgh Park</item>
+        <item>EDR|Edmonton Green</item>
+        <item>EFF|Effingham Junction</item>
+        <item>EGG|Eggesford</item>
+        <item>EGH|Egham</item>
+        <item>EGT|Egton</item>
+        <item>EPH|Elephant &amp; Castle</item>
+        <item>ZEL|Elephant &amp; Castle (Underground)</item>
+        <item>ELG|Elgin</item>
+        <item>ELP|Ellesmere Port</item>
+        <item>ELE|Elmers End</item>
+        <item>ESD|Elmstead Woods</item>
+        <item>ESW|Elmswell</item>
+        <item>ELR|Elsecar</item>
+        <item>ESM|Elsenham (Essex)</item>
+        <item>ELS|Elstree &amp; Borehamwood</item>
+        <item>ELW|Eltham</item>
+        <item>ELO|Elton &amp; Orston</item>
+        <item>ELY|Ely</item>
+        <item>EMP|Emerson Park</item>
+        <item>EMS|Emsworth</item>
+        <item>ECP|Energlyn &amp; Churchill Park</item>
+        <item>ENC|Enfield Chase</item>
+        <item>ENL|Enfield Lock</item>
+        <item>ENF|Enfield Town</item>
+        <item>ENT|Entwistle</item>
+        <item>EPS|Epsom (Surrey)</item>
+        <item>EPD|Epsom Downs</item>
+        <item>ERD|Erdington</item>
+        <item>ERI|Eridge</item>
+        <item>ERH|Erith</item>
+        <item>ESH|Esher</item>
+        <item>EKB|Eskbank</item>
+        <item>EXR|Essex Road</item>
+        <item>ETC|Etchingham</item>
+        <item>EBA|Euxton Balshaw Lane</item>
+        <item>EVE|Evesham</item>
+        <item>EWE|Ewell East</item>
+        <item>EWW|Ewell West</item>
+        <item>EXC|Exeter Central</item>
+        <item>EXD|Exeter St David's</item>
+        <item>EXT|Exeter St Thomas</item>
+        <item>EXG|Exhibition Centre (Glasgow)</item>
+        <item>EXM|Exmouth</item>
+        <item>EXN|Exton</item>
+        <item>EYN|Eynsford</item>
+        <item>FRB|Fairbourne</item>
+        <item>FRF|Fairfield</item>
+        <item>FRL|Fairlie</item>
+        <item>FRW|Fairwater</item>
+        <item>FCN|Falconwood</item>
+        <item>FKG|Falkirk Grahamston</item>
+        <item>FKK|Falkirk High</item>
+        <item>FOC|Falls of Cruachan</item>
+        <item>FMR|Falmer</item>
+        <item>FAL|Falmouth Docks</item>
+        <item>FMT|Falmouth Town</item>
+        <item>FRM|Fareham</item>
+        <item>FNB|Farnborough (Main)</item>
+        <item>FNN|Farnborough North</item>
+        <item>FNC|Farncombe</item>
+        <item>FNH|Farnham</item>
+        <item>FNR|Farningham Road</item>
+        <item>FNW|Farnworth</item>
+        <item>ZFD|Farringdon</item>
+        <item>FLD|Fauldhouse</item>
+        <item>FAV|Faversham</item>
+        <item>FGT|Faygate</item>
+        <item>FAZ|Fazakerley</item>
+        <item>FRN|Fearn</item>
+        <item>FEA|Featherstone</item>
+        <item>FLX|Felixstowe</item>
+        <item>FEL|Feltham</item>
+        <item>FNT|Feniton</item>
+        <item>FEN|Fenny Stratford</item>
+        <item>FER|Fernhill</item>
+        <item>FRY|Ferriby</item>
+        <item>FYS|Ferryside</item>
+        <item>FFA|Ffairfach</item>
+        <item>FIL|Filey</item>
+        <item>FIT|Filton Abbey Wood</item>
+        <item>FNY|Finchley Road &amp; Frognal</item>
+        <item>FPK|Finsbury Park</item>
+        <item>FIN|Finstock</item>
+        <item>FSB|Fishbourne (Sussex)</item>
+        <item>FSG|Fishersgate</item>
+        <item>FGW|Fishguard &amp; Goodwick</item>
+        <item>FGH|Fishguard Harbour</item>
+        <item>FSK|Fiskerton</item>
+        <item>FZW|Fitzwilliam</item>
+        <item>FWY|Five Ways</item>
+        <item>FLE|Fleet</item>
+        <item>FLM|Flimby</item>
+        <item>FLN|Flint</item>
+        <item>FLT|Flitwick</item>
+        <item>FLI|Flixton</item>
+        <item>FLF|Flowery Field</item>
+        <item>FKC|Folkestone Central</item>
+        <item>FKW|Folkestone West</item>
+        <item>FOD|Ford</item>
+        <item>FOG|Forest Gate</item>
+        <item>FOH|Forest Hill</item>
+        <item>FBY|Formby</item>
+        <item>FOR|Forres</item>
+        <item>FRS|Forsinard</item>
+        <item>FTM|Fort Matilda</item>
+        <item>FTW|Fort William</item>
+        <item>FOK|Four Oaks</item>
+        <item>FOX|Foxfield</item>
+        <item>FXN|Foxton</item>
+        <item>FRT|Frant</item>
+        <item>FTN|Fratton</item>
+        <item>FRE|Freshfield</item>
+        <item>FFD|Freshford</item>
+        <item>FML|Frimley</item>
+        <item>FRI|Frinton-on-Sea</item>
+        <item>FZH|Frizinghall</item>
+        <item>FRD|Frodsham</item>
+        <item>FRO|Frome</item>
+        <item>FLW|Fulwell</item>
+        <item>FNV|Furness Vale</item>
+        <item>FZP|Furze Platt</item>
+        <item>GNB|Gainsborough Central</item>
+        <item>GBL|Gainsborough Lea Road</item>
+        <item>GAL|Galashiels</item>
+        <item>GCH|Garelochhead</item>
+        <item>GRF|Garforth</item>
+        <item>GGV|Gargrave</item>
+        <item>GAR|Garrowhill</item>
+        <item>GRS|Garscadden</item>
+        <item>GSD|Garsdale</item>
+        <item>GSN|Garston (Hertfordshire)</item>
+        <item>GSW|Garswood</item>
+        <item>GRH|Gartcosh</item>
+        <item>GMG|Garth (Mid Glamorgan)</item>
+        <item>GTH|Garth (Powys)</item>
+        <item>GVE|Garve</item>
+        <item>GST|Gathurst</item>
+        <item>GTY|Gatley</item>
+        <item>GTW|Gatwick Airport</item>
+        <item>GGJ|Georgemas Junction</item>
+        <item>GER|Gerrards Cross</item>
+        <item>GDP|Gidea Park</item>
+        <item>GFN|Giffnock</item>
+        <item>GIG|Giggleswick</item>
+        <item>GBD|Gilberdyke</item>
+        <item>GFF|Gilfach Fargoed</item>
+        <item>GIL|Gillingham (Dorset)</item>
+        <item>GLM|Gillingham (Kent)</item>
+        <item>GSC|Gilshochill</item>
+        <item>GIP|Gipsy Hill</item>
+        <item>GIR|Girvan</item>
+        <item>GLS|Glaisdale</item>
+        <item>GCW|Glan Conwy</item>
+        <item>GLC|Glasgow Central</item>
+        <item>GLQ|Glasgow Queen Street</item>
+        <item>GLH|Glasshoughton</item>
+        <item>GLZ|Glazebrook</item>
+        <item>GLE|Gleneagles</item>
+        <item>GLF|Glenfinnan</item>
+        <item>GLG|Glengarnock</item>
+        <item>GLT|Glenrothes with Thornton</item>
+        <item>GLO|Glossop</item>
+        <item>GCR|Gloucester</item>
+        <item>GLY|Glynde</item>
+        <item>GOB|Gobowen</item>
+        <item>GOD|Godalming</item>
+        <item>GDL|Godley</item>
+        <item>GDN|Godstone</item>
+        <item>GOE|Goldthorpe</item>
+        <item>GOF|Golf Street</item>
+        <item>GOL|Golspie</item>
+        <item>GOM|Gomshall</item>
+        <item>GMY|Goodmayes</item>
+        <item>GOO|Goole</item>
+        <item>GTR|Goostrey</item>
+        <item>GDH|Gordon Hill</item>
+        <item>GBG|Gorebridge</item>
+        <item>GOR|Goring &amp; Streatley</item>
+        <item>GBS|Goring-by-Sea</item>
+        <item>GTO|Gorton</item>
+        <item>GPO|Gospel Oak</item>
+        <item>GRK|Gourock</item>
+        <item>GWN|Gowerton</item>
+        <item>GOX|Goxhill</item>
+        <item>GPK|Grange Park</item>
+        <item>GOS|Grange-Over-Sands</item>
+        <item>GTN|Grangetown (Cardiff)</item>
+        <item>GRA|Grantham</item>
+        <item>GRT|Grateley</item>
+        <item>GVH|Gravelly Hill</item>
+        <item>GRV|Gravesend</item>
+        <item>GRY|Grays</item>
+        <item>GTA|Great Ayton</item>
+        <item>GRB|Great Bentley</item>
+        <item>GRC|Great Chesterford</item>
+        <item>GCT|Great Coates</item>
+        <item>GMV|Great Malvern</item>
+        <item>GMN|Great Missenden</item>
         <item>GYM|Great Yarmouth</item>
-        <item>OUN|Oulton Broad North</item>
+        <item>GNL|Green Lane</item>
+        <item>GNR|Green Road</item>
+        <item>GBK|Greenbank</item>
+        <item>GRL|Greenfaulds</item>
+        <item>GNF|Greenfield</item>
+        <item>GFD|Greenford</item>
+        <item>GNH|Greenhithe</item>
+        <item>GKC|Greenock Central</item>
+        <item>GKW|Greenock West</item>
+        <item>GNW|Greenwich</item>
+        <item>GEA|Gretna Green</item>
+        <item>GMD|Grimsby Docks</item>
+        <item>GMB|Grimsby Town</item>
+        <item>GRN|Grindleford</item>
+        <item>GMT|Grosmont</item>
+        <item>GRP|Grove Park</item>
+        <item>GUI|Guide Bridge</item>
+        <item>GLD|Guildford</item>
+        <item>GSY|Guiseley</item>
+        <item>GUN|Gunnersbury</item>
+        <item>GSL|Gunnislake</item>
+        <item>GNT|Gunton</item>
+        <item>GWE|Gwersyllt</item>
+        <item>GYP|Gypsy Lane</item>
+        <item>HAB|Habrough</item>
+        <item>HCB|Hackbridge</item>
+        <item>HKC|Hackney Central</item>
+        <item>HAC|Hackney Downs</item>
+        <item>HKW|Hackney Wick</item>
+        <item>HDM|Haddenham &amp; Thame Parkway</item>
+        <item>HAD|Haddiscoe</item>
+        <item>HDF|Hadfield</item>
+        <item>HDW|Hadley Wood</item>
+        <item>HGF|Hag Fold</item>
+        <item>HGG|Haggerston</item>
+        <item>HAG|Hagley</item>
+        <item>HMY|Hairmyres</item>
+        <item>HAL|Hale (Manchester)</item>
+        <item>HAS|Halesworth</item>
+        <item>HED|Halewood</item>
+        <item>HFX|Halifax</item>
+        <item>HLG|Hall Green</item>
+        <item>HLR|Hall Road</item>
+        <item>HAI|Halling</item>
+        <item>HID|Hall-i'-th'-Wood</item>
+        <item>HWH|Haltwhistle</item>
+        <item>HMT|Ham Street</item>
+        <item>HME|Hamble</item>
+        <item>HNC|Hamilton Central</item>
+        <item>HNW|Hamilton West</item>
+        <item>HMM|Hammerton</item>
+        <item>HMD|Hampden Park (Sussex)</item>
+        <item>HDH|Hampstead Heath</item>
+        <item>HMP|Hampton (London)</item>
+        <item>HMC|Hampton Court</item>
+        <item>HMW|Hampton Wick</item>
+        <item>HIA|Hampton-in-Arden</item>
+        <item>HSD|Hamstead (Birmingham)</item>
+        <item>HAM|Hamworthy</item>
+        <item>HND|Hanborough</item>
+        <item>HTH|Handforth</item>
+        <item>HAN|Hanwell</item>
+        <item>HPN|Hapton</item>
+        <item>HRL|Harlech</item>
+        <item>HDN|Harlesden</item>
+        <item>HRD|Harling Road</item>
+        <item>HLN|Harlington (Beds)</item>
+        <item>HWM|Harlow Mill</item>
+        <item>HWN|Harlow Town</item>
+        <item>HRO|Harold Wood</item>
+        <item>HPD|Harpenden</item>
+        <item>HRM|Harrietsham</item>
+        <item>HGY|Harringay</item>
+        <item>HRY|Harringay Green Lanes</item>
+        <item>HRR|Harrington</item>
+        <item>HGT|Harrogate</item>
+        <item>HRW|Harrow &amp; Wealdstone</item>
+        <item>HOH|Harrow-on-the-Hill</item>
+        <item>HTF|Hartford (Cheshire)</item>
+        <item>HBY|Hartlebury</item>
+        <item>HPL|Hartlepool</item>
+        <item>HTW|Hartwood</item>
+        <item>HPQ|Harwich International</item>
+        <item>HWC|Harwich Town</item>
+        <item>HSL|Haslemere</item>
+        <item>HSK|Hassocks</item>
+        <item>HGS|Hastings</item>
+        <item>HTE|Hatch End</item>
+        <item>HFS|Hatfield &amp; Stainforth</item>
+        <item>HAT|Hatfield (Herts)</item>
+        <item>HAP|Hatfield Peverel</item>
+        <item>HSG|Hathersage</item>
+        <item>HTY|Hattersley</item>
+        <item>HTN|Hatton</item>
+        <item>HAV|Havant</item>
+        <item>HVN|Havenhouse</item>
+        <item>HVF|Haverfordwest</item>
+        <item>HWD|Hawarden</item>
+        <item>HWB|Hawarden Bridge</item>
+        <item>HKH|Hawkhead</item>
+        <item>HDB|Haydon Bridge</item>
+        <item>HYR|Haydons Road</item>
+        <item>HAY|Hayes &amp; Harlington</item>
+        <item>HYS|Hayes (Kent)</item>
+        <item>HYL|Hayle</item>
+        <item>HYM|Haymarket</item>
+        <item>HHE|Haywards Heath</item>
+        <item>HAZ|Hazel Grove</item>
+        <item>HCN|Headcorn</item>
+        <item>HDY|Headingley</item>
+        <item>HDL|Headstone Lane</item>
+        <item>HDG|Heald Green</item>
+        <item>HLI|Healing</item>
+        <item>HHL|Heath High Level</item>
+        <item>HLL|Heath Low Level</item>
+        <item>HAF|Heathrow Airport Terminal 4</item>
+        <item>HWV|Heathrow Airport Terminal 5</item>
+        <item>HXX|Heathrow Airport Terminals 1, 2 and 3</item>
+        <item>HTC|Heaton Chapel</item>
+        <item>HBD|Hebden Bridge</item>
+        <item>HEC|Heckington</item>
+        <item>HDE|Hedge End</item>
+        <item>HNF|Hednesford</item>
+        <item>HEI|Heighington</item>
+        <item>HLC|Helensburgh Central</item>
+        <item>HLU|Helensburgh Upper</item>
+        <item>HLD|Hellifield</item>
+        <item>HMS|Helmsdale</item>
+        <item>HSB|Helsby</item>
+        <item>HML|Hemel Hempstead</item>
+        <item>HEN|Hendon</item>
+        <item>HNG|Hengoed</item>
+        <item>HNL|Henley-in-Arden</item>
+        <item>HOT|Henley-on-Thames</item>
+        <item>HEL|Hensall</item>
+        <item>HFD|Hereford</item>
+        <item>HNB|Herne Bay</item>
+        <item>HNH|Herne Hill</item>
+        <item>HER|Hersham</item>
+        <item>HFE|Hertford East</item>
+        <item>HFN|Hertford North</item>
+        <item>HES|Hessle</item>
+        <item>HSW|Heswall</item>
+        <item>HEV|Hever</item>
+        <item>HEW|Heworth</item>
+        <item>HEX|Hexham</item>
+        <item>HYD|Heyford</item>
+        <item>HHB|Heysham Port</item>
+        <item>HIB|High Brooms</item>
+        <item>HST|High Street (Glasgow)</item>
+        <item>ZHS|High Street Kensington Underground</item>
+        <item>HWY|High Wycombe</item>
+        <item>HGM|Higham (Kent)</item>
+        <item>HIP|Highams Park</item>
+        <item>HIG|Highbridge &amp; Burnham</item>
+        <item>HHY|Highbury &amp; Islington</item>
+        <item>HTO|Hightown</item>
+        <item>HLB|Hildenborough</item>
+        <item>HLF|Hillfoot</item>
+        <item>HLE|Hillington East</item>
+        <item>HLW|Hillington West</item>
+        <item>HIL|Hillside</item>
+        <item>HLS|Hilsea</item>
+        <item>HYW|Hinchley Wood</item>
+        <item>HNK|Hinckley (Leics)</item>
+        <item>HIN|Hindley</item>
+        <item>HNA|Hinton Admiral</item>
+        <item>HIT|Hitchin</item>
+        <item>HGR|Hither Green</item>
+        <item>HOC|Hockley</item>
+        <item>HBN|Hollingbourne</item>
+        <item>HCH|Holmes Chapel</item>
+        <item>HLM|Holmwood</item>
+        <item>HOL|Holton Heath</item>
+        <item>HHD|Holyhead</item>
+        <item>HLY|Holytown</item>
+        <item>HMN|Homerton</item>
+        <item>HYB|Honeybourne</item>
+        <item>HON|Honiton</item>
+        <item>HOY|Honley</item>
+        <item>HPA|Honor Oak Park</item>
+        <item>HOK|Hook</item>
+        <item>HOO|Hooton</item>
+        <item>HOP|Hope (Derbyshire)</item>
+        <item>HPE|Hope (Flintshire)</item>
+        <item>HPT|Hopton Heath</item>
+        <item>HOR|Horley</item>
+        <item>HBP|Hornbeam Park</item>
+        <item>HRN|Hornsey</item>
+        <item>HRS|Horsforth</item>
+        <item>HRH|Horsham</item>
+        <item>HSY|Horsley</item>
+        <item>HIR|Horton-in-Ribblesdale</item>
+        <item>HWI|Horwich Parkway</item>
+        <item>HSC|Hoscar</item>
+        <item>HGN|Hough Green</item>
+        <item>HOU|Hounslow</item>
+        <item>HOV|Hove</item>
+        <item>HXM|Hoveton &amp; Wroxham</item>
+        <item>HWW|How Wood (Herts)</item>
+        <item>HOW|Howden</item>
+        <item>HOZ|Howwood (Renfrewshire)</item>
+        <item>HOX|Hoxton</item>
+        <item>HYK|Hoylake</item>
+        <item>HBB|Hubberts Bridge</item>
+        <item>HKN|Hucknall</item>
+        <item>HUD|Huddersfield</item>
+        <item>HUL|Hull</item>
+        <item>HUP|Humphrey Park</item>
+        <item>HCT|Huncoat</item>
+        <item>HGD|Hungerford</item>
+        <item>HUB|Hunmanby</item>
+        <item>HUN|Huntingdon</item>
+        <item>HNT|Huntly</item>
+        <item>HNX|Hunts Cross</item>
+        <item>HUR|Hurst Green</item>
+        <item>HUT|Hutton Cranswick</item>
+        <item>HUY|Huyton</item>
+        <item>HYC|Hyde Central</item>
+        <item>HYT|Hyde North</item>
+        <item>HKM|Hykeham</item>
+        <item>HYN|Hyndland</item>
+        <item>HYH|Hythe (Essex)</item>
+        <item>IBM|IBM Halt</item>
+        <item>IFI|Ifield</item>
+        <item>IFD|Ilford</item>
+        <item>ILK|Ilkley</item>
+        <item>IMW|Imperial Wharf</item>
+        <item>INE|Ince &amp; Elton</item>
+        <item>INC|Ince (Manchester)</item>
+        <item>INT|Ingatestone</item>
+        <item>INS|Insch</item>
+        <item>IGD|Invergordon</item>
+        <item>ING|Invergowrie</item>
+        <item>INK|Inverkeithing</item>
+        <item>INP|Inverkip</item>
+        <item>INV|Inverness</item>
+        <item>INH|Invershin</item>
+        <item>INR|Inverurie</item>
+        <item>IPS|Ipswich</item>
+        <item>IRL|Irlam</item>
+        <item>IRV|Irvine</item>
+        <item>ISL|Isleworth</item>
+        <item>ISP|Islip</item>
+        <item>IVR|Iver</item>
+        <item>IVY|Ivybridge</item>
+        <item>JCH|James Cook</item>
+        <item>JEQ|Jewellery Quarter</item>
+        <item>JOH|Johnston (Pembs)</item>
+        <item>JHN|Johnstone (Strathclyde)</item>
+        <item>JOR|Jordanhill</item>
+        <item>KSL|Kearsley (Manchester)</item>
+        <item>KSN|Kearsney (Kent)</item>
+        <item>KEI|Keighley</item>
+        <item>KEH|Keith</item>
+        <item>KEL|Kelvedon</item>
+        <item>KVD|Kelvindale</item>
+        <item>KEM|Kemble</item>
+        <item>KMH|Kempston Hardwick</item>
+        <item>KMP|Kempton Park Racecourse</item>
+        <item>KMS|Kemsing</item>
+        <item>KML|Kemsley</item>
+        <item>KEN|Kendal</item>
+        <item>KLY|Kenley</item>
+        <item>KNE|Kennett</item>
+        <item>KNS|Kennishead</item>
+        <item>KNL|Kensal Green</item>
+        <item>KNR|Kensal Rise</item>
+        <item>KPA|Kensington Olympia</item>
+        <item>KTH|Kent House</item>
+        <item>KTN|Kentish Town</item>
+        <item>KTW|Kentish Town West</item>
+        <item>KNT|Kenton</item>
+        <item>KBK|Kents Bank</item>
+        <item>KET|Kettering</item>
+        <item>KWB|Kew Bridge</item>
+        <item>KWG|Kew Gardens</item>
+        <item>KEY|Keyham</item>
+        <item>KYN|Keynsham</item>
+        <item>KDB|Kidbrooke</item>
+        <item>KID|Kidderminster</item>
+        <item>KDG|Kidsgrove</item>
+        <item>KWL|Kidwelly</item>
+        <item>KBN|Kilburn High Road</item>
+        <item>KLD|Kildale</item>
+        <item>KIL|Kildonan</item>
+        <item>KGT|Kilgetty</item>
+        <item>KMK|Kilmarnock</item>
+        <item>KLM|Kilmaurs</item>
+        <item>KPT|Kilpatrick</item>
+        <item>KWN|Kilwinning</item>
+        <item>KBC|Kinbrace</item>
+        <item>KGM|Kingham</item>
+        <item>KGH|Kinghorn</item>
+        <item>KGL|Kings Langley</item>
+        <item>KLN|Kings Lynn</item>
+        <item>KNN|Kings Norton</item>
+        <item>KGN|Kings Nympton</item>
+        <item>KGP|Kings Park</item>
+        <item>KGS|Kings Sutton</item>
+        <item>KGE|Kingsknowe</item>
+        <item>KNG|Kingston</item>
+        <item>KND|Kingswood</item>
+        <item>KIN|Kingussie</item>
+        <item>KIT|Kintbury</item>
+        <item>KBX|Kirby Cross</item>
+        <item>KKS|Kirk Sandall</item>
+        <item>KIR|Kirkby (Merseyside)</item>
+        <item>KSW|Kirkby Stephen</item>
+        <item>KKB|Kirkby-in-Ashfield</item>
+        <item>KBF|Kirkby-in-Furness</item>
+        <item>KDY|Kirkcaldy</item>
+        <item>KRK|Kirkconnel</item>
+        <item>KKD|Kirkdale</item>
+        <item>KKM|Kirkham &amp; Wesham</item>
+        <item>KKH|Kirkhill</item>
+        <item>KKN|Kirknewton</item>
+        <item>KLF|Kirkstall Forge</item>
+        <item>KWD|Kirkwood</item>
+        <item>KTL|Kirton Lindsey</item>
+        <item>KIV|Kiveton Bridge</item>
+        <item>KVP|Kiveton Park</item>
+        <item>KNA|Knaresborough</item>
+        <item>KBW|Knebworth</item>
+        <item>KNI|Knighton</item>
+        <item>KCK|Knockholt</item>
+        <item>KNO|Knottingley</item>
+        <item>KNU|Knucklas</item>
+        <item>KNF|Knutsford</item>
+        <item>KYL|Kyle of Lochalsh</item>
+        <item>LDY|Ladybank</item>
+        <item>LAD|Ladywell</item>
+        <item>LAI|Laindon</item>
+        <item>LRG|Lairg</item>
+        <item>LKE|Lake</item>
+        <item>LAK|Lakenheath</item>
+        <item>LAM|Lamphey</item>
+        <item>LNK|Lanark</item>
+        <item>LAN|Lancaster</item>
+        <item>LAC|Lancing</item>
+        <item>LAW|Landywood</item>
+        <item>LGB|Langbank</item>
+        <item>LHO|Langho</item>
+        <item>LNY|Langley (Berks)</item>
+        <item>LGG|Langley Green</item>
+        <item>LGM|Langley Mill</item>
+        <item>LGS|Langside</item>
+        <item>LGW|Langwathby</item>
+        <item>LAG|Langwith-Whaley Thorns</item>
+        <item>LAP|Lapford</item>
+        <item>LPW|Lapworth</item>
+        <item>LBT|Larbert</item>
+        <item>LAR|Largs</item>
+        <item>LRH|Larkhall</item>
+        <item>LAU|Laurencekirk</item>
+        <item>LWH|Lawrence Hill</item>
+        <item>LAY|Layton (Lancs)</item>
+        <item>LZB|Lazonby &amp; Kirkoswald</item>
+        <item>LEB|Lea Bridge</item>
+        <item>LEG|Lea Green</item>
+        <item>LEH|Lea Hall</item>
+        <item>LEA|Leagrave</item>
+        <item>LHM|Lealholm</item>
+        <item>LMS|Leamington Spa</item>
+        <item>LSW|Leasowe</item>
+        <item>LHD|Leatherhead</item>
+        <item>LED|Ledbury</item>
+        <item>LEE|Lee (London)</item>
+        <item>LDS|Leeds</item>
+        <item>LEI|Leicester</item>
+        <item>LIH|Leigh (Kent)</item>
+        <item>LES|Leigh-on-Sea</item>
+        <item>LBZ|Leighton Buzzard</item>
+        <item>LEL|Lelant</item>
+        <item>LTS|Lelant Saltings</item>
+        <item>LEN|Lenham</item>
+        <item>LNZ|Lenzie</item>
+        <item>LEO|Leominster</item>
+        <item>LET|Letchworth Garden City</item>
+        <item>LEU|Leuchars (for St. Andrews)</item>
+        <item>LVM|Levenshulme</item>
+        <item>LWS|Lewes</item>
+        <item>LEW|Lewisham</item>
+        <item>LEY|Leyland</item>
+        <item>LEM|Leyton Midland Road</item>
+        <item>LER|Leytonstone High Road</item>
+        <item>LIC|Lichfield City</item>
+        <item>LTV|Lichfield Trent Valley</item>
+        <item>LID|Lidlington</item>
+        <item>LHS|Limehouse</item>
+        <item>LCN|Lincoln Central</item>
+        <item>LFD|Lingfield</item>
+        <item>LGD|Lingwood</item>
+        <item>LIN|Linlithgow</item>
+        <item>LIP|Liphook</item>
+        <item>LSK|Liskeard</item>
+        <item>LIS|Liss</item>
+        <item>LVT|Lisvane &amp; Thornhill</item>
+        <item>LTK|Little Kimble</item>
+        <item>LTT|Little Sutton</item>
+        <item>LTL|Littleborough</item>
+        <item>LIT|Littlehampton</item>
+        <item>LVN|Littlehaven</item>
+        <item>LTP|Littleport</item>
+        <item>LVC|Liverpool Central</item>
+        <item>LVJ|Liverpool James Street</item>
+        <item>LIV|Liverpool Lime Street</item>
+        <item>LPY|Liverpool South Parkway</item>
+        <item>LSN|Livingston North</item>
+        <item>LVG|Livingston South</item>
+        <item>LLA|Llanaber</item>
+        <item>LBR|Llanbedr</item>
+        <item>LLT|Llanbister Road</item>
+        <item>LNB|Llanbradach</item>
+        <item>LLN|Llandaf</item>
+        <item>LDN|Llandanwg</item>
+        <item>LLC|Llandecwyn</item>
+        <item>LLL|Llandeilo</item>
+        <item>LLV|Llandovery</item>
+        <item>LLO|Llandrindod</item>
+        <item>LLD|Llandudno</item>
+        <item>LLJ|Llandudno Junction</item>
+        <item>LLI|Llandybie</item>
+        <item>LLE|Llanelli</item>
+        <item>LLF|Llanfairfechan</item>
+        <item>LPG|Llanfairpwll</item>
+        <item>LLG|Llangadog</item>
+        <item>LLM|Llangammarch</item>
+        <item>LLH|Llangennech</item>
+        <item>LGO|Llangynllo</item>
+        <item>LLR|Llanharan</item>
+        <item>LTH|Llanhilleth</item>
+        <item>LLS|Llanishen</item>
+        <item>LWR|Llanrwst</item>
+        <item>LAS|Llansamlet</item>
+        <item>LWM|Llantwit Major</item>
+        <item>LNR|Llanwrda</item>
+        <item>LNW|Llanwrtyd</item>
+        <item>LLW|Llwyngwril</item>
+        <item>LLY|Llwynypia</item>
+        <item>LHA|Loch Awe</item>
+        <item>LHE|Loch Eil Outward Bound</item>
+        <item>LCL|Lochailort</item>
+        <item>LCS|Locheilside</item>
+        <item>LCG|Lochgelly</item>
+        <item>LCC|Lochluichart</item>
+        <item>LHW|Lochwinnoch</item>
+        <item>LOC|Lockerbie</item>
+        <item>LCK|Lockwood</item>
+        <item>BFR|London Blackfriars</item>
+        <item>LBG|London Bridge</item>
+        <item>CST|London Cannon Street</item>
+        <item>CHX|London Charing Cross</item>
+        <item>EUS|London Euston</item>
+        <item>FST|London Fenchurch Street</item>
+        <item>LOF|London Fields</item>
+        <item>KGX|London Kings Cross</item>
+        <item>LST|London Liverpool Street</item>
+        <item>MYB|London Marylebone</item>
+        <item>PAD|London Paddington</item>
+        <item>LRB|London Road (Brighton)</item>
+        <item>LRD|London Road (Guildford)</item>
+        <item>SPX|London St Pancras (Intl)</item>
+        <item>STP|London St Pancras International</item>
+        <item>VIC|London Victoria</item>
+        <item>WAT|London Waterloo</item>
+        <item>WAE|London Waterloo East</item>
+        <item>LBK|Long Buckby</item>
+        <item>LGE|Long Eaton</item>
+        <item>LPR|Long Preston</item>
+        <item>LGK|Longbeck</item>
+        <item>LOB|Longbridge</item>
+        <item>LNG|Longcross</item>
+        <item>LGF|Longfield</item>
+        <item>LND|Longniddry</item>
+        <item>LPT|Longport</item>
+        <item>LGN|Longton</item>
+        <item>LOO|Looe</item>
+        <item>LOT|Lostock</item>
+        <item>LTG|Lostock Gralam</item>
+        <item>LOH|Lostock Hall</item>
+        <item>LOS|Lostwithiel</item>
+        <item>LBO|Loughborough</item>
+        <item>LGJ|Loughborough Junction</item>
+        <item>LOW|Lowdham</item>
+        <item>LSY|Lower Sydenham</item>
         <item>LWT|Lowestoft</item>
+        <item>LUD|Ludlow</item>
+        <item>LUT|Luton</item>
+        <item>LTN|Luton Airport Parkway</item>
+        <item>LUX|Luxulyan</item>
+        <item>LYD|Lydney</item>
+        <item>LYE|Lye (West Midlands)</item>
+        <item>LYP|Lymington Pier</item>
+        <item>LYT|Lymington Town</item>
+        <item>LYC|Lympstone Commando</item>
+        <item>LYM|Lympstone Village</item>
+        <item>LTM|Lytham</item>
+        <item>MAC|Macclesfield</item>
+        <item>MCN|Machynlleth</item>
+        <item>MST|Maesteg</item>
+        <item>MEW|Maesteg (Ewenny Road)</item>
+        <item>MAG|Maghull</item>
+        <item>MDN|Maiden Newton</item>
+        <item>MAI|Maidenhead</item>
+        <item>MDB|Maidstone Barracks</item>
+        <item>MDE|Maidstone East</item>
+        <item>MDW|Maidstone West</item>
+        <item>MAL|Malden Manor</item>
+        <item>MLG|Mallaig</item>
+        <item>MLT|Malton</item>
+        <item>MVL|Malvern Link</item>
+        <item>MIA|Manchester Airport</item>
+        <item>MCO|Manchester Oxford Road</item>
+        <item>MAN|Manchester Piccadilly</item>
+        <item>MUF|Manchester United Football Ground</item>
+        <item>MCV|Manchester Victoria</item>
+        <item>MNE|Manea</item>
+        <item>MNG|Manningtree</item>
+        <item>MNP|Manor Park</item>
+        <item>MNR|Manor Road</item>
+        <item>MRB|Manorbier</item>
+        <item>MAS|Manors</item>
+        <item>MFT|Mansfield</item>
+        <item>MSW|Mansfield Woodhouse</item>
+        <item>MCH|March</item>
+        <item>MRN|Marden (Kent)</item>
+        <item>MAR|Margate</item>
+        <item>MHR|Market Harborough</item>
+        <item>MKR|Market Rasen</item>
+        <item>MNC|Markinch</item>
+        <item>MKT|Marks Tey</item>
+        <item>MLW|Marlow</item>
+        <item>MPL|Marple</item>
+        <item>MSN|Marsden (Yorks)</item>
+        <item>MSK|Marske</item>
+        <item>MGN|Marston Green</item>
+        <item>MTM|Martin Mill</item>
+        <item>MAO|Martins Heron</item>
+        <item>MTO|Marton</item>
+        <item>MYH|Maryhill</item>
+        <item>MYL|Maryland</item>
+        <item>MRY|Maryport</item>
+        <item>MAT|Matlock</item>
+        <item>MTB|Matlock Bath</item>
+        <item>MAU|Mauldeth Road</item>
+        <item>MAX|Maxwell Park</item>
+        <item>MAY|Maybole</item>
+        <item>MZH|Maze Hill</item>
+        <item>MHS|Meadowhall</item>
+        <item>MEL|Meldreth</item>
+        <item>MKM|Melksham</item>
+        <item>MES|Melton (Suffolk)</item>
+        <item>MMO|Melton Mowbray</item>
+        <item>MEN|Menheniot</item>
+        <item>MNN|Menston</item>
+        <item>MEO|Meols</item>
+        <item>MEC|Meols Cop</item>
+        <item>MEP|Meopham</item>
+        <item>MEY|Merryton</item>
+        <item>MHM|Merstham</item>
+        <item>MER|Merthyr Tydfil</item>
+        <item>MEV|Merthyr Vale</item>
+        <item>MGM|Metheringham</item>
+        <item>MCE|MetroCentre</item>
+        <item>MEX|Mexborough</item>
+        <item>MIC|Micheldever</item>
+        <item>MIK|Micklefield</item>
+        <item>MBR|Middlesbrough</item>
+        <item>MDL|Middlewood</item>
+        <item>MDG|Midgham</item>
+        <item>MLF|Milford (Surrey)</item>
+        <item>MFH|Milford Haven</item>
+        <item>MLH|Mill Hill (Lancs)</item>
+        <item>MIL|Mill Hill Broadway</item>
+        <item>MLB|Millbrook (Beds)</item>
+        <item>MBK|Millbrook (Hants)</item>
+        <item>MIN|Milliken Park</item>
+        <item>MLM|Millom</item>
+        <item>MIH|Mills Hill (Manchester)</item>
+        <item>MLN|Milngavie</item>
+        <item>MKC|Milton Keynes Central</item>
+        <item>MFF|Minffordd</item>
+        <item>MSR|Minster</item>
+        <item>MIR|Mirfield</item>
+        <item>MIS|Mistley</item>
+        <item>MTC|Mitcham Eastfields</item>
+        <item>MIJ|Mitcham Junction</item>
+        <item>MOB|Mobberley</item>
+        <item>MON|Monifieth</item>
+        <item>MRS|Monks Risborough</item>
+        <item>MTP|Montpelier</item>
+        <item>MTS|Montrose</item>
+        <item>MRF|Moorfields</item>
+        <item>MOG|Moorgate</item>
+        <item>MSD|Moorside</item>
+        <item>MRP|Moorthorpe</item>
+        <item>MRR|Morar</item>
+        <item>MRD|Morchard Road</item>
+        <item>MDS|Morden South</item>
+        <item>MCM|Morecambe</item>
+        <item>MTN|Moreton (Dorset)</item>
+        <item>MRT|Moreton (Merseyside)</item>
+        <item>MIM|Moreton-in-Marsh</item>
+        <item>MFA|Morfa Mawddach</item>
+        <item>MLY|Morley</item>
+        <item>MPT|Morpeth</item>
+        <item>MOR|Mortimer</item>
+        <item>MTL|Mortlake</item>
+        <item>MSS|Moses Gate</item>
+        <item>MOS|Moss Side</item>
+        <item>MSL|Mossley (Manchester)</item>
+        <item>MSH|Mossley Hill</item>
+        <item>MPK|Mosspark</item>
+        <item>MSO|Moston</item>
+        <item>MTH|Motherwell</item>
+        <item>MOT|Motspur Park</item>
+        <item>MTG|Mottingham</item>
+        <item>DBG|Mottisfont &amp; Dunbridge</item>
+        <item>MLD|Mouldsworth</item>
+        <item>MCB|Moulsecoomb</item>
+        <item>MFL|Mount Florida</item>
+        <item>MTV|Mount Vernon</item>
+        <item>MTA|Mountain Ash</item>
+        <item>MOO|Muir of Ord</item>
+        <item>MUI|Muirend</item>
+        <item>MUB|Musselburgh</item>
+        <item>MYT|Mytholmroyd</item>
+        <item>NFN|Nafferton</item>
+        <item>NLS|Nailsea &amp; Backwell</item>
+        <item>NRN|Nairn</item>
+        <item>NAN|Nantwich</item>
+        <item>NAR|Narberth</item>
+        <item>NBR|Narborough</item>
+        <item>NVR|Navigation Road</item>
+        <item>NTH|Neath</item>
+        <item>NMT|Needham Market</item>
+        <item>NEI|Neilston</item>
+        <item>NEL|Nelson</item>
+        <item>NES|Neston</item>
+        <item>NET|Netherfield</item>
+        <item>NRT|Nethertown</item>
+        <item>NTL|Netley</item>
+        <item>NBA|New Barnet</item>
+        <item>NBC|New Beckenham</item>
+        <item>NBN|New Brighton</item>
+        <item>NCE|New Clee</item>
+        <item>NWX|New Cross</item>
+        <item>NXG|New Cross Gate</item>
+        <item>NCK|New Cumnock</item>
+        <item>NEH|New Eltham</item>
+        <item>NHL|New Holland</item>
+        <item>NHE|New Hythe</item>
+        <item>NLN|New Lane</item>
+        <item>NEM|New Malden</item>
+        <item>NMC|New Mills Central</item>
+        <item>NMN|New Mills Newtown</item>
+        <item>NWM|New Milton</item>
+        <item>NPD|New Pudsey</item>
+        <item>NSG|New Southgate</item>
+        <item>NCT|Newark Castle</item>
+        <item>NNG|Newark North Gate</item>
+        <item>NBE|Newbridge</item>
+        <item>NBY|Newbury</item>
+        <item>NRC|Newbury Racecourse</item>
+        <item>NCL|Newcastle</item>
+        <item>NCO|Newcourt</item>
+        <item>NEW|Newcraighall</item>
+        <item>NVH|Newhaven Harbour</item>
+        <item>NVN|Newhaven Town</item>
+        <item>NGT|Newington</item>
+        <item>NMK|Newmarket</item>
+        <item>NWE|Newport (Essex)</item>
+        <item>NWP|Newport (South Wales)</item>
+        <item>NQY|Newquay</item>
+        <item>NSD|Newstead</item>
+        <item>NTN|Newton (Lanark)</item>
+        <item>NTA|Newton Abbot</item>
+        <item>NAY|Newton Aycliffe</item>
+        <item>NWN|Newton for Hyde</item>
+        <item>NTC|Newton St Cyres</item>
+        <item>NEG|Newtongrange</item>
+        <item>NLW|Newton-le-Willows</item>
+        <item>NWR|Newtonmore</item>
+        <item>NOA|Newton-on-Ayr</item>
+        <item>NWT|Newtown (Powys)</item>
+        <item>NNP|Ninian Park</item>
+        <item>NIT|Nitshill</item>
+        <item>NBT|Norbiton</item>
+        <item>NRB|Norbury</item>
+        <item>NSB|Normans Bay</item>
+        <item>NOR|Normanton</item>
+        <item>NBW|North Berwick</item>
+        <item>NCM|North Camp</item>
+        <item>NDL|North Dulwich</item>
+        <item>NFA|North Fambridge</item>
+        <item>NLR|North Llanrwst</item>
+        <item>NQU|North Queensferry</item>
+        <item>NRD|North Road (Darlington)</item>
+        <item>NSH|North Sheen</item>
+        <item>NWA|North Walsham</item>
+        <item>NWB|North Wembley</item>
+        <item>NTR|Northallerton</item>
+        <item>NMP|Northampton</item>
+        <item>NFD|Northfield</item>
+        <item>NFL|Northfleet</item>
+        <item>NLT|Northolt Park</item>
+        <item>NUM|Northumberland Park</item>
+        <item>NWI|Northwich</item>
+        <item>NTB|Norton Bridge</item>
+        <item>NRW|Norwich</item>
+        <item>NWD|Norwood Junction</item>
+        <item>NOT|Nottingham</item>
+        <item>NUN|Nuneaton</item>
+        <item>NHD|Nunhead</item>
+        <item>NNT|Nunthorpe</item>
+        <item>NUT|Nutbourne</item>
+        <item>NUF|Nutfield</item>
+        <item>OKN|Oakengates</item>
+        <item>OKM|Oakham</item>
+        <item>OKL|Oakleigh Park</item>
+        <item>OBN|Oban</item>
+        <item>OCK|Ockendon</item>
+        <item>OLY|Ockley</item>
+        <item>OKE|Okehampton</item>
+        <item>OHL|Old Hill</item>
+        <item>ORN|Old Roan</item>
+        <item>OLD|Old Street</item>
+        <item>OLF|Oldfield Park</item>
+        <item>OLT|Olton</item>
+        <item>ORE|Ore</item>
+        <item>OMS|Ormskirk</item>
+        <item>ORP|Orpington</item>
+        <item>ORR|Orrell</item>
+        <item>OPK|Orrell Park</item>
+        <item>OTF|Otford</item>
+        <item>OUN|Oulton Broad North</item>
+        <item>OUS|Oulton Broad South</item>
+        <item>OUT|Outwood</item>
+        <item>OVE|Overpool</item>
+        <item>OVR|Overton</item>
+        <item>OXN|Oxenholme Lake District</item>
+        <item>OXF|Oxford</item>
+        <item>OXP|Oxford Parkway</item>
+        <item>OXS|Oxshott</item>
+        <item>OXT|Oxted</item>
+        <item>PDW|Paddock Wood</item>
+        <item>PDG|Padgate</item>
+        <item>PGN|Paignton</item>
+        <item>PCN|Paisley Canal</item>
+        <item>PYG|Paisley Gilmour Street</item>
+        <item>PYJ|Paisley St James</item>
+        <item>PAL|Palmers Green</item>
+        <item>PAN|Pangbourne</item>
+        <item>PNL|Pannal</item>
+        <item>PTF|Pantyffynnon</item>
+        <item>PAR|Par</item>
+        <item>PBL|Parbold</item>
+        <item>PKT|Park Street</item>
+        <item>PKS|Parkstone (Dorset)</item>
+        <item>PSN|Parson Street</item>
+        <item>PTK|Partick</item>
+        <item>PRN|Parton</item>
+        <item>PWY|Patchway</item>
+        <item>PAT|Patricroft</item>
+        <item>PTT|Patterton</item>
+        <item>PEA|Peartree</item>
+        <item>PMR|Peckham Rye</item>
+        <item>PEG|Pegswood</item>
+        <item>PEM|Pemberton</item>
+        <item>PBY|Pembrey &amp; Burry Port</item>
+        <item>PMB|Pembroke</item>
+        <item>PMD|Pembroke Dock</item>
+        <item>PNA|Penally</item>
+        <item>PEN|Penarth</item>
+        <item>PCD|Pencoed</item>
+        <item>PGM|Pengam</item>
+        <item>PNE|Penge East</item>
+        <item>PNW|Penge West</item>
+        <item>PHG|Penhelig</item>
+        <item>PNS|Penistone</item>
+        <item>PKG|Penkridge</item>
+        <item>PMW|Penmaenmawr</item>
+        <item>PNM|Penmere</item>
+        <item>PER|Penrhiwceiber</item>
+        <item>PRH|Penrhyndeudraeth</item>
+        <item>PNR|Penrith (North Lakes)</item>
+        <item>PYN|Penryn (Cornwall)</item>
+        <item>PES|Pensarn (Gwynedd)</item>
+        <item>PHR|Penshurst</item>
+        <item>PTB|Pentre-Bach</item>
+        <item>PNY|Pen-y-Bont</item>
+        <item>PNC|Penychain</item>
+        <item>PNF|Penyffordd</item>
+        <item>PNZ|Penzance</item>
+        <item>PRW|Perranwell</item>
+        <item>PRY|Perry Barr</item>
+        <item>PSH|Pershore</item>
+        <item>PTH|Perth</item>
+        <item>PBO|Peterborough</item>
+        <item>PTR|Petersfield</item>
+        <item>PET|Petts Wood</item>
+        <item>PEV|Pevensey &amp; Westham</item>
+        <item>PEB|Pevensey Bay</item>
+        <item>PEW|Pewsey</item>
+        <item>PIL|Pilning</item>
+        <item>PIN|Pinhoe</item>
+        <item>PIT|Pitlochry</item>
+        <item>PSE|Pitsea</item>
+        <item>PLS|Pleasington</item>
+        <item>PLK|Plockton</item>
+        <item>PLC|Pluckley</item>
+        <item>PLM|Plumley</item>
+        <item>PMP|Plumpton</item>
+        <item>PLU|Plumstead</item>
+        <item>PLY|Plymouth</item>
+        <item>POK|Pokesdown</item>
+        <item>PLG|Polegate</item>
+        <item>PSW|Polesworth</item>
+        <item>PWE|Pollokshaws East</item>
+        <item>PWW|Pollokshaws West</item>
+        <item>PLE|Pollokshields East</item>
+        <item>PLW|Pollokshields West</item>
+        <item>PMT|Polmont</item>
+        <item>POL|Polsloe Bridge</item>
+        <item>PON|Ponders End</item>
+        <item>PTD|Pontarddulais</item>
+        <item>PFR|Pontefract Baghill</item>
+        <item>PFM|Pontefract Monkhill</item>
+        <item>POT|Pontefract Tanshelf</item>
+        <item>PLT|Pontlottyn</item>
+        <item>PYC|Pontyclun</item>
+        <item>PYP|Pont-y-Pant</item>
+        <item>PPL|Pontypool &amp; New Inn</item>
+        <item>PPD|Pontypridd</item>
+        <item>POO|Poole</item>
+        <item>POP|Poppleton</item>
+        <item>PTG|Port Glasgow</item>
+        <item>PSL|Port Sunlight</item>
+        <item>PTA|Port Talbot Parkway</item>
+        <item>PTC|Portchester</item>
+        <item>POR|Porth</item>
+        <item>PTM|Porthmadog</item>
+        <item>PLN|Portlethen</item>
+        <item>PLD|Portslade</item>
+        <item>PMS|Portsmouth &amp; Southsea</item>
+        <item>PMA|Portsmouth Arms</item>
+        <item>PMH|Portsmouth Harbour</item>
+        <item>PPK|Possilpark &amp; Parkhouse</item>
+        <item>PBR|Potters Bar</item>
+        <item>PFY|Poulton-le-Fylde</item>
+        <item>PYT|Poynton</item>
+        <item>PRS|Prees</item>
+        <item>PSC|Prescot</item>
+        <item>PRT|Prestatyn</item>
+        <item>PRB|Prestbury</item>
+        <item>PRE|Preston (Lancs)</item>
+        <item>PRP|Preston Park</item>
+        <item>PST|Prestonpans</item>
+        <item>PRA|Prestwick International Airport</item>
+        <item>PTW|Prestwick Town</item>
+        <item>PTL|Priesthill &amp; Darnley</item>
+        <item>PRR|Princes Risborough</item>
+        <item>PRL|Prittlewell</item>
+        <item>PRU|Prudhoe</item>
+        <item>PUL|Pulborough</item>
+        <item>PFL|Purfleet</item>
+        <item>PUR|Purley</item>
+        <item>PUO|Purley Oaks</item>
+        <item>PUT|Putney</item>
+        <item>PWL|Pwllheli</item>
+        <item>PYE|Pye Corner</item>
+        <item>PYL|Pyle</item>
+        <item>QYD|Quakers Yard</item>
+        <item>QBR|Queenborough</item>
+        <item>QPK|Queens Park (Glasgow)</item>
+        <item>QPW|Queens Park (London)</item>
+        <item>QRP|Queens Road (Peckham)</item>
+        <item>QRB|Queenstown Road (Battersea)</item>
+        <item>QUI|Quintrell Downs</item>
+        <item>RDF|Radcliffe-on-Trent</item>
+        <item>RDT|Radlett</item>
+        <item>RAD|Radley</item>
+        <item>RDR|Radyr</item>
+        <item>RNF|Rainford</item>
+        <item>RNM|Rainham (Essex)</item>
+        <item>RAI|Rainham (Kent)</item>
+        <item>RNH|Rainhill</item>
+        <item>RAM|Ramsgate</item>
+        <item>RGW|Ramsgreave &amp; Wilpshire</item>
+        <item>RAN|Rannoch</item>
+        <item>RAU|Rauceby</item>
+        <item>RAV|Ravenglass for Eskdale</item>
+        <item>RVB|Ravensbourne</item>
+        <item>RVN|Ravensthorpe</item>
+        <item>RWC|Rawcliffe</item>
+        <item>RLG|Rayleigh</item>
+        <item>RAY|Raynes Park</item>
+        <item>RDG|Reading</item>
+        <item>RDW|Reading West</item>
+        <item>REC|Rectory Road</item>
+        <item>RDB|Redbridge</item>
+        <item>RBS|Redcar British Steel</item>
+        <item>RCC|Redcar Central</item>
+        <item>RCE|Redcar East</item>
+        <item>RDN|Reddish North</item>
+        <item>RDS|Reddish South</item>
+        <item>RDC|Redditch</item>
+        <item>RDH|Redhill</item>
+        <item>RDA|Redland</item>
+        <item>RED|Redruth</item>
+        <item>REE|Reedham (Norfolk)</item>
+        <item>RHM|Reedham (Surrey)</item>
+        <item>REI|Reigate</item>
+        <item>RTN|Renton</item>
+        <item>RET|Retford</item>
+        <item>RHI|Rhiwbina</item>
+        <item>RIA|Rhoose Cardiff International Airport</item>
+        <item>RHO|Rhosneigr</item>
+        <item>RHL|Rhyl</item>
+        <item>RHY|Rhymney</item>
+        <item>RHD|Ribblehead</item>
+        <item>RIL|Rice Lane</item>
+        <item>RMD|Richmond (London)</item>
+        <item>RIC|Rickmansworth</item>
+        <item>RDD|Riddlesdown</item>
+        <item>RID|Ridgmont</item>
+        <item>RDM|Riding Mill</item>
+        <item>RCA|Risca &amp; Pontymister</item>
+        <item>RIS|Rishton</item>
+        <item>RBR|Robertsbridge</item>
+        <item>ROB|Roby</item>
+        <item>RCD|Rochdale</item>
+        <item>ROC|Roche</item>
+        <item>RTR|Rochester</item>
+        <item>RFD|Rochford</item>
+        <item>RFY|Rock Ferry</item>
+        <item>ROG|Rogart</item>
+        <item>ROR|Rogerstone</item>
+        <item>ROL|Rolleston</item>
+        <item>RMB|Roman Bridge</item>
+        <item>RMF|Romford</item>
+        <item>RML|Romiley</item>
+        <item>ROM|Romsey</item>
+        <item>ROO|Roose</item>
+        <item>RSG|Rose Grove</item>
+        <item>RSH|Rose Hill Marple</item>
+        <item>ROS|Rosyth</item>
+        <item>RMC|Rotherham Central</item>
+        <item>ROE|Rotherhithe</item>
+        <item>RNR|Roughton Road</item>
+        <item>RLN|Rowlands Castle</item>
+        <item>ROW|Rowley Regis</item>
+        <item>RYB|Roy Bridge</item>
+        <item>RYN|Roydon</item>
+        <item>RYS|Royston</item>
+        <item>RUA|Ruabon</item>
+        <item>RUF|Rufford</item>
+        <item>RUG|Rugby</item>
+        <item>RGT|Rugeley Town</item>
+        <item>RGL|Rugeley Trent Valley</item>
+        <item>RUN|Runcorn</item>
+        <item>RUE|Runcorn East</item>
+        <item>RKT|Ruskington</item>
+        <item>RUS|Ruswarp</item>
+        <item>RUT|Rutherglen</item>
+        <item>RYD|Ryde Esplanade</item>
+        <item>RYP|Ryde Pier Head</item>
+        <item>RYR|Ryde St Johns Road</item>
+        <item>RRB|Ryder Brow</item>
+        <item>RYE|Rye (Sussex)</item>
+        <item>RYH|Rye House</item>
+        <item>SFD|Salford Central</item>
+        <item>SLD|Salford Crescent</item>
+        <item>SAF|Salfords (Surrey)</item>
+        <item>SAH|Salhouse</item>
+        <item>SAL|Salisbury</item>
+        <item>SAE|Saltaire</item>
+        <item>STS|Saltash</item>
+        <item>SLB|Saltburn</item>
+        <item>SLT|Saltcoats</item>
+        <item>SAM|Saltmarshe</item>
+        <item>SLW|Salwick</item>
+        <item>SMC|Sampford Courtenay</item>
+        <item>SNA|Sandal &amp; Agbrigg</item>
+        <item>SDB|Sandbach</item>
+        <item>SNR|Sanderstead</item>
+        <item>SDL|Sandhills</item>
+        <item>SND|Sandhurst (Berks)</item>
+        <item>SDG|Sandling</item>
+        <item>SAN|Sandown</item>
+        <item>SDP|Sandplace</item>
+        <item>SAD|Sandwell &amp; Dudley</item>
+        <item>SDW|Sandwich</item>
+        <item>SDY|Sandy</item>
+        <item>SNK|Sankey for Penketh</item>
+        <item>SQH|Sanquhar</item>
+        <item>SRR|Sarn</item>
+        <item>SDF|Saundersfoot</item>
+        <item>SDR|Saunderton</item>
+        <item>SAW|Sawbridgeworth</item>
+        <item>SXY|Saxilby</item>
+        <item>SAX|Saxmundham</item>
+        <item>SCA|Scarborough</item>
+        <item>SCT|Scotscalder</item>
+        <item>SCH|Scotstounhill</item>
+        <item>SCU|Scunthorpe</item>
+        <item>SML|Sea Mills</item>
+        <item>SEF|Seaford (Sussex)</item>
+        <item>SFL|Seaforth &amp; Litherland</item>
+        <item>SEA|Seaham</item>
+        <item>SEM|Seamer</item>
+        <item>SSC|Seascale</item>
+        <item>SEC|Seaton Carew</item>
+        <item>SRG|Seer Green &amp; Jordans</item>
+        <item>SBY|Selby</item>
+        <item>SRS|Selhurst</item>
+        <item>SEL|Sellafield</item>
+        <item>SEG|Selling</item>
+        <item>SLY|Selly Oak</item>
+        <item>SET|Settle</item>
+        <item>SVK|Seven Kings</item>
+        <item>SVS|Seven Sisters</item>
+        <item>SEV|Sevenoaks</item>
+        <item>SVB|Severn Beach</item>
+        <item>STJ|Severn Tunnel Junction</item>
+        <item>SDE|Shadwell</item>
+        <item>SFR|Shalford (Surrey)</item>
+        <item>SHN|Shanklin</item>
+        <item>SFI|Shawfair</item>
+        <item>SHW|Shawford</item>
+        <item>SHL|Shawlands</item>
+        <item>SSS|Sheerness-on-Sea</item>
+        <item>SHF|Sheffield</item>
+        <item>SED|Shelford (Cambs)</item>
+        <item>SNF|Shenfield</item>
+        <item>SEN|Shenstone</item>
+        <item>SPB|Shepherd's Bush</item>
+        <item>SPH|Shepherds Well</item>
+        <item>SPY|Shepley</item>
+        <item>SHP|Shepperton</item>
+        <item>STH|Shepreth</item>
+        <item>SHE|Sherborne</item>
+        <item>SIE|Sherburn-in-Elmet</item>
+        <item>SHM|Sheringham</item>
+        <item>SLS|Shettleston</item>
+        <item>SDM|Shieldmuir</item>
+        <item>SFN|Shifnal</item>
+        <item>SHD|Shildon</item>
+        <item>SHI|Shiplake</item>
+        <item>SHY|Shipley (Yorks)</item>
+        <item>SPP|Shippea Hill</item>
+        <item>SIP|Shipton</item>
+        <item>SHB|Shirebrook</item>
+        <item>SHH|Shirehampton</item>
+        <item>SRO|Shireoaks</item>
+        <item>SRL|Shirley</item>
+        <item>SRY|Shoeburyness</item>
+        <item>SHO|Sholing</item>
+        <item>SDC|Shoreditch High Street</item>
+        <item>SEH|Shoreham (Kent)</item>
+        <item>SSE|Shoreham-by-Sea</item>
+        <item>SRT|Shortlands</item>
+        <item>SHT|Shotton</item>
+        <item>SHS|Shotts</item>
+        <item>SHR|Shrewsbury</item>
+        <item>SID|Sidcup</item>
+        <item>SIL|Sileby</item>
+        <item>SIC|Silecroft</item>
+        <item>SLK|Silkstone Common</item>
+        <item>SLV|Silver Street</item>
+        <item>SVR|Silverdale</item>
+        <item>SIN|Singer</item>
+        <item>SIT|Sittingbourne</item>
+        <item>SKG|Skegness</item>
+        <item>SKE|Skewen</item>
+        <item>SKI|Skipton</item>
+        <item>SGR|Slade Green</item>
+        <item>SWT|Slaithwaite</item>
+        <item>SLA|Slateford</item>
+        <item>SLR|Sleaford</item>
+        <item>SLH|Sleights</item>
+        <item>SLO|Slough</item>
+        <item>SMA|Small Heath</item>
+        <item>SAB|Smallbrook Junction</item>
+        <item>SGB|Smethwick Galton Bridge</item>
+        <item>SMR|Smethwick Rolfe Street</item>
+        <item>SMB|Smithy Bridge</item>
+        <item>SNI|Snaith</item>
+        <item>SDA|Snodland</item>
+        <item>SWO|Snowdown</item>
+        <item>SOR|Sole Street</item>
+        <item>SOL|Solihull</item>
+        <item>SYT|Somerleyton</item>
+        <item>SAT|South Acton</item>
+        <item>SBK|South Bank</item>
+        <item>SBM|South Bermondsey</item>
+        <item>SCY|South Croydon</item>
+        <item>SES|South Elmsall</item>
+        <item>SGN|South Greenford</item>
+        <item>SGL|South Gyle</item>
+        <item>SOH|South Hampstead</item>
+        <item>SOK|South Kenton</item>
+        <item>SMO|South Merton</item>
+        <item>SOM|South Milford</item>
+        <item>SRU|South Ruislip</item>
+        <item>STO|South Tottenham</item>
+        <item>SWS|South Wigston</item>
+        <item>SOF|South Woodham Ferrers</item>
+        <item>STL|Southall</item>
+        <item>SOA|Southampton Airport Parkway</item>
+        <item>SOU|Southampton Central</item>
+        <item>SOB|Southbourne</item>
+        <item>SBU|Southbury</item>
+        <item>SEE|Southease</item>
+        <item>SIA|Southend Airport</item>
+        <item>SOC|Southend Central</item>
+        <item>SOE|Southend East</item>
+        <item>SOV|Southend Victoria</item>
+        <item>SMN|Southminster</item>
+        <item>SOP|Southport</item>
+        <item>SWK|Southwick</item>
+        <item>SOW|Sowerby Bridge</item>
+        <item>SPA|Spalding</item>
+        <item>SBR|Spean Bridge</item>
+        <item>SPI|Spital</item>
+        <item>SPO|Spondon</item>
+        <item>SPN|Spooner Row</item>
+        <item>SRI|Spring Road</item>
+        <item>SPR|Springburn</item>
+        <item>SPF|Springfield</item>
+        <item>SQU|Squires Gate</item>
+        <item>SAA|St Albans Abbey</item>
+        <item>SAC|St Albans City</item>
+        <item>SAR|St Andrews Road</item>
+        <item>SAS|St Annes-on-Sea</item>
+        <item>SAU|St Austell</item>
+        <item>SBS|St Bees</item>
+        <item>SBF|St Budeaux Ferry Road</item>
+        <item>SBV|St Budeaux Victoria Road</item>
+        <item>SCR|St Columb Road</item>
+        <item>SDN|St Denys</item>
+        <item>SER|St Erth</item>
+        <item>SGM|St Germans</item>
+        <item>SNH|St Helens Central</item>
+        <item>SHJ|St Helens Junction</item>
+        <item>SIH|St Helier (Surrey)</item>
+        <item>SIV|St Ives (Cornwall)</item>
+        <item>SJP|St James Park (Exeter)</item>
+        <item>SJS|St James Street (Walthamstow)</item>
+        <item>SAJ|St Johns (London)</item>
+        <item>SKN|St Keyne Wishing Well Halt</item>
+        <item>SLQ|St Leonards Warrior Square</item>
+        <item>SMT|St Margarets (Herts)</item>
+        <item>SMG|St Margarets (London)</item>
+        <item>SMY|St Mary Cray</item>
+        <item>STM|St Michaels</item>
+        <item>SNO|St Neots</item>
+        <item>STA|Stafford</item>
+        <item>SNS|Staines</item>
+        <item>SLL|Stallingborough</item>
+        <item>SYB|Stalybridge</item>
+        <item>SMD|Stamford (Lincs)</item>
+        <item>SMH|Stamford Hill</item>
+        <item>SFO|Stanford-le-Hope</item>
+        <item>SNT|Stanlow &amp; Thornton</item>
+        <item>SSD|Stansted Airport</item>
+        <item>SST|Stansted Mountfitchet</item>
+        <item>SPU|Staplehurst</item>
+        <item>SRD|Stapleton Road</item>
+        <item>SBE|Starbeck</item>
+        <item>SCS|Starcross</item>
+        <item>SVL|Staveley (Cumbria)</item>
+        <item>SCF|Stechford</item>
+        <item>SON|Steeton &amp; Silsden</item>
+        <item>SPS|Stepps</item>
+        <item>SVG|Stevenage</item>
+        <item>STV|Stevenston</item>
+        <item>SWR|Stewartby</item>
+        <item>STT|Stewarton</item>
+        <item>STG|Stirling</item>
+        <item>SPT|Stockport</item>
+        <item>SKS|Stocksfield</item>
+        <item>SSM|Stocksmoor</item>
+        <item>STK|Stockton</item>
+        <item>SKM|Stoke Mandeville</item>
+        <item>SKW|Stoke Newington</item>
+        <item>SOT|Stoke-on-Trent</item>
+        <item>SNE|Stone (Staffs)</item>
+        <item>SCG|Stone Crossing</item>
+        <item>SBP|Stonebridge Park</item>
+        <item>SOG|Stonegate</item>
+        <item>STN|Stonehaven</item>
+        <item>SHU|Stonehouse</item>
+        <item>SNL|Stoneleigh</item>
+        <item>SBJ|Stourbridge Junction</item>
+        <item>SBT|Stourbridge Town</item>
+        <item>SOI|Stow</item>
+        <item>SMK|Stowmarket</item>
+        <item>STR|Stranraer</item>
+        <item>SRA|Stratford (London)</item>
+        <item>SFA|Stratford International</item>
+        <item>SAV|Stratford-upon-Avon</item>
+        <item>STY|Stratford-upon-Avon Parkway</item>
+        <item>STC|Strathcarron</item>
+        <item>STW|Strawberry Hill</item>
+        <item>STE|Streatham (Greater London)</item>
+        <item>SRC|Streatham Common</item>
+        <item>SRH|Streatham Hill</item>
+        <item>SHC|Streethouse</item>
+        <item>SRN|Strines</item>
+        <item>STF|Stromeferry</item>
+        <item>SOO|Strood (Kent)</item>
+        <item>STD|Stroud (Gloucs)</item>
+        <item>STU|Sturry</item>
+        <item>SYA|Styal</item>
+        <item>SUD|Sudbury &amp; Harrow Road</item>
+        <item>SUY|Sudbury (Suffolk)</item>
+        <item>SDH|Sudbury Hill Harrow</item>
+        <item>SUG|Sugar Loaf</item>
+        <item>SUM|Summerston</item>
+        <item>SUU|Sunbury</item>
+        <item>SUN|Sunderland</item>
+        <item>SUP|Sundridge Park</item>
+        <item>SNG|Sunningdale</item>
+        <item>SNY|Sunnymeads</item>
+        <item>SUR|Surbiton</item>
+        <item>SQE|Surrey Quays</item>
+        <item>SUO|Sutton (Surrey)</item>
+        <item>SUT|Sutton Coldfield</item>
+        <item>SUC|Sutton Common</item>
+        <item>SPK|Sutton Parkway</item>
+        <item>SWL|Swale</item>
+        <item>SAY|Swanley</item>
+        <item>SWM|Swanscombe</item>
+        <item>SWA|Swansea</item>
+        <item>SNW|Swanwick</item>
+        <item>SWY|Sway</item>
+        <item>SWG|Swaythling</item>
+        <item>SWD|Swinderby</item>
+        <item>SWI|Swindon (Wilts)</item>
+        <item>SWE|Swineshead</item>
+        <item>SNN|Swinton (Manchester)</item>
+        <item>SWN|Swinton (South Yorks)</item>
+        <item>SYD|Sydenham (London)</item>
+        <item>SYH|Sydenham Hill</item>
+        <item>SYL|Syon Lane</item>
+        <item>SYS|Syston</item>
+        <item>TAC|Tackley</item>
+        <item>TAD|Tadworth</item>
+        <item>TAF|Taffs Well</item>
+        <item>TAI|Tain</item>
+        <item>TAL|Talsarnau</item>
+        <item>TLB|Talybont</item>
+        <item>TLC|Tal-y-Cafn</item>
+        <item>TAB|Tame Bridge Parkway</item>
+        <item>TAM|Tamworth</item>
+        <item>TAP|Taplow</item>
+        <item>TAT|Tattenham Corner</item>
+        <item>TAU|Taunton</item>
+        <item>TAY|Taynuilt</item>
+        <item>TED|Teddington</item>
+        <item>TEA|Tees-side Airport</item>
+        <item>TGM|Teignmouth</item>
+        <item>TFC|Telford Central</item>
+        <item>TMC|Templecombe</item>
+        <item>TEN|Tenby</item>
+        <item>TEY|Teynham</item>
+        <item>THD|Thames Ditton</item>
+        <item>THA|Thatcham</item>
+        <item>THH|Thatto Heath</item>
+        <item>THW|The Hawthorns</item>
+        <item>TLK|The Lakes (Warks)</item>
+        <item>THE|Theale</item>
+        <item>TEO|Theobalds Grove</item>
+        <item>TTF|Thetford</item>
+        <item>THI|Thirsk</item>
+        <item>TBY|Thornaby</item>
+        <item>TNN|Thorne North</item>
+        <item>TNS|Thorne South</item>
+        <item>THO|Thornford</item>
+        <item>THB|Thornliebank</item>
+        <item>TNA|Thornton Abbey</item>
+        <item>TTH|Thornton Heath</item>
+        <item>THT|Thorntonhall</item>
+        <item>TPB|Thorpe Bay</item>
+        <item>TPC|Thorpe Culvert</item>
+        <item>TLS|Thorpe-le-Soken</item>
+        <item>TBD|Three Bridges</item>
+        <item>TOK|Three Oaks</item>
+        <item>THU|Thurgarton</item>
+        <item>THC|Thurnscoe</item>
+        <item>THS|Thurso</item>
+        <item>TRS|Thurston</item>
+        <item>TIL|Tilbury Town</item>
+        <item>THL|Tile Hill</item>
+        <item>TLH|Tilehurst</item>
+        <item>TIP|Tipton</item>
+        <item>TIR|Tir-Phil</item>
+        <item>TIS|Tisbury</item>
+        <item>TVP|Tiverton Parkway</item>
+        <item>TOD|Todmorden</item>
+        <item>TOL|Tolworth</item>
+        <item>TPN|Ton Pentre</item>
+        <item>TON|Tonbridge</item>
+        <item>TDU|Tondu</item>
+        <item>TNF|Tonfanau</item>
+        <item>TNP|Tonypandy</item>
+        <item>TOO|Tooting</item>
+        <item>TOP|Topsham</item>
+        <item>TQY|Torquay</item>
+        <item>TRR|Torre</item>
+        <item>TOT|Totnes</item>
+        <item>TOM|Tottenham Hale</item>
+        <item>TTN|Totton</item>
+        <item>TWN|Town Green</item>
+        <item>TRA|Trafford Park</item>
+        <item>TRF|Trefforest</item>
+        <item>TRE|Trefforest Estate</item>
+        <item>TRH|Trehafod</item>
+        <item>TRB|Treherbert</item>
+        <item>TRY|Treorchy</item>
+        <item>TRM|Trimley</item>
+        <item>TRI|Tring</item>
+        <item>TRD|Troed-y-rhiw</item>
+        <item>TRN|Troon</item>
+        <item>TRO|Trowbridge</item>
+        <item>TRU|Truro</item>
+        <item>TUL|Tulloch</item>
+        <item>TUH|Tulse Hill</item>
+        <item>TBW|Tunbridge Wells</item>
+        <item>TUR|Turkey Street</item>
+        <item>TUT|Tutbury &amp; Hatton</item>
+        <item>TWB|Tweedbank</item>
+        <item>TWI|Twickenham</item>
+        <item>TWY|Twyford</item>
+        <item>TYC|Ty Croes</item>
+        <item>TGS|Ty Glas</item>
+        <item>TYG|Tygwyn</item>
+        <item>TYL|Tyndrum Lower</item>
+        <item>TYS|Tyseley</item>
+        <item>TYW|Tywyn</item>
+        <item>UCK|Uckfield</item>
+        <item>UDD|Uddingston</item>
+        <item>ULC|Ulceby</item>
+        <item>ULL|Ulleskelf</item>
+        <item>ULV|Ulverston</item>
+        <item>UMB|Umberleigh</item>
+        <item>UNI|University (Birmingham)</item>
+        <item>UHA|Uphall</item>
+        <item>UPL|Upholland</item>
+        <item>UPM|Upminster</item>
+        <item>UPH|Upper Halliford</item>
+        <item>UHL|Upper Holloway</item>
+        <item>UTY|Upper Tyndrum</item>
+        <item>UWL|Upper Warlingham</item>
+        <item>UPT|Upton (Merseyside)</item>
+        <item>UPW|Upwey</item>
+        <item>URM|Urmston</item>
+        <item>UTT|Uttoxeter</item>
+        <item>VAL|Valley</item>
+        <item>VXH|Vauxhall</item>
+        <item>VIR|Virginia Water</item>
+        <item>WDO|Waddon</item>
+        <item>WAD|Wadhurst</item>
+        <item>WFL|Wainfleet</item>
+        <item>WKK|Wakefield Kirkgate</item>
+        <item>WKF|Wakefield Westgate</item>
+        <item>WKD|Walkden</item>
+        <item>WLG|Wallasey Grove Road</item>
+        <item>WLV|Wallasey Village</item>
+        <item>WLT|Wallington</item>
+        <item>WAF|Wallyford</item>
+        <item>WAM|Walmer</item>
+        <item>WSL|Walsall</item>
+        <item>WDN|Walsden</item>
+        <item>WLC|Waltham Cross</item>
+        <item>WHC|Walthamstow Central</item>
+        <item>WMW|Walthamstow Queen's Road</item>
+        <item>WAO|Walton (Merseyside)</item>
+        <item>WAL|Walton-on-Thames</item>
+        <item>WON|Walton-on-the-Naze</item>
+        <item>WAN|Wanborough</item>
+        <item>WSW|Wandsworth Common</item>
+        <item>WWR|Wandsworth Road</item>
+        <item>WNT|Wandsworth Town</item>
+        <item>WNP|Wanstead Park</item>
+        <item>WPE|Wapping</item>
+        <item>WBL|Warblington</item>
+        <item>WAR|Ware (Herts)</item>
+        <item>WRM|Wareham (Dorset)</item>
+        <item>WGV|Wargrave</item>
+        <item>WMN|Warminster</item>
+        <item>WNH|Warnham</item>
+        <item>WBQ|Warrington Bank Quay</item>
+        <item>WAC|Warrington Central</item>
+        <item>WRW|Warwick</item>
+        <item>WRP|Warwick Parkway</item>
+        <item>WTO|Water Orton</item>
+        <item>WBC|Waterbeach</item>
+        <item>WTR|Wateringbury</item>
+        <item>WLO|Waterloo (Merseyside)</item>
+        <item>WFH|Watford High Street</item>
+        <item>WFJ|Watford Junction</item>
+        <item>WFN|Watford North</item>
+        <item>WTG|Watlington</item>
+        <item>WAS|Watton-at-Stone</item>
+        <item>WNG|Waun-Gron Park</item>
+        <item>WAV|Wavertree Technology Park</item>
+        <item>WED|Wedgwood</item>
+        <item>WEE|Weeley</item>
+        <item>WET|Weeton</item>
+        <item>WMG|Welham Green</item>
+        <item>WLI|Welling</item>
+        <item>WEL|Wellingborough</item>
+        <item>WLN|Wellington (Shropshire)</item>
+        <item>WLP|Welshpool</item>
+        <item>WGC|Welwyn Garden City</item>
+        <item>WLW|Welwyn North</item>
+        <item>WEM|Wem</item>
+        <item>WMB|Wembley Central</item>
+        <item>WCX|Wembley Stadium</item>
+        <item>WMS|Wemyss Bay</item>
+        <item>WND|Wendover</item>
+        <item>WNN|Wennington</item>
+        <item>WSA|West Allerton</item>
+        <item>WBP|West Brompton</item>
+        <item>WBY|West Byfleet</item>
+        <item>WCL|West Calder</item>
+        <item>WCY|West Croydon</item>
+        <item>WDT|West Drayton</item>
+        <item>WDU|West Dulwich</item>
+        <item>WEA|West Ealing</item>
+        <item>WEH|West Ham</item>
+        <item>WHD|West Hampstead</item>
+        <item>WHP|West Hampstead Thameslink</item>
+        <item>WHR|West Horndon</item>
+        <item>WKB|West Kilbride</item>
+        <item>WKI|West Kirby</item>
+        <item>WMA|West Malling</item>
+        <item>WNW|West Norwood</item>
+        <item>WRU|West Ruislip</item>
+        <item>WRN|West Runton</item>
+        <item>WLD|West St Leonards</item>
+        <item>WSU|West Sutton</item>
+        <item>WWI|West Wickham</item>
+        <item>WWO|West Worthing</item>
+        <item>WSB|Westbury (Wilts)</item>
+        <item>WCF|Westcliff</item>
+        <item>WCB|Westcombe Park</item>
+        <item>WHA|Westenhanger</item>
+        <item>WTA|Wester Hailes</item>
+        <item>WFI|Westerfield</item>
+        <item>WES|Westerton</item>
+        <item>WGA|Westgate-on-Sea</item>
+        <item>WHG|Westhoughton</item>
+        <item>WNM|Weston Milton</item>
+        <item>WSM|Weston-super-Mare</item>
+        <item>WRL|Wetheral</item>
+        <item>WYB|Weybridge</item>
+        <item>WEY|Weymouth</item>
+        <item>WBR|Whaley Bridge</item>
+        <item>WHE|Whalley (Lancs)</item>
+        <item>WTS|Whatstandwell</item>
+        <item>WFF|Whifflet</item>
+        <item>WHM|Whimple</item>
+        <item>WNL|Whinhill</item>
+        <item>WHN|Whiston</item>
+        <item>WTB|Whitby</item>
+        <item>WHT|Whitchurch (Cardiff)</item>
+        <item>WCH|Whitchurch (Hants)</item>
+        <item>WTC|Whitchurch (Shropshire)</item>
+        <item>WHL|White Hart Lane</item>
+        <item>WNY|White Notley</item>
+        <item>ZLW|Whitechapel</item>
+        <item>WCR|Whitecraigs</item>
+        <item>WTH|Whitehaven</item>
+        <item>WTL|Whitland</item>
+        <item>WBD|Whitley Bridge</item>
+        <item>WTE|Whitlocks End</item>
+        <item>WHI|Whitstable</item>
+        <item>WLE|Whittlesea</item>
+        <item>WLF|Whittlesford Parkway</item>
+        <item>WTN|Whitton (London)</item>
+        <item>WWL|Whitwell (Derbyshire)</item>
+        <item>WHY|Whyteleafe</item>
+        <item>WHS|Whyteleafe South</item>
+        <item>WCK|Wick</item>
+        <item>WIC|Wickford</item>
+        <item>WCM|Wickham Market</item>
+        <item>WDD|Widdrington</item>
+        <item>WID|Widnes</item>
+        <item>WMR|Widney Manor</item>
+        <item>WGN|Wigan North Western</item>
+        <item>WGW|Wigan Wallgate</item>
+        <item>WGT|Wigton</item>
+        <item>WMI|Wildmill</item>
+        <item>WIJ|Willesden Junction</item>
+        <item>WLM|Williamwood</item>
+        <item>WIL|Willington</item>
+        <item>WMC|Wilmcote</item>
+        <item>WML|Wilmslow</item>
+        <item>WNE|Wilnecote (Staffs)</item>
+        <item>WIM|Wimbledon</item>
+        <item>WBO|Wimbledon Chase</item>
+        <item>WSE|Winchelsea</item>
+        <item>WIN|Winchester</item>
+        <item>WNF|Winchfield</item>
+        <item>WIH|Winchmore Hill</item>
+        <item>WDM|Windermere</item>
+        <item>WNC|Windsor &amp; Eton Central</item>
+        <item>WNR|Windsor &amp; Eton Riverside</item>
+        <item>WNS|Winnersh</item>
+        <item>WTI|Winnersh Triangle</item>
+        <item>WSF|Winsford</item>
+        <item>WSH|Wishaw</item>
+        <item>WTM|Witham</item>
+        <item>WTY|Witley</item>
+        <item>WTT|Witton (West Midlands)</item>
+        <item>WVF|Wivelsfield</item>
+        <item>WIV|Wivenhoe</item>
+        <item>WOB|Woburn Sands</item>
+        <item>WOK|Woking</item>
+        <item>WKM|Wokingham</item>
+        <item>WOH|Woldingham</item>
+        <item>WVH|Wolverhampton</item>
+        <item>WOL|Wolverton</item>
+        <item>WOM|Wombwell</item>
+        <item>WDE|Wood End</item>
+        <item>WST|Wood Street</item>
+        <item>WDB|Woodbridge</item>
+        <item>WGR|Woodgrange Park</item>
+        <item>WDL|Woodhall</item>
+        <item>WDH|Woodhouse</item>
+        <item>WDS|Woodlesford</item>
+        <item>WLY|Woodley</item>
+        <item>WME|Woodmansterne</item>
+        <item>WSR|Woodsmoor</item>
+        <item>WOO|Wool</item>
+        <item>WLS|Woolston</item>
+        <item>WWA|Woolwich Arsenal</item>
+        <item>WWD|Woolwich Dockyard</item>
+        <item>WWW|Wootton Wawen</item>
+        <item>WOF|Worcester Foregate Street</item>
+        <item>WCP|Worcester Park</item>
+        <item>WOS|Worcester Shrub Hill</item>
+        <item>WKG|Workington</item>
+        <item>WRK|Worksop</item>
+        <item>WOR|Worle</item>
+        <item>WPL|Worplesdon</item>
+        <item>WRT|Worstead</item>
+        <item>WRH|Worthing</item>
+        <item>WRB|Wrabness</item>
+        <item>WRY|Wraysbury</item>
+        <item>WRE|Wrenbury</item>
+        <item>WRS|Wressle</item>
+        <item>WXC|Wrexham Central</item>
+        <item>WRX|Wrexham General</item>
+        <item>WYE|Wye</item>
+        <item>WYM|Wylam</item>
+        <item>WYL|Wylde Green</item>
+        <item>WMD|Wymondham</item>
+        <item>WYT|Wythall</item>
+        <item>YAL|Yalding</item>
+        <item>YRD|Yardley Wood</item>
+        <item>YRM|Yarm</item>
+        <item>YAE|Yate</item>
+        <item>YAT|Yatton</item>
+        <item>YEO|Yeoford</item>
+        <item>YVJ|Yeovil Junction</item>
+        <item>YVP|Yeovil Pen Mill</item>
+        <item>YET|Yetminster</item>
+        <item>YNW|Ynyswen</item>
+        <item>YOK|Yoker</item>
+        <item>YRK|York</item>
+        <item>YRT|Yorton</item>
+        <item>YSM|Ystrad Mynach</item>
+        <item>YSR|Ystrad Rhondda</item>
+
     </string-array>
 </resources>

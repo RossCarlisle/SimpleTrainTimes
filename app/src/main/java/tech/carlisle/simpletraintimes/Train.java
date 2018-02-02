@@ -1,5 +1,11 @@
 package tech.carlisle.simpletraintimes;
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Comparator;
+import java.util.Date;
+
 /**
  * Created by Ross on 27/01/2018.
  */
@@ -43,4 +49,23 @@ public class Train {
     public void setArrival(String arrival) {
         this.arrival = arrival;
     }
+
+    public static Comparator<Train> trainComparator = new Comparator<Train>() {
+
+        public int compare(Train trainOne, Train trainTwo) {
+
+            DateFormat dateFormat = new SimpleDateFormat("hh:mm");
+            try {
+                Date trainOneDate = dateFormat.parse(trainOne.getArrival());
+                Date trainTwoDate = dateFormat.parse(trainTwo.getArrival());
+
+                return trainOneDate.compareTo(trainTwoDate);
+
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+
+            return 0;
+        }};
+
 }

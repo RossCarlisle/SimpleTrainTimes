@@ -1,30 +1,29 @@
 package tech.carlisle.simpletraintimes;
 
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
-import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class StationsViewActivity extends AppCompatActivity {
@@ -34,12 +33,12 @@ public class StationsViewActivity extends AppCompatActivity {
     private RecyclerView trainRecyclerView;
     private TrainAdapter trainAdapter;
     private RecyclerView.LayoutManager trainLayoutManager;
-    public String arrival;
-    public List<String> arrivalList = new ArrayList<>();
+    public static RequestQueue queue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        //Initialise progress dialog and show
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Fetching data");
         progressDialog.setCancelable(false);
@@ -48,111 +47,96 @@ public class StationsViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stations_view);
 
+        //Initialise RecyclerView components
         trainRecyclerView = (RecyclerView) findViewById(R.id.trainRecyclerView);
-        // use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
         trainRecyclerView.setHasFixedSize(true);
-        // use a linear layout manager
         trainLayoutManager = new LinearLayoutManager(this);
         trainRecyclerView.setLayoutManager(trainLayoutManager);
-        // specify an adapter (see also next example)
         trainAdapter = new TrainAdapter(trainList);
         trainRecyclerView.setAdapter(trainAdapter);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(trainRecyclerView.getContext(),
+                1);
+        trainRecyclerView.addItemDecoration(dividerItemDecoration);
 
+        //Grab user input data from Intent, thrown from MainActivity class
         Bundle extras = getIntent().getExtras();
-
-        String fromStationName = extras.getString("fromStationName");
-        String toStationName = extras.getString("toStationName");
-        String fromStationCode = extras.getString("fromStationCode");
+        final String fromStationName = extras.getString("fromStationName");
+        final String toStationName = extras.getString("toStationName");
+        final String fromStationCode = "DMR";//extras.getString("fromStationCode");
         final String toStationCode = "GLQ";//extras.getString("toStationCode");
 
+        setStationTextViews(fromStationName, toStationName);
         final TextView mTextView = findViewById(R.id.infoTextView);
-        final TextView fromStationTextView = findViewById(R.id.fromStationView);
-        final TextView toStationTextView = findViewById(R.id.toStationView);
-        fromStationTextView.setText(fromStationName);
-        toStationTextView.setText(toStationName);
 
         // Instantiate the RequestQueue.
-        RequestQueue queue = Volley.newRequestQueue(this);
-        final String url ="https://transportapi.com/v3/uk/train/station/DMR/2018-01-25/12:53/timetable.json?app_id=2dda32f1&app_key=dfe90240b0786883c8a523955c671a83&calling_at=GLQ&train_status=passenger";
+        queue = Volley.newRequestQueue(this);
+        String url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/live.json?app_id=2dda32f1&app_key=dfe90240b0786883c8a523955c671a83&calling_at=" + toStationCode + "&darwin=false&train_status=passenger";
 
-        // Request a string response from the provided URL.
-        JsonObjectRequest jsObjRequest = new JsonObjectRequest
-                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+        JsonObjectRequest jsObjRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        try {
+            @Override
+            public void onResponse(JSONObject response) {
 
-                            JSONArray trainDepartures = response.getJSONObject("departures").getJSONArray("all");
+                try {
 
-                            for(int i = 0; i < trainDepartures.length(); i++) {
+                    final JSONArray trainDepartures = response.getJSONObject("departures").getJSONArray("all");
+                    for(int i = 0; i<trainDepartures.length();i++) {
 
-                                String serviceUrl = trainDepartures.getJSONObject(i).getJSONObject("service_timetable").get("id").toString();
-                                getServiceJSON(serviceUrl, new VolleyCallback() {
-                                    @Override
-                                    public void onSuccess(JSONObject response) {
+                        String serviceUrl = trainDepartures.getJSONObject(i).getJSONObject("service_timetable").get("id").toString();
+                        final int finalI = i;
+                        getServiceJSON(serviceUrl, new VolleyCallback() {
+                            @Override
+                            public void onSuccess(JSONObject response) {
 
-                                        try {
-                                            JSONArray trainStops = response.getJSONArray("stops");
-                                            for (int x = 0; x < trainStops.length(); x++) {
+                                try {
 
-                                                if (trainStops.getJSONObject(x).get("station_code").toString().equals("GLQ")) {
+                                    JSONArray trainStops = response.getJSONArray("stops");
 
-                                                    arrivalList.add(trainStops.getJSONObject(x).get("aimed_arrival_time").toString());
-                                                    mTextView.setText(mTextView.getText() + " " + trainStops.getJSONObject(x).get("aimed_arrival_time"));
-                                                    break;
+                                    for (int x = 0; x < trainStops.length(); x++) {
 
-                                                }
-                                            }
+                                        if (trainStops.getJSONObject(x).get("station_code").toString().equals(toStationCode)) {
 
+                                            Train train = new Train(trainDepartures.getJSONObject(finalI).get("aimed_departure_time").toString(), trainDepartures.getJSONObject(finalI).get("platform").toString(), trainStops.getJSONObject(x).get("aimed_arrival_time").toString());
+                                            trainList.add(train);
+                                            break;
 
-                                        } catch (JSONException e) {
-                                            e.printStackTrace();
                                         }
                                     }
-                                });
 
-                                //String serviceID = trainDepartures.getJSONObject(i).get("service_timetable").toString();
-                                Train train = new Train(trainDepartures.getJSONObject(i).get("aimed_departure_time").toString(), trainDepartures.getJSONObject(i).get("platform").toString(), "placeholder");
-                                trainList.add(train);
+                                Collections.sort(trainList, Train.trainComparator);
                                 trainAdapter.notifyDataSetChanged();
+                                progressDialog.dismiss();
+
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
                             }
-
-                            progressDialog.dismiss();
-
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
+                        });
                     }
-                }, new Response.ErrorListener() {
 
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        // TODO Auto-generated method stub
-                        mTextView.setText("Network error");
-                    }
-                });
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
 
-        // Add the request to the RequestQueue.
-        for(int i = 0; i < arrivalList.size(); i++) {
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                progressDialog.dismiss();
+            }
+        });
 
-            trainList.get(i).setArrival(arrivalList.get(i));
-
-        }
-
-
-        trainAdapter.notifyDataSetChanged();
         queue.add(jsObjRequest);
-
-
 
     }
 
-    public String findArrivalTime(){
+    private void setStationTextViews(String fromStation, String toStation) {
 
+        TextView fromStationTextView = findViewById(R.id.fromStationView);
+        TextView toStationTextView = findViewById(R.id.toStationView);
+        fromStationTextView.setText(fromStation);
+        toStationTextView.setText(toStation);
 
-        return "x";
     }
 
     public void getServiceJSON(String serviceUrl, final VolleyCallback callback) {
@@ -168,15 +152,13 @@ public class StationsViewActivity extends AppCompatActivity {
                     }
                 }, new Response.ErrorListener() {
 
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
+            @Override
+            public void onErrorResponse(VolleyError error) {
 
-                    }
-                });
+            }
 
-        Volley.newRequestQueue(getApplicationContext()).add(jsonObjReq);
+        });
+
+        queue.add(jsonObjReq);
     }
-
-
-
 }
