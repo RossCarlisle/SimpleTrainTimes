@@ -1,15 +1,13 @@
 package tech.carlisle.simpletraintimes;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
+import android.support.v7.widget.Toolbar;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -33,7 +31,7 @@ public class StationsViewActivity extends AppCompatActivity {
     private RecyclerView trainRecyclerView;
     private TrainAdapter trainAdapter;
     private RecyclerView.LayoutManager trainLayoutManager;
-    public static RequestQueue queue;
+    private RequestQueue queue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,31 +44,33 @@ public class StationsViewActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stations_view);
+        setupToolbar();
 
         //Initialise RecyclerView components
-        trainRecyclerView = (RecyclerView) findViewById(R.id.trainRecyclerView);
+        trainRecyclerView = findViewById(R.id.trainRecyclerView);
         trainRecyclerView.setHasFixedSize(true);
         trainLayoutManager = new LinearLayoutManager(this);
         trainRecyclerView.setLayoutManager(trainLayoutManager);
         trainAdapter = new TrainAdapter(trainList);
         trainRecyclerView.setAdapter(trainAdapter);
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(trainRecyclerView.getContext(),
-                1);
+
+        //Add divider to RecyclerView
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(trainRecyclerView.getContext(),1);
         trainRecyclerView.addItemDecoration(dividerItemDecoration);
 
         //Grab user input data from Intent, thrown from MainActivity class
         Bundle extras = getIntent().getExtras();
-        final String fromStationName = extras.getString("fromStationName");
-        final String toStationName = extras.getString("toStationName");
-        final String fromStationCode = "DMR";//extras.getString("fromStationCode");
-        final String toStationCode = "GLQ";//extras.getString("toStationCode");
+        String fromStationName = extras.getString("fromStationName");
+        String toStationName = extras.getString("toStationName");
+        String fromStationCode = extras.getString("fromStationCode");
+        final String toStationCode = extras.getString("toStationCode");
+        final int maxShownTrains = 5; //Maximum amount of trains to show in the RecyclerView
 
         setStationTextViews(fromStationName, toStationName);
-        final TextView mTextView = findViewById(R.id.infoTextView);
 
         // Instantiate the RequestQueue.
         queue = Volley.newRequestQueue(this);
-        String url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/live.json?app_id=2dda32f1&app_key=dfe90240b0786883c8a523955c671a83&calling_at=" + toStationCode + "&darwin=false&train_status=passenger";
+        String url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/live.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger";
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
@@ -80,7 +80,13 @@ public class StationsViewActivity extends AppCompatActivity {
                 try {
 
                     final JSONArray trainDepartures = response.getJSONObject("departures").getJSONArray("all");
-                    for(int i = 0; i<trainDepartures.length();i++) {
+                    int displayedTrains;
+                    if(trainDepartures.length() > maxShownTrains) {
+                        displayedTrains = maxShownTrains;
+                    } else
+                        displayedTrains = trainDepartures.length();
+
+                    for(int i = 0; i<displayedTrains;i++) {
 
                         String serviceUrl = trainDepartures.getJSONObject(i).getJSONObject("service_timetable").get("id").toString();
                         final int finalI = i;
@@ -91,22 +97,17 @@ public class StationsViewActivity extends AppCompatActivity {
                                 try {
 
                                     JSONArray trainStops = response.getJSONArray("stops");
-
                                     for (int x = 0; x < trainStops.length(); x++) {
-
                                         if (trainStops.getJSONObject(x).get("station_code").toString().equals(toStationCode)) {
-
                                             Train train = new Train(trainDepartures.getJSONObject(finalI).get("aimed_departure_time").toString(), trainDepartures.getJSONObject(finalI).get("platform").toString(), trainStops.getJSONObject(x).get("aimed_arrival_time").toString());
                                             trainList.add(train);
                                             break;
-
                                         }
                                     }
 
                                 Collections.sort(trainList, Train.trainComparator);
                                 trainAdapter.notifyDataSetChanged();
                                 progressDialog.dismiss();
-
                                 } catch (JSONException e) {
                                     e.printStackTrace();
                                 }
@@ -139,6 +140,15 @@ public class StationsViewActivity extends AppCompatActivity {
 
     }
 
+    private void setupToolbar() {
+
+        Toolbar StationsViewActivityToolbar = findViewById(R.id.stationsViewActivityToolbar);
+        setSupportActionBar(StationsViewActivityToolbar);
+        getSupportActionBar().setTitle(R.string.stationsViewTitle);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+    }
+
     public void getServiceJSON(String serviceUrl, final VolleyCallback callback) {
 
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(
@@ -156,9 +166,8 @@ public class StationsViewActivity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
 
             }
-
         });
-
         queue.add(jsonObjReq);
+
     }
 }

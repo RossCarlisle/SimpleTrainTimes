@@ -16,7 +16,7 @@ android:paddingTop="12dp">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -25,16 +25,27 @@ android:paddingTop="12dp">
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@id/departureTextView"
-        android:layout_toRightOf="@id/departureTextView"
+        android:layout_toEndOf="@id/departureTextView"
         android:textSize="12sp" />
 
     <TextView
         android:id="@+id/arrivalTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:textSize="24sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/arrowIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="150dp"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/arrivalTextView"
+        android:text="@string/iconArrowRight" />
 
 </RelativeLayout>

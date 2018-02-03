@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Simple Train Times</string>
+    <string name="stationsViewTitle">Trains</string>
     <string name="hintFrom">From</string>
     <string name="hintTo">To</string>
-    <string name="buttonFind">Find</string>
+    <string name="buttonFind">Find Trains</string>
+    <string name="platform">Platform %2$d</string>
+    <string name="iconArrowRight">&#xf30b;</string>
     <string-array name="arrayStations">
 
         <item>ABW|Abbey Wood</item>

@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".StationsViewActivity" />
+        <activity android:name=".StationsViewActivity" android:parentActivityName=".MainActivity" />
 
     </application>
 

@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/fromStationView"
-        android:layout_width="150dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
@@ -16,7 +16,7 @@
         android:maxLines="1"
         android:textAlignment="textStart"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/stationsViewActivityToolbar" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/trainRecyclerView"
@@ -25,13 +25,12 @@
         android:layout_marginTop="8dp"
         android:scrollbars="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toStationView" />
 
     <TextView
         android:id="@+id/toStationView"
-        android:layout_width="150dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
@@ -39,16 +38,15 @@
         android:maxLines="1"
         android:textAlignment="textEnd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/stationsViewActivityToolbar" />
 
-    <TextView
-        android:id="@+id/infoTextView"
-        android:layout_width="344dp"
-        android:layout_height="27dp"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/stationsViewActivityToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ToolbarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
 </android.support.constraint.ConstraintLayout>

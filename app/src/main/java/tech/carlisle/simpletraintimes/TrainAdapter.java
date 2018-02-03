@@ -1,5 +1,7 @@
 package tech.carlisle.simpletraintimes;
 
+import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,26 +10,23 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by Ross on 27/01/2018.
- */
-
     public class TrainAdapter extends RecyclerView.Adapter<TrainAdapter.TrainViewHolder> {
 
         private List<Train> trainList;
 
-        public class TrainViewHolder extends RecyclerView.ViewHolder {
-            public TextView departure, departurePlatform, arrival;
+        class TrainViewHolder extends RecyclerView.ViewHolder {
+            TextView departure, departurePlatform, arrival, arrowIcon;
 
-            public TrainViewHolder(View view) {
+            TrainViewHolder(View view) {
                 super(view);
-                departure = (TextView) view.findViewById(R.id.departureTextView);
-                departurePlatform = (TextView) view.findViewById(R.id.departurePlatformTextView);
-                arrival = (TextView) view.findViewById(R.id.arrivalTextView);
+                departure = view.findViewById(R.id.departureTextView);
+                departurePlatform = view.findViewById(R.id.departurePlatformTextView);
+                arrival = view.findViewById(R.id.arrivalTextView);
+                arrowIcon = view.findViewById(R.id.arrowIcon);
             }
         }
 
-        public TrainAdapter(List<Train> trainList) {
+        TrainAdapter(List<Train> trainList) {
             this.trainList = trainList;
         }
 
@@ -42,9 +41,12 @@ import java.util.List;
         @Override
         public void onBindViewHolder(TrainViewHolder holder, int position) {
             Train train = trainList.get(position);
+            Typeface font = Typeface.createFromAsset( holder.arrowIcon.getContext().getAssets(), "FontAwesome5Solid.otf" );
+            String platformText = " Platform " + train.getPlatformDeparture();
             holder.departure.setText(train.getDeparture());
-            holder.departurePlatform.setText(" Platform " + train.getPlatformDeparture());
+            holder.departurePlatform.setText(platformText);
             holder.arrival.setText(train.getArrival());
+            holder.arrowIcon.setTypeface(font);
         }
 
         @Override
