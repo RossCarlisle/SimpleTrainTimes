@@ -3,7 +3,9 @@ package tech.carlisle.simpletraintimes;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -50,24 +52,41 @@ public class MainActivity extends AppCompatActivity {
                 String fromStationName = autoCompleteTextViewFrom.getText().toString();
                 String toStationName = autoCompleteTextViewTo.getText().toString();
 
-                if(!stations.containsKey(fromStationName)) {
-                    showErrorDialog(fromStationName, false);
+                if (fromStationName.isEmpty()) {
+                    showErrorDialog(fromStationName, 0);
+                } else if (toStationName.isEmpty()) {
+                    showErrorDialog(toStationName, 1);
+                } else if (fromStationName.equals(toStationName)) {
+                    showErrorDialog(fromStationName, 2);
+                } else if(!stations.containsKey(fromStationName)) {
+                    showErrorDialog(fromStationName, 3);
                 } else if (!stations.containsKey(toStationName)) {
-                    showErrorDialog(toStationName, true);
+                    showErrorDialog(toStationName, 4);
                 } else {
 
-                    String fromStationCode = stations.get(fromStationName);
-                    String toStationCode = stations.get(toStationName);
-
-                    Intent intent = new Intent(v.getContext(), StationsViewActivity.class);
-                    intent.putExtra("fromStationName", fromStationName);
-                    intent.putExtra("toStationName", toStationName);
-                    intent.putExtra("fromStationCode", fromStationCode);
-                    intent.putExtra("toStationCode", toStationCode);
-                    startActivity(intent);
+                        String fromStationCode = stations.get(fromStationName);
+                        String toStationCode = stations.get(toStationName);
+                        saveToRecentSearches(fromStationName, toStationName);
+                        Intent intent = new Intent(v.getContext(), StationsViewActivity.class);
+                        intent.putExtra("fromStationName", fromStationName);
+                        intent.putExtra("toStationName", toStationName);
+                        intent.putExtra("fromStationCode", fromStationCode);
+                        intent.putExtra("toStationCode", toStationCode);
+                        startActivity(intent);
+                    }
                 }
-            }
-        });
+            });
+
+        loadRecentSearches();
+    }
+
+    private void saveToRecentSearches(String fromStationName, String toStationName) {
+
+
+    }
+
+    private void loadRecentSearches() {
+
 
     }
 
@@ -78,23 +97,25 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(R.string.app_name);
 
     }
-    //Takes in the users string input and a boolean fromStation = False and toStation = True to identify what field contains an error
-    private void showErrorDialog(String stationInputError, boolean fromToBoolean) {
+
+    /*  Takes in the users string input and a int to say which error has occurred
+        errorCode 0 means no data input on origin station, errorCode 1 means no data input on destination station.
+        errorCode 2 means fromStation = toStation,
+        errorCode 3 means input error on origin station, errorCode 4 means means input error on destination station,
+     */
+    private void showErrorDialog(String stationInputError, int errorCode) {
 
         AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
         alertDialog.setTitle("Alert");
-        if(stationInputError.isEmpty()) {
-            if(fromToBoolean) {
-                alertDialog.setMessage("Please enter a destination station");
-            } else{
-                alertDialog.setMessage("Please enter a origin station");
-            }
-        } else {
-            if (fromToBoolean) {
-                alertDialog.setMessage("Error finding destination station: " + stationInputError);
-            } else {
-                alertDialog.setMessage("Error finding origin station: " + stationInputError);
-            }
+
+        switch (errorCode) {
+
+            case 0: alertDialog.setMessage("Please enter a origin station"); break;
+            case 1: alertDialog.setMessage("Please enter a destination station"); break;
+            case 2: alertDialog.setMessage("Origin destination is the same as destination station."); break;
+            case 3: alertDialog.setMessage("Error finding origin station: " + stationInputError); break;
+            case 4: alertDialog.setMessage("Error finding destination station: " + stationInputError); break;
+
         }
 
         alertDialog.setButton(AlertDialog.BUTTON_POSITIVE, "OK",

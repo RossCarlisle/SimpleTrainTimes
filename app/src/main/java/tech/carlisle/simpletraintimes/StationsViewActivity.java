@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -78,41 +80,50 @@ public class StationsViewActivity extends AppCompatActivity {
             public void onResponse(JSONObject response) {
 
                 try {
-
                     final JSONArray trainDepartures = response.getJSONObject("departures").getJSONArray("all");
-                    int displayedTrains;
-                    if(trainDepartures.length() > maxShownTrains) {
-                        displayedTrains = maxShownTrains;
-                    } else
-                        displayedTrains = trainDepartures.length();
 
-                    for(int i = 0; i<displayedTrains;i++) {
+                    if (trainDepartures.isNull(0)) {
 
-                        String serviceUrl = trainDepartures.getJSONObject(i).getJSONObject("service_timetable").get("id").toString();
-                        final int finalI = i;
-                        getServiceJSON(serviceUrl, new VolleyCallback() {
-                            @Override
-                            public void onSuccess(JSONObject response) {
+                        progressDialog.dismiss();
+                        Toast toast = Toast.makeText(getApplicationContext(), "Could not find any trains", Toast.LENGTH_LONG);
+                        toast.show();
 
-                                try {
+                    } else {
 
-                                    JSONArray trainStops = response.getJSONArray("stops");
-                                    for (int x = 0; x < trainStops.length(); x++) {
-                                        if (trainStops.getJSONObject(x).get("station_code").toString().equals(toStationCode)) {
-                                            Train train = new Train(trainDepartures.getJSONObject(finalI).get("aimed_departure_time").toString(), trainDepartures.getJSONObject(finalI).get("platform").toString(), trainStops.getJSONObject(x).get("aimed_arrival_time").toString());
-                                            trainList.add(train);
-                                            break;
+                        int displayedTrains;
+                        if (trainDepartures.length() > maxShownTrains) {
+                            displayedTrains = maxShownTrains;
+                        } else
+                            displayedTrains = trainDepartures.length();
+
+                        for (int i = 0; i < displayedTrains; i++) {
+
+                            String serviceUrl = trainDepartures.getJSONObject(i).getJSONObject("service_timetable").get("id").toString();
+                            final int finalI = i;
+                            getServiceJSON(serviceUrl, new VolleyCallback() {
+                                @Override
+                                public void onSuccess(JSONObject response) {
+
+                                    try {
+
+                                        JSONArray trainStops = response.getJSONArray("stops");
+                                        for (int x = 0; x < trainStops.length(); x++) {
+                                            if (trainStops.getJSONObject(x).get("station_code").toString().equals(toStationCode)) {
+                                                Train train = new Train(trainDepartures.getJSONObject(finalI).get("aimed_departure_time").toString(), trainDepartures.getJSONObject(finalI).get("platform").toString(), trainStops.getJSONObject(x).get("aimed_arrival_time").toString());
+                                                trainList.add(train);
+                                                break;
+                                            }
                                         }
-                                    }
 
-                                Collections.sort(trainList, Train.trainComparator);
-                                trainAdapter.notifyDataSetChanged();
-                                progressDialog.dismiss();
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
+                                        Collections.sort(trainList, Train.trainComparator);
+                                        trainAdapter.notifyDataSetChanged();
+                                        progressDialog.dismiss();
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
                                 }
-                            }
-                        });
+                            });
+                        }
                     }
 
                 } catch (JSONException e) {
