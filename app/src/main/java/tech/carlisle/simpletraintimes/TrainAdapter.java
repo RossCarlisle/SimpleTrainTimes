@@ -1,6 +1,5 @@
 package tech.carlisle.simpletraintimes;
 
-import android.content.res.Resources;
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -42,9 +41,14 @@ import java.util.List;
         public void onBindViewHolder(TrainViewHolder holder, int position) {
             Train train = trainList.get(position);
             Typeface font = Typeface.createFromAsset( holder.arrowIcon.getContext().getAssets(), "FontAwesome5Solid.otf" );
-            String platformText = " Platform " + train.getPlatformDeparture();
+            if (train.getPlatformDeparture().equals("null")) {
+                holder.departurePlatform.setVisibility(View.INVISIBLE);
+            } else {
+                String platformText = " Platform " + train.getPlatformDeparture();
+                holder.departurePlatform.setText(platformText);
+            }
             holder.departure.setText(train.getDeparture());
-            holder.departurePlatform.setText(platformText);
+
             holder.arrival.setText(train.getArrival());
             holder.arrowIcon.setTypeface(font);
         }

@@ -6,10 +6,6 @@ import java.text.SimpleDateFormat;
 import java.util.Comparator;
 import java.util.Date;
 
-/**
- * Created by Ross on 27/01/2018.
- */
-
 public class Train {
 
     private String departure, platformDeparture, arrival;

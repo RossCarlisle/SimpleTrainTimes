@@ -6,6 +6,9 @@
     <string name="buttonFind">Find Trains</string>
     <string name="platform">Platform %2$d</string>
     <string name="iconArrowRight">&#xf30b;</string>
+    <string name="iconArrowRightButton">&#xf105;</string>
+    <string name="noRecentTrains">No recent trains</string>
+    <string name="ClearRecentAction">Clear recent searches</string>
     <string-array name="arrayStations">
 
         <item>ABW|Abbey Wood</item>
