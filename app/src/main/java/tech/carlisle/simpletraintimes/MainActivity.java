@@ -18,7 +18,6 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -301,11 +300,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    public static void clearRecentList(){
-
-
-
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -335,4 +329,5 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         loadRecentSearches();
     }
+
 }

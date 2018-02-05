@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.MenuItem;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
@@ -81,7 +82,7 @@ public class StationsViewActivity extends AppCompatActivity {
                 try {
                     final JSONArray trainDepartures = response.getJSONObject("departures").getJSONArray("all");
 
-                    if (trainDepartures.isNull(0)) {
+                    if (trainDepartures.isNull(0) || !trainDepartures.getJSONObject(0).get("mode").equals("train")) {
 
                         progressDialog.dismiss();
                         Toast toast = Toast.makeText(getApplicationContext(), "Could not find any trains", Toast.LENGTH_LONG);
@@ -112,6 +113,7 @@ public class StationsViewActivity extends AppCompatActivity {
                                                 trainList.add(train);
                                                 break;
                                             }
+
                                         }
 
                                         Collections.sort(trainList, Train.trainComparator);
@@ -124,7 +126,6 @@ public class StationsViewActivity extends AppCompatActivity {
                             });
                         }
                     }
-
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -136,6 +137,7 @@ public class StationsViewActivity extends AppCompatActivity {
                 progressDialog.dismiss();
             }
         });
+
 
         queue.add(jsObjRequest);
 
@@ -180,4 +182,18 @@ public class StationsViewActivity extends AppCompatActivity {
         queue.add(jsonObjReq);
 
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+
+        }
+    }
+
 }

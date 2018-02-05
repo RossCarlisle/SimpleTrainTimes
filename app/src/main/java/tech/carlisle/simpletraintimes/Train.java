@@ -52,8 +52,8 @@ public class Train {
 
             DateFormat dateFormat = new SimpleDateFormat("hh:mm");
             try {
-                Date trainOneDate = dateFormat.parse(trainOne.getArrival());
-                Date trainTwoDate = dateFormat.parse(trainTwo.getArrival());
+                Date trainOneDate = dateFormat.parse(trainOne.getDeparture());
+                Date trainTwoDate = dateFormat.parse(trainTwo.getDeparture());
 
                 return trainOneDate.compareTo(trainTwoDate);
 
