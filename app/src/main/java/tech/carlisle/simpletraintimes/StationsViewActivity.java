@@ -111,12 +111,12 @@ public class StationsViewActivity extends AppCompatActivity {
 
                                         }
 
-                                        if (trainList.size() == maxShownTrains) {
+                                        if (trainList.size() == trainDepartures.length()) {
                                             Collections.sort(trainList, Train.trainComparator);
                                             trainAdapter.notifyDataSetChanged();
                                             progressDialog.dismiss();
                                         }
-                                        
+
                                     } catch (JSONException e) {
                                         e.printStackTrace();
                                     }
