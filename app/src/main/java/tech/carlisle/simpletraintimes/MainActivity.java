@@ -3,6 +3,7 @@ package tech.carlisle.simpletraintimes;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
@@ -40,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupToolbar();
+
+        makeSwapButton();
 
         stations = parseStringArray(R.array.arrayStations);
         String[] stationNames = stations.keySet().toArray(new String[stations.size()]);
@@ -76,6 +80,27 @@ public class MainActivity extends AppCompatActivity {
                     searchTrains(fromStationName, toStationName);
 
                 }
+            }
+        });
+
+    }
+
+    private void makeSwapButton() {
+
+        Typeface font = Typeface.createFromAsset( getAssets(), "FontAwesome5Solid.otf" );
+        Button swapButton = findViewById(R.id.swapButton);
+        swapButton.setTypeface(font);
+        swapButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                String fromString, toString;
+
+                AutoCompleteTextView fromTextView = findViewById(R.id.fromStation);
+                AutoCompleteTextView toTextView = findViewById(R.id.toStation);
+                fromString = fromTextView.getText().toString();
+                toString = toTextView.getText().toString();
+                fromTextView.setText(toString);
+                toTextView.setText(fromString);
+                toTextView.clearFocus();
             }
         });
 
@@ -330,4 +355,10 @@ public class MainActivity extends AppCompatActivity {
         loadRecentSearches();
     }
 
+    //Used for when user clicks in the whitespace to close the keyboard
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        hideKeyboard();
+        return true;
+    }
 }

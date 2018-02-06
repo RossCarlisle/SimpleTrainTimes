@@ -7,6 +7,8 @@
     <string name="platform">Platform %2$d</string>
     <string name="iconArrowRight">&#xf30b;</string>
     <string name="iconArrowRightButton">&#xf105;</string>
+    <string name="iconSwap">&#xf362;</string>
+    <string name="iconArrowDownUp">&#xf309; &#xf30c;</string>
     <string name="noRecentTrains">No recent trains</string>
     <string name="ClearRecentAction">Clear recent searches</string>
     <string-array name="arrayStations">
