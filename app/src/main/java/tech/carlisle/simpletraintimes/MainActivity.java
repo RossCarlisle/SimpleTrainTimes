@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 fromTextView.setText(toString);
                 toTextView.setText(fromString);
                 toTextView.clearFocus();
+                fromTextView.clearFocus();
             }
         });
 
