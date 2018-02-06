@@ -92,16 +92,12 @@ public class MainActivity extends AppCompatActivity {
         swapButton.setTypeface(font);
         swapButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                String fromString, toString;
-
-                AutoCompleteTextView fromTextView = findViewById(R.id.fromStation);
-                AutoCompleteTextView toTextView = findViewById(R.id.toStation);
-                fromString = fromTextView.getText().toString();
-                toString = toTextView.getText().toString();
-                fromTextView.setText(toString);
-                toTextView.setText(fromString);
-                toTextView.clearFocus();
-                fromTextView.clearFocus();
+                String tempToStation;
+                tempToStation = autoCompleteTextViewTo.getText().toString();
+                autoCompleteTextViewTo.setText(autoCompleteTextViewFrom.getText().toString());
+                autoCompleteTextViewFrom.setText(tempToStation);
+                autoCompleteTextViewTo.clearFocus();
+                autoCompleteTextViewFrom.clearFocus();
             }
         });
 
@@ -360,6 +356,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         hideKeyboard();
+        autoCompleteTextViewFrom.clearFocus();
+        autoCompleteTextViewTo.clearFocus();
         return true;
     }
 }
