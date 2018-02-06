@@ -55,12 +55,11 @@ public class MainActivity extends AppCompatActivity {
         autoCompleteTextViewFrom.setAdapter(stationsAdapter);
         autoCompleteTextViewTo.setAdapter(stationsAdapter);
 
-        final Button findTrains = findViewById(R.id.findButton);
+        Button findTrains = findViewById(R.id.findButton);
         findTrains.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                hideKeyboard();
-
+                clearUi();
                 String fromStationName = autoCompleteTextViewFrom.getText().toString();
                 String toStationName = autoCompleteTextViewTo.getText().toString();
 
@@ -352,12 +351,16 @@ public class MainActivity extends AppCompatActivity {
         loadRecentSearches();
     }
 
+    private void clearUi() {
+        hideKeyboard();
+        autoCompleteTextViewTo.clearFocus();
+        autoCompleteTextViewFrom.clearFocus();
+    }
+
     //Used for when user clicks in the whitespace to close the keyboard
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        hideKeyboard();
-        autoCompleteTextViewFrom.clearFocus();
-        autoCompleteTextViewTo.clearFocus();
+        clearUi();
         return true;
     }
 }

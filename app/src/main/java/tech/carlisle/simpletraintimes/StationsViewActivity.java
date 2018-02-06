@@ -38,6 +38,8 @@ public class StationsViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        final int maxShownTrains = 5; //Maximum amount of trains to get from JSON Request
+
         //Initialise progress dialog and show
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Fetching data");
@@ -66,13 +68,12 @@ public class StationsViewActivity extends AppCompatActivity {
         String toStationName = extras.getString("toStationName");
         String fromStationCode = extras.getString("fromStationCode");
         final String toStationCode = extras.getString("toStationCode");
-        final int maxShownTrains = 5; //Maximum amount of trains to show in the RecyclerView
 
         setStationTextViews(fromStationName, toStationName);
 
         // Instantiate the RequestQueue.
         queue = Volley.newRequestQueue(this);
-        String url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/live.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger";
+        String url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/live.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger&limit=" + maxShownTrains;
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
@@ -90,16 +91,10 @@ public class StationsViewActivity extends AppCompatActivity {
 
                     } else {
 
-                        int displayedTrains;
-                        if (trainDepartures.length() > maxShownTrains) {
-                            displayedTrains = maxShownTrains;
-                        } else
-                            displayedTrains = trainDepartures.length();
+                        for (int trainIndex = 0; trainIndex < trainDepartures.length(); trainIndex++) {
 
-                        for (int i = 0; i < displayedTrains; i++) {
-
-                            String serviceUrl = trainDepartures.getJSONObject(i).getJSONObject("service_timetable").get("id").toString();
-                            final int finalI = i;
+                            String serviceUrl = trainDepartures.getJSONObject(trainIndex).getJSONObject("service_timetable").get("id").toString();
+                            final int trainAddPosition = trainIndex;
                             getServiceJSON(serviceUrl, new VolleyCallback() {
                                 @Override
                                 public void onSuccess(JSONObject response) {
@@ -107,23 +102,27 @@ public class StationsViewActivity extends AppCompatActivity {
                                     try {
 
                                         JSONArray trainStops = response.getJSONArray("stops");
-                                        for (int x = 0; x < trainStops.length(); x++) {
-                                            if (trainStops.getJSONObject(x).get("station_code").toString().equals(toStationCode)) {
-                                                Train train = new Train(trainDepartures.getJSONObject(finalI).get("aimed_departure_time").toString(), trainDepartures.getJSONObject(finalI).get("platform").toString(), trainStops.getJSONObject(x).get("aimed_arrival_time").toString());
+                                        for (int stopIndex = 0; stopIndex < trainStops.length(); stopIndex++) {
+                                            if (trainStops.getJSONObject(stopIndex).get("station_code").toString().equals(toStationCode)) {
+                                                Train train = new Train(trainDepartures.getJSONObject(trainAddPosition).get("aimed_departure_time").toString(), trainDepartures.getJSONObject(trainAddPosition).get("platform").toString(), trainStops.getJSONObject(stopIndex).get("aimed_arrival_time").toString());
                                                 trainList.add(train);
                                                 break;
                                             }
 
                                         }
 
-                                        Collections.sort(trainList, Train.trainComparator);
-                                        trainAdapter.notifyDataSetChanged();
-                                        progressDialog.dismiss();
+                                        if (trainList.size() == maxShownTrains) {
+                                            Collections.sort(trainList, Train.trainComparator);
+                                            trainAdapter.notifyDataSetChanged();
+                                            progressDialog.dismiss();
+                                        }
+                                        
                                     } catch (JSONException e) {
                                         e.printStackTrace();
                                     }
                                 }
                             });
+
                         }
                     }
                 } catch (JSONException e) {
@@ -135,6 +134,8 @@ public class StationsViewActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 progressDialog.dismiss();
+                Toast toast = Toast.makeText(getApplicationContext(), "Network error while finding trains", Toast.LENGTH_LONG);
+                toast.show();
             }
         });
 
