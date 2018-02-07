@@ -1,12 +1,16 @@
 package tech.carlisle.simpletraintimes;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
@@ -59,7 +63,7 @@ public class StationsViewActivity extends AppCompatActivity {
         trainRecyclerView.setAdapter(trainAdapter);
 
         //Add divider to RecyclerView
-        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(trainRecyclerView.getContext(),1);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(trainRecyclerView.getContext(), 1);
         trainRecyclerView.addItemDecoration(dividerItemDecoration);
 
         //Grab user input data from Intent, thrown from MainActivity class
@@ -70,7 +74,7 @@ public class StationsViewActivity extends AppCompatActivity {
         final String toStationCode = extras.getString("toStationCode");
 
         setStationTextViews(fromStationName, toStationName);
-
+        makeSwapButton();
         // Instantiate the RequestQueue.
         queue = Volley.newRequestQueue(this);
         String url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/live.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger&limit=" + maxShownTrains;
@@ -91,6 +95,7 @@ public class StationsViewActivity extends AppCompatActivity {
 
                     } else {
 
+                        // For each train we get we will need to make another request to find out its aimed arrival time at the destination station
                         for (int trainIndex = 0; trainIndex < trainDepartures.length(); trainIndex++) {
 
                             String serviceUrl = trainDepartures.getJSONObject(trainIndex).getJSONObject("service_timetable").get("id").toString();
@@ -101,6 +106,7 @@ public class StationsViewActivity extends AppCompatActivity {
 
                                     try {
 
+                                        // Loop through the train service and look for the stationCode the user want to go to
                                         JSONArray trainStops = response.getJSONArray("stops");
                                         for (int stopIndex = 0; stopIndex < trainStops.length(); stopIndex++) {
                                             if (trainStops.getJSONObject(stopIndex).get("station_code").toString().equals(toStationCode)) {
@@ -111,6 +117,7 @@ public class StationsViewActivity extends AppCompatActivity {
 
                                         }
 
+                                        // When trainList size is equal to the trainDepartures size in our first request then we know it is the last train to add so we sort it and update recyclerView
                                         if (trainList.size() == trainDepartures.length()) {
                                             Collections.sort(trainList, Train.trainComparator);
                                             trainAdapter.notifyDataSetChanged();
@@ -134,11 +141,9 @@ public class StationsViewActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 progressDialog.dismiss();
-                Toast toast = Toast.makeText(getApplicationContext(), "Network error while finding trains", Toast.LENGTH_LONG);
-                toast.show();
+                showErrorToast();
             }
         });
-
 
         queue.add(jsObjRequest);
 
@@ -177,7 +182,7 @@ public class StationsViewActivity extends AppCompatActivity {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-
+                showErrorToast();
             }
         });
         queue.add(jsonObjReq);
@@ -197,4 +202,30 @@ public class StationsViewActivity extends AppCompatActivity {
         }
     }
 
+    private void showErrorToast() {
+
+        Toast toast = Toast.makeText(getApplicationContext(), "Network error while finding trains", Toast.LENGTH_LONG);
+        toast.show();
+
+    }
+
+    private void makeSwapButton() {
+
+        Typeface font = Typeface.createFromAsset(getAssets(), "FontAwesome5Solid.otf");
+        Button swapButton = findViewById(R.id.swapButtonStationView);
+        swapButton.setTypeface(font);
+        swapButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Bundle extras = getIntent().getExtras();
+                Intent intent = new Intent(getApplicationContext(), StationsViewActivity.class);
+                intent.putExtra("fromStationName", extras.getString("toStationName"));
+                intent.putExtra("toStationName", extras.getString("fromStationName"));
+                intent.putExtra("fromStationCode", extras.getString("toStationCode"));
+                intent.putExtra("toStationCode", extras.getString("fromStationCode"));
+                startActivity(intent);
+                finish();
+            }
+        });
+
+    }
 }

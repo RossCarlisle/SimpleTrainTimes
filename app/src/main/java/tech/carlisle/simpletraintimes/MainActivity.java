@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,16 +21,22 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setupToolbar();
-
         makeSwapButton();
 
         stations = parseStringArray(R.array.arrayStations);
@@ -213,13 +219,12 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-
     }
 
     public void loadRecentSearches() {
 
         RecyclerView recentTrainRecyclerView;
-        RecentTrainAdapter recentTrainAdapter;
+        final RecentTrainAdapter recentTrainAdapter;
         RecyclerView.LayoutManager recentTrainLayoutManager;
         final ArrayList<RecentTrain> recentList = new ArrayList<>();
         readRecentSearches(recentList);
@@ -244,7 +249,53 @@ public class MainActivity extends AppCompatActivity {
                     searchTrains(recentList.get(position).getRecentTrainFrom(), recentList.get(position).getRecentTrainTo());
                 }
             });
+
+            ItemTouchHelper.SimpleCallback simpleItemTouchCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT) {
+
+                @Override
+                public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
+                    Toast.makeText(MainActivity.this, "on Move", Toast.LENGTH_SHORT).show();
+                    return false;
+                }
+
+                @Override
+                public void onSwiped(RecyclerView.ViewHolder viewHolder, int swipeDir) {
+
+                    File path = getFilesDir();
+                    File file = new File(path,FILE_NAME);
+
+                    final int position = viewHolder.getAdapterPosition();
+                    try {
+                        removeLine(file, position);
+                        loadRecentSearches();
+                        recentTrainAdapter.notifyItemRemoved(position);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+                }
+            };
+            ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleItemTouchCallback);
+            itemTouchHelper.attachToRecyclerView(recentTrainRecyclerView);
         }
+    }
+
+    /*  Remove line from a file, has to read through full file and store in List
+        then it writes back the new file using the contents of list with removed line
+    */
+    public void removeLine(final File file, final int lineIndex) throws IOException {
+        final List<String> lines = new LinkedList<>();
+        final Scanner reader = new Scanner(new FileInputStream(file), "UTF-8");
+        while (reader.hasNextLine())
+            lines.add(reader.nextLine());
+        reader.close();
+        assert lineIndex >= 0 && lineIndex <= lines.size() - 1;
+        lines.remove(lineIndex);
+        final BufferedWriter writer = new BufferedWriter(new FileWriter(file, false));
+        for (final String line : lines)
+            writer.write(line + "\n");
+        writer.flush();
+        writer.close();
     }
 
     private void setupToolbar() {
@@ -295,6 +346,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // Split up the xml String array and use a HashMap to store stationName + stationCode
     public Map<String, String> parseStringArray(int stringArrayResourceId) {
         String[] stringArray = getResources().getStringArray(stringArrayResourceId);
         Map<String, String> outputMap = new HashMap<>();
@@ -357,7 +409,7 @@ public class MainActivity extends AppCompatActivity {
         autoCompleteTextViewFrom.clearFocus();
     }
 
-    //Used for when user clicks in the whitespace to close the keyboard
+    //Used for when user clicks in the whitespace to close the keyboard and clear focus on text fields
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         clearUi();
