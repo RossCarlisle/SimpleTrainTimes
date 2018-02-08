@@ -52,12 +52,12 @@ public class MainActivity extends AppCompatActivity {
         makeSwapButton();
 
         stations = parseStringArray(R.array.arrayStations);
-        String[] stationNames = stations.keySet().toArray(new String[stations.size()]);
+        List<String> stationNames = new ArrayList<>(stations.keySet());
         loadRecentSearches();
 
         autoCompleteTextViewFrom = findViewById(R.id.fromStation);
         autoCompleteTextViewTo = findViewById(R.id.toStation);
-        ArrayAdapter<String> stationsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, stationNames);
+        ArrayAdapter<String> stationsAdapter = new AutoSuggestAdapter(this, android.R.layout.simple_list_item_1, stationNames);
         autoCompleteTextViewFrom.setAdapter(stationsAdapter);
         autoCompleteTextViewTo.setAdapter(stationsAdapter);
 
