@@ -21,29 +21,18 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
 
-    private AutoCompleteTextView autoCompleteTextViewFrom, autoCompleteTextViewTo;
-    private static Map<String, String> stations;
     private static final String FILE_NAME = "recentSearches.txt";
     private static final int MAX_RECENT_SEARCHES = 20;
+    private AutoCompleteTextView autoCompleteTextViewFrom, autoCompleteTextViewTo;
+    private static Map<String, String> stations;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,28 +70,11 @@ public class MainActivity extends AppCompatActivity {
                     showErrorDialog(toStationName, 4);
                 } else {
 
-                    saveToRecentSearches(fromStationName, toStationName);
+                    FileOperations FileOperations = new FileOperations(FILE_NAME,MAX_RECENT_SEARCHES,getApplicationContext());
+                    FileOperations.saveToRecentSearches(fromStationName, toStationName);
                     searchTrains(fromStationName, toStationName);
 
                 }
-            }
-        });
-
-    }
-
-    private void makeSwapButton() {
-
-        Typeface font = Typeface.createFromAsset( getAssets(), "FontAwesome5Solid.otf" );
-        Button swapButton = findViewById(R.id.swapButton);
-        swapButton.setTypeface(font);
-        swapButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                String tempToStation;
-                tempToStation = autoCompleteTextViewTo.getText().toString();
-                autoCompleteTextViewTo.setText(autoCompleteTextViewFrom.getText().toString());
-                autoCompleteTextViewFrom.setText(tempToStation);
-                autoCompleteTextViewTo.clearFocus();
-                autoCompleteTextViewFrom.clearFocus();
             }
         });
 
@@ -121,113 +93,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void saveToRecentSearches(String fromStationName, String toStationName) {
-
-        String writeData = fromStationName + "->" + toStationName + "\n";
-        if (recentSearchesErrorCheck(writeData) != 0) {
-
-        } else {
-
-            FileOutputStream fos = null;
-
-            try {
-                fos = openFileOutput(FILE_NAME, MODE_APPEND | MODE_PRIVATE);
-                fos.write(writeData.getBytes());
-            } catch (IOException e) {
-                e.printStackTrace();
-            } finally {
-                if (fos != null) {
-                    try {
-                        fos.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }
-    }
-
-    /*  Takes in a string to check if it is already in the text file and also to check that there
-        is not too many recentSearches. Returns 0 if no errors, returns 1 if input is already present
-        and returns 2 if max line count has been reached.
-     */
-    private int recentSearchesErrorCheck(String writeData) {
-
-        //Removes newline character '\n'
-        String searchString = writeData.substring(0, writeData.length() - 1);
-        FileInputStream fis = null;
-        try {
-            fis = openFileInput(FILE_NAME);
-            InputStreamReader isr = new InputStreamReader(fis);
-            BufferedReader br = new BufferedReader(isr);
-            StringBuilder sb = new StringBuilder();
-            String text;
-            int lineCount = 0;
-            while ((text = br.readLine()) != null) {
-
-                lineCount++;
-                if (text.equals(searchString)) {
-                    return 1;
-                } else if (lineCount > MAX_RECENT_SEARCHES - 1) {
-                    return 2;
-                }
-
-
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (fis != null) {
-                try {
-                    fis.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-        return 0;
-    }
-
-    public void readRecentSearches(ArrayList<RecentTrain> recentList) {
-
-        FileInputStream fis = null;
-        try {
-            fis = openFileInput(FILE_NAME);
-            InputStreamReader isr = new InputStreamReader(fis);
-            BufferedReader br = new BufferedReader(isr);
-            StringBuilder sb = new StringBuilder();
-            String text;
-            String[] splitStations;
-
-            while ((text = br.readLine()) != null) {
-
-                splitStations = text.split("->");
-                recentList.add(new RecentTrain(splitStations[0], splitStations[1]));
-
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (fis != null) {
-                try {
-                    fis.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-
-    }
-
     public void loadRecentSearches() {
 
         RecyclerView recentTrainRecyclerView;
         final RecentTrainAdapter recentTrainAdapter;
         RecyclerView.LayoutManager recentTrainLayoutManager;
         final ArrayList<RecentTrain> recentList = new ArrayList<>();
-        readRecentSearches(recentList);
+        FileOperations FileOperations = new FileOperations(FILE_NAME,MAX_RECENT_SEARCHES,getApplicationContext());
+
+        FileOperations.readRecentSearches(recentList);
         recentTrainRecyclerView = findViewById(R.id.recentSearchesRecyclerView);
         TextView recentTrainsEmpty = findViewById(R.id.recentTrainsEmpty);
         if (recentList.isEmpty()) {
@@ -254,56 +128,23 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
-                    Toast.makeText(MainActivity.this, "on Move", Toast.LENGTH_SHORT).show();
                     return false;
                 }
 
                 @Override
                 public void onSwiped(RecyclerView.ViewHolder viewHolder, int swipeDir) {
 
-                    File path = getFilesDir();
-                    File file = new File(path,FILE_NAME);
-
                     final int position = viewHolder.getAdapterPosition();
-                    try {
-                        removeLine(file, position);
-                        loadRecentSearches();
-                        recentTrainAdapter.notifyItemRemoved(position);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
+                    FileOperations FileOperations = new FileOperations(FILE_NAME,MAX_RECENT_SEARCHES,getApplicationContext());
+
+                    FileOperations.removeLine(position);
+                    loadRecentSearches();
 
                 }
             };
             ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleItemTouchCallback);
             itemTouchHelper.attachToRecyclerView(recentTrainRecyclerView);
         }
-    }
-
-    /*  Remove line from a file, has to read through full file and store in List
-        then it writes back the new file using the contents of list with removed line
-    */
-    public void removeLine(final File file, final int lineIndex) throws IOException {
-        final List<String> lines = new LinkedList<>();
-        final Scanner reader = new Scanner(new FileInputStream(file), "UTF-8");
-        while (reader.hasNextLine())
-            lines.add(reader.nextLine());
-        reader.close();
-        assert lineIndex >= 0 && lineIndex <= lines.size() - 1;
-        lines.remove(lineIndex);
-        final BufferedWriter writer = new BufferedWriter(new FileWriter(file, false));
-        for (final String line : lines)
-            writer.write(line + "\n");
-        writer.flush();
-        writer.close();
-    }
-
-    private void setupToolbar() {
-
-        Toolbar mainActivityToolbar = findViewById(R.id.mainActivityToolbar);
-        setSupportActionBar(mainActivityToolbar);
-        getSupportActionBar().setTitle(R.string.app_name);
-
     }
 
     /*  Takes in the users string input and a int to say which error has occurred
@@ -358,6 +199,14 @@ public class MainActivity extends AppCompatActivity {
         return outputMap;
     }
 
+    private void setupToolbar() {
+
+        Toolbar mainActivityToolbar = findViewById(R.id.mainActivityToolbar);
+        setSupportActionBar(mainActivityToolbar);
+        getSupportActionBar().setTitle(R.string.app_name);
+
+    }
+
     private void hideKeyboard() {
 
         InputMethodManager inputManager = (InputMethodManager)
@@ -374,6 +223,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void makeSwapButton() {
+
+        Typeface font = Typeface.createFromAsset(getAssets(), "FontAwesome5Solid.otf");
+        Button swapButton = findViewById(R.id.swapButton);
+        swapButton.setTypeface(font);
+        swapButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                String tempToStation;
+                tempToStation = autoCompleteTextViewTo.getText().toString();
+                autoCompleteTextViewTo.setText(autoCompleteTextViewFrom.getText().toString());
+                autoCompleteTextViewFrom.setText(tempToStation);
+                autoCompleteTextViewTo.clearFocus();
+                autoCompleteTextViewFrom.clearFocus();
+            }
+        });
+
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -381,6 +248,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
 
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -397,6 +265,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
     @Override
     public void onResume() {
         super.onResume();
