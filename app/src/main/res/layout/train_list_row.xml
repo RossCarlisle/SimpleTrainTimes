@@ -48,4 +48,12 @@ android:paddingTop="12dp">
         android:layout_alignBaseline="@id/arrivalTextView"
         android:text="@string/iconArrowRight" />
 
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/departurePlatformTextView"
+        android:layout_marginStart="2dp" />
+
 </RelativeLayout>

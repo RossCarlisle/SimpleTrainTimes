@@ -188,7 +188,10 @@ public class FileOperations {
     }
 
     private void errorIOToast() {
-        Toast toast = Toast.makeText(context.getApplicationContext(), R.string.errorRecentSearchesIO, Toast.LENGTH_LONG);
-        toast.show();
+        File recentSearches = new File(fileName);
+        if (recentSearches.exists() && !recentSearches.isDirectory()) {
+            Toast toast = Toast.makeText(context.getApplicationContext(), R.string.errorRecentSearchesIO, Toast.LENGTH_LONG);
+            toast.show();
+        }
     }
 }

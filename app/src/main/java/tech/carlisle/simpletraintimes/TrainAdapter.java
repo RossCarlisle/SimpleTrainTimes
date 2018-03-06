@@ -1,5 +1,6 @@
 package tech.carlisle.simpletraintimes;
 
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -14,7 +15,7 @@ import java.util.List;
         private List<Train> trainList;
 
         class TrainViewHolder extends RecyclerView.ViewHolder {
-            TextView departure, departurePlatform, arrival, arrowIcon;
+            TextView departure, departurePlatform, arrival, arrowIcon, status;
 
             TrainViewHolder(View view) {
                 super(view);
@@ -22,6 +23,7 @@ import java.util.List;
                 departurePlatform = view.findViewById(R.id.departurePlatformTextView);
                 arrival = view.findViewById(R.id.arrivalTextView);
                 arrowIcon = view.findViewById(R.id.arrowIcon);
+                status = view.findViewById(R.id.statusTextView);
             }
         }
 
@@ -48,9 +50,21 @@ import java.util.List;
                 holder.departurePlatform.setText(platformText);
             }
             holder.departure.setText(train.getDeparture());
-
             holder.arrival.setText(train.getArrival());
             holder.arrowIcon.setTypeface(font);
+
+            setStatusColor(holder, train);
+            holder.status.setText(train.getStatus());
+        }
+
+        private void setStatusColor(TrainViewHolder holder, Train train){
+
+            String status = train.getStatus();
+            switch (status) {
+                case "cancelled":
+                    holder.status.setTextColor(Color.parseColor("#F44334"));
+            }
+
         }
 
         @Override

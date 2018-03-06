@@ -34,9 +34,7 @@ public class StationsViewActivity extends AppCompatActivity {
 
     private ProgressDialog progressDialog;
     private List<Train> trainList = new ArrayList<>();
-    private RecyclerView trainRecyclerView;
     private TrainAdapter trainAdapter;
-    private RecyclerView.LayoutManager trainLayoutManager;
     private RequestQueue queue;
 
     @Override
@@ -47,7 +45,7 @@ public class StationsViewActivity extends AppCompatActivity {
         //Initialise progress dialog and show
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Fetching data");
-        progressDialog.setCancelable(false);
+        progressDialog.setCancelable(true);
         progressDialog.show();
 
         super.onCreate(savedInstanceState);
@@ -55,9 +53,9 @@ public class StationsViewActivity extends AppCompatActivity {
         setupToolbar();
 
         //Initialise RecyclerView components
-        trainRecyclerView = findViewById(R.id.trainRecyclerView);
+        RecyclerView trainRecyclerView = findViewById(R.id.trainRecyclerView);
         trainRecyclerView.setHasFixedSize(true);
-        trainLayoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager trainLayoutManager = new LinearLayoutManager(this);
         trainRecyclerView.setLayoutManager(trainLayoutManager);
         trainAdapter = new TrainAdapter(trainList);
         trainRecyclerView.setAdapter(trainAdapter);
@@ -105,12 +103,18 @@ public class StationsViewActivity extends AppCompatActivity {
                                 public void onSuccess(JSONObject response) {
 
                                     try {
-
                                         // Loop through the train service and look for the stationCode the user want to go to
                                         JSONArray trainStops = response.getJSONArray("stops");
                                         for (int stopIndex = 0; stopIndex < trainStops.length(); stopIndex++) {
                                             if (trainStops.getJSONObject(stopIndex).get("station_code").toString().equals(toStationCode)) {
-                                                Train train = new Train(trainDepartures.getJSONObject(trainAddPosition).get("aimed_departure_time").toString(), trainDepartures.getJSONObject(trainAddPosition).get("platform").toString(), trainStops.getJSONObject(stopIndex).get("aimed_arrival_time").toString());
+                                                String aimedDepartureTime = trainDepartures.getJSONObject(trainAddPosition).get("aimed_departure_time").toString();
+                                                String platform = trainDepartures.getJSONObject(trainAddPosition).get("platform").toString();
+                                                String aimedArrivalTime = trainStops.getJSONObject(stopIndex).get("aimed_arrival_time").toString();
+                                                String status = trainStops.getJSONObject(stopIndex).get("status").toString().toLowerCase();
+                                                if (status.equals("late")) {
+                                                    status = trainDepartures.getJSONObject(trainAddPosition).get("expected_departure_time").toString() + " expected";
+                                                }
+                                                Train train = new Train(aimedDepartureTime, platform, aimedArrivalTime, status);
                                                 trainList.add(train);
                                                 break;
                                             }
@@ -129,7 +133,6 @@ public class StationsViewActivity extends AppCompatActivity {
                                     }
                                 }
                             });
-
                         }
                     }
                 } catch (JSONException e) {
@@ -164,7 +167,6 @@ public class StationsViewActivity extends AppCompatActivity {
         setSupportActionBar(StationsViewActivityToolbar);
         getSupportActionBar().setTitle(R.string.stationsViewTitle);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 
     public void getServiceJSON(String serviceUrl, final VolleyCallback callback) {

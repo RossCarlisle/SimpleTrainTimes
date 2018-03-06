@@ -8,18 +8,18 @@ import java.util.Date;
 
 public class Train {
 
-    private String departure, platformDeparture, arrival;
+    private String departure, platformDeparture, arrival, status;
 
     public Train() {
 
     }
 
-    public Train(String departure, String platformDeparture, String arrival) {
+    public Train(String departure, String platformDeparture, String arrival, String status) {
 
         this.departure = departure;
         this.platformDeparture = platformDeparture;
         this.arrival = arrival;
-
+        this.status = status;
     }
 
     public String getDeparture() {
@@ -33,6 +33,10 @@ public class Train {
     public String getArrival() {
         return arrival;
     }
+
+    public String getStatus() { return status; }
+
+    public void setStatus(String status) { this.status = status; }
 
     public void setDeparture(String departure) {
         this.departure = departure;
@@ -50,7 +54,7 @@ public class Train {
 
         public int compare(Train trainOne, Train trainTwo) {
 
-            DateFormat dateFormat = new SimpleDateFormat("hh:mm");
+            DateFormat dateFormat = new SimpleDateFormat("HH:mm");
             try {
                 Date trainOneDate = dateFormat.parse(trainOne.getDeparture());
                 Date trainTwoDate = dateFormat.parse(trainTwo.getDeparture());
