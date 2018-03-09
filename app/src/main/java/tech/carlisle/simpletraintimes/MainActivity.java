@@ -21,6 +21,7 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.TextView;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     showErrorDialog(toStationName, 4);
                 } else {
 
-                    FileOperations FileOperations = new FileOperations(FILE_NAME,MAX_RECENT_SEARCHES,getApplicationContext());
+                    FileOperations FileOperations = new FileOperations(FILE_NAME, MAX_RECENT_SEARCHES, getApplicationContext());
                     FileOperations.saveToRecentSearches(fromStationName, toStationName);
                     searchTrains(fromStationName, toStationName);
 
@@ -99,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         final RecentTrainAdapter recentTrainAdapter;
         RecyclerView.LayoutManager recentTrainLayoutManager;
         final ArrayList<RecentTrain> recentList = new ArrayList<>();
-        FileOperations FileOperations = new FileOperations(FILE_NAME,MAX_RECENT_SEARCHES,getApplicationContext());
+        FileOperations FileOperations = new FileOperations(FILE_NAME, MAX_RECENT_SEARCHES, getApplicationContext());
 
         FileOperations.readRecentSearches(recentList);
         recentTrainRecyclerView = findViewById(R.id.recentSearchesRecyclerView);
@@ -135,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onSwiped(RecyclerView.ViewHolder viewHolder, int swipeDir) {
 
                     final int position = viewHolder.getAdapterPosition();
-                    FileOperations FileOperations = new FileOperations(FILE_NAME,MAX_RECENT_SEARCHES,getApplicationContext());
+                    FileOperations FileOperations = new FileOperations(FILE_NAME, MAX_RECENT_SEARCHES, getApplicationContext());
 
                     FileOperations.removeLine(position);
                     loadRecentSearches();
@@ -245,6 +246,8 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
 
         getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+        MenuItem item = menu.findItem(R.id.menuRefresh);
+        item.setVisible(false);
         return true;
 
     }

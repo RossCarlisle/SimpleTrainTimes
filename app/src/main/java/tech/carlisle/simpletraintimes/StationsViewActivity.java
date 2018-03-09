@@ -3,11 +3,13 @@ package tech.carlisle.simpletraintimes;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -51,6 +53,7 @@ public class StationsViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stations_view);
         setupToolbar();
+        swipeRefresh();
 
         //Initialise RecyclerView components
         RecyclerView trainRecyclerView = findViewById(R.id.trainRecyclerView);
@@ -152,6 +155,20 @@ public class StationsViewActivity extends AppCompatActivity {
 
     }
 
+    private void swipeRefresh() {
+
+        SwipeRefreshLayout swipeLayout = findViewById(R.id.refreshView);
+        swipeLayout .setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+
+            @Override
+            public void onRefresh() {
+                Intent intent = getIntent();
+                finish();
+                startActivity(intent);
+            }
+        });
+    }
+
     private void setStationTextViews(String fromStation, String toStation) {
 
         TextView fromStationTextView = findViewById(R.id.fromStationView);
@@ -167,6 +184,15 @@ public class StationsViewActivity extends AppCompatActivity {
         setSupportActionBar(StationsViewActivityToolbar);
         getSupportActionBar().setTitle(R.string.stationsViewTitle);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+        MenuItem item = menu.findItem(R.id.clearRecentAction);
+        item.setVisible(false);
+        return true;
     }
 
     public void getServiceJSON(String serviceUrl, final VolleyCallback callback) {
@@ -196,6 +222,12 @@ public class StationsViewActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 onBackPressed();
+                return true;
+
+            case R.id.menuRefresh:
+                Intent intent = getIntent();
+                finish();
+                startActivity(intent);
                 return true;
 
             default:

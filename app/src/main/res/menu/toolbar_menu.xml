@@ -6,4 +6,8 @@
         android:title="@string/ClearRecentAction"
         app:showAsAction="never"/>
 
+    <item android:id="@+id/menuRefresh"
+        android:title="@string/refreshAction"
+        app:showAsAction="never" />
+
 </menu>

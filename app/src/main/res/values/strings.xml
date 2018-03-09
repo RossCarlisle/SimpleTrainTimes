@@ -12,6 +12,7 @@
     <string name="noRecentTrains">No recent trains</string>
     <string name="ClearRecentAction">Clear recent searches</string>
     <string name="errorRecentSearchesIO">Error updating recent searches</string>
+    <string name="refreshAction">Refresh</string>
     <string-array name="arrayStations">
 
         <item>ABW|Abbey Wood</item>
