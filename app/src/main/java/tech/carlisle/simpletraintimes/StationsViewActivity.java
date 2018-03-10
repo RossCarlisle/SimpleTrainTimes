@@ -28,8 +28,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 public class StationsViewActivity extends AppCompatActivity {
@@ -38,11 +40,9 @@ public class StationsViewActivity extends AppCompatActivity {
     private List<Train> trainList = new ArrayList<>();
     private TrainAdapter trainAdapter;
     private RequestQueue queue;
-
+    final int MAX_REQUESTED_TRAINS = 5; //Maximum amount of trains to get from JSON Request
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        final int maxShownTrains = 5; //Maximum amount of trains to get from JSON Request
 
         //Initialise progress dialog and show
         progressDialog = new ProgressDialog(this);
@@ -67,18 +67,36 @@ public class StationsViewActivity extends AppCompatActivity {
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(trainRecyclerView.getContext(), 1);
         trainRecyclerView.addItemDecoration(dividerItemDecoration);
 
+
+        makeTrainRequest();
+
+    }
+
+    private void makeTrainRequest() {
         //Grab user input data from Intent, thrown from MainActivity class
         Bundle extras = getIntent().getExtras();
         String fromStationName = extras.getString("fromStationName");
         String toStationName = extras.getString("toStationName");
         String fromStationCode = extras.getString("fromStationCode");
         final String toStationCode = extras.getString("toStationCode");
+        final boolean searchWithTime = getIntent().hasExtra("searchTime");
+        String searchTime = null;
+        if(searchWithTime) {
+            searchTime = extras.getString("searchTime");
+        }
 
         setStationTextViews(fromStationName, toStationName);
         makeSwapButton();
         // Instantiate the RequestQueue.
         queue = Volley.newRequestQueue(this);
-        String url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/live.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger&limit=" + maxShownTrains;
+        String url = null;
+        if (searchWithTime) {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+            String currentDate = sdf.format(new Date());
+            url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/" + currentDate + "/" + searchTime +"/timetable.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger&limit=" + MAX_REQUESTED_TRAINS;
+        } else {
+            url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/live.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger&limit=" + MAX_REQUESTED_TRAINS;
+        }
 
         JsonObjectRequest jsObjRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
@@ -113,9 +131,13 @@ public class StationsViewActivity extends AppCompatActivity {
                                                 String aimedDepartureTime = trainDepartures.getJSONObject(trainAddPosition).get("aimed_departure_time").toString();
                                                 String platform = trainDepartures.getJSONObject(trainAddPosition).get("platform").toString();
                                                 String aimedArrivalTime = trainStops.getJSONObject(stopIndex).get("aimed_arrival_time").toString();
-                                                String status = trainStops.getJSONObject(stopIndex).get("status").toString().toLowerCase();
-                                                if (status.equals("late")) {
-                                                    status = trainDepartures.getJSONObject(trainAddPosition).get("expected_departure_time").toString() + " expected";
+                                                String status = "";
+                                                if (!searchWithTime) {
+                                                    status = trainStops.getJSONObject(stopIndex).get("status").toString().toLowerCase();
+
+                                                    if (status.equals("late")) {
+                                                        status = trainDepartures.getJSONObject(trainAddPosition).get("expected_departure_time").toString() + " expected";
+                                                    }
                                                 }
                                                 Train train = new Train(aimedDepartureTime, platform, aimedArrivalTime, status);
                                                 trainList.add(train);
@@ -128,6 +150,8 @@ public class StationsViewActivity extends AppCompatActivity {
                                         if (trainList.size() == trainDepartures.length()) {
                                             Collections.sort(trainList, Train.trainComparator);
                                             trainAdapter.notifyDataSetChanged();
+                                            SwipeRefreshLayout swipeLayout = findViewById(R.id.refreshView);
+                                            swipeLayout.setRefreshing(false);
                                             progressDialog.dismiss();
                                         }
 
@@ -157,15 +181,15 @@ public class StationsViewActivity extends AppCompatActivity {
 
     private void swipeRefresh() {
 
-        SwipeRefreshLayout swipeLayout = findViewById(R.id.refreshView);
-        swipeLayout .setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-
-            @Override
-            public void onRefresh() {
-                Intent intent = getIntent();
-                finish();
-                startActivity(intent);
-            }
+        final SwipeRefreshLayout swipeLayout = findViewById(R.id.refreshView);
+        swipeLayout .setOnRefreshListener(
+                new SwipeRefreshLayout.OnRefreshListener() {
+                @Override
+                public void onRefresh() {
+                    Intent intent = getIntent();
+                    finish();
+                    startActivity(intent);
+                }
         });
     }
 
@@ -256,6 +280,10 @@ public class StationsViewActivity extends AppCompatActivity {
                 intent.putExtra("toStationName", extras.getString("fromStationName"));
                 intent.putExtra("fromStationCode", extras.getString("toStationCode"));
                 intent.putExtra("toStationCode", extras.getString("fromStationCode"));
+                final boolean searchWithTime = getIntent().hasExtra("searchTime");
+                if(searchWithTime) {
+                    intent.putExtra("searchTime", extras.getString("searchTime"));
+                }
                 startActivity(intent);
                 finish();
             }

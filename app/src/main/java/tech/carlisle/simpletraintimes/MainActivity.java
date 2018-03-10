@@ -1,5 +1,6 @@
 package tech.carlisle.simpletraintimes;
 
+import android.app.DialogFragment;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setupToolbar();
         makeSwapButton();
+        makeTimeButton();
 
         stations = parseStringArray(R.array.arrayStations);
         List<String> stationNames = new ArrayList<>(stations.keySet());
@@ -73,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
                     FileOperations FileOperations = new FileOperations(FILE_NAME, MAX_RECENT_SEARCHES, getApplicationContext());
                     FileOperations.saveToRecentSearches(fromStationName, toStationName);
-                    searchTrains(fromStationName, toStationName);
+                    searchTrains(fromStationName, toStationName, true);
 
                 }
             }
@@ -81,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void searchTrains(String fromStationName, String toStationName) {
+    private void searchTrains(String fromStationName, String toStationName, boolean searchWithTime) {
 
         String fromStationCode = stations.get(fromStationName);
         String toStationCode = stations.get(toStationName);
@@ -90,6 +92,13 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("toStationName", toStationName);
         intent.putExtra("fromStationCode", fromStationCode);
         intent.putExtra("toStationCode", toStationCode);
+        if(searchWithTime) {
+            TextView timeTextView = findViewById(R.id.timeTextView);
+            if (!timeTextView.getText().toString().isEmpty()) {
+                String searchTime = timeTextView.getText().toString();
+                intent.putExtra("searchTime", searchTime);
+            }
+        }
         startActivity(intent);
 
     }
@@ -121,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
             recentTrainAdapter.setOnItemClickListener(new RecentTrainAdapter.OnItemClickListener() {
                 @Override
                 public void onItemClick(int position) {
-                    searchTrains(recentList.get(position).getRecentTrainFrom(), recentList.get(position).getRecentTrainTo());
+                    searchTrains(recentList.get(position).getRecentTrainFrom(), recentList.get(position).getRecentTrainTo(), false);
                 }
             });
 
@@ -223,6 +232,30 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+    private void showTimePickerDialog(View v) {
+        DialogFragment newFragment = new TimePickerFragment();
+        newFragment.show(getFragmentManager(), "timePicker");
+    }
+
+    private void makeTimeButton() {
+
+        Button timeButton = findViewById(R.id.timePickerButton);
+        Typeface font = Typeface.createFromAsset(getAssets(), "FontAwesome5Solid.otf");
+        timeButton.setTypeface(font);
+
+        timeButton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        DialogFragment newFragment = new TimePickerFragment();
+                        newFragment.show(getFragmentManager(), "timePicker");
+                    }
+                }
+        );
+
+    }
+
 
     private void makeSwapButton() {
 

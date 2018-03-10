@@ -55,6 +55,9 @@ import java.util.List;
 
             setStatusColor(holder, train);
             holder.status.setText(train.getStatus());
+            if (!holder.status.getText().toString().isEmpty()) {
+                holder.status.setVisibility(View.VISIBLE);
+            }
         }
 
         private void setStatusColor(TrainViewHolder holder, Train train){

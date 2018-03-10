@@ -54,6 +54,7 @@ android:paddingTop="12dp">
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/departurePlatformTextView"
-        android:layout_marginStart="2dp" />
+        android:layout_marginStart="2dp"
+        android:visibility="gone"/>
 
 </RelativeLayout>
