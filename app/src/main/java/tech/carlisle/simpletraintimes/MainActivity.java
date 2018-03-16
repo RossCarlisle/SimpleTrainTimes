@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("toStationName", toStationName);
         intent.putExtra("fromStationCode", fromStationCode);
         intent.putExtra("toStationCode", toStationCode);
-        if(searchWithTime) {
+        if (searchWithTime) {
             TextView timeTextView = findViewById(R.id.timeTextView);
             if (!timeTextView.getText().toString().isEmpty()) {
                 String searchTime = timeTextView.getText().toString();
@@ -228,7 +228,6 @@ public class MainActivity extends AppCompatActivity {
             } catch (NullPointerException nullError) {
                 Log.e("hideKeyboardException", "Failed to close keyboard null: " + nullError);
             }
-
         }
 
     }

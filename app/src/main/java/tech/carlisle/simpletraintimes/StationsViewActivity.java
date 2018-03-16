@@ -36,11 +36,12 @@ import java.util.List;
 
 public class StationsViewActivity extends AppCompatActivity {
 
+    final int MAX_REQUESTED_TRAINS = 5;
     private ProgressDialog progressDialog;
     private List<Train> trainList = new ArrayList<>();
     private TrainAdapter trainAdapter;
     private RequestQueue queue;
-    final int MAX_REQUESTED_TRAINS = 5; //Maximum amount of trains to get from JSON Request
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -67,21 +68,22 @@ public class StationsViewActivity extends AppCompatActivity {
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(trainRecyclerView.getContext(), 1);
         trainRecyclerView.addItemDecoration(dividerItemDecoration);
 
-
         makeTrainRequest();
 
     }
 
     private void makeTrainRequest() {
+
+        trainList.clear();
         //Grab user input data from Intent, thrown from MainActivity class
         Bundle extras = getIntent().getExtras();
-        String fromStationName = extras.getString("fromStationName");
-        String toStationName = extras.getString("toStationName");
-        String fromStationCode = extras.getString("fromStationCode");
+        final String fromStationName = extras.getString("fromStationName");
+        final String toStationName = extras.getString("toStationName");
+        final String fromStationCode = extras.getString("fromStationCode");
         final String toStationCode = extras.getString("toStationCode");
         final boolean searchWithTime = getIntent().hasExtra("searchTime");
         String searchTime = null;
-        if(searchWithTime) {
+        if (searchWithTime) {
             searchTime = extras.getString("searchTime");
         }
 
@@ -93,7 +95,7 @@ public class StationsViewActivity extends AppCompatActivity {
         if (searchWithTime) {
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             String currentDate = sdf.format(new Date());
-            url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/" + currentDate + "/" + searchTime +"/timetable.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger&limit=" + MAX_REQUESTED_TRAINS;
+            url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/" + currentDate + "/" + searchTime + "/timetable.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger&limit=" + MAX_REQUESTED_TRAINS;
         } else {
             url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/live.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger&limit=" + MAX_REQUESTED_TRAINS;
         }
@@ -109,7 +111,7 @@ public class StationsViewActivity extends AppCompatActivity {
                     if (trainDepartures.isNull(0) || !trainDepartures.getJSONObject(0).get("mode").equals("train")) {
 
                         progressDialog.dismiss();
-                        Toast toast = Toast.makeText(getApplicationContext(), "Could not find any trains", Toast.LENGTH_LONG);
+                        Toast toast = Toast.makeText(getApplicationContext(), R.string.noTrainsFound, Toast.LENGTH_LONG);
                         toast.show();
 
                     } else {
@@ -181,16 +183,14 @@ public class StationsViewActivity extends AppCompatActivity {
 
     private void swipeRefresh() {
 
-        final SwipeRefreshLayout swipeLayout = findViewById(R.id.refreshView);
-        swipeLayout .setOnRefreshListener(
+        SwipeRefreshLayout swipeLayout = findViewById(R.id.refreshView);
+        swipeLayout.setOnRefreshListener(
                 new SwipeRefreshLayout.OnRefreshListener() {
-                @Override
-                public void onRefresh() {
-                    Intent intent = getIntent();
-                    finish();
-                    startActivity(intent);
-                }
-        });
+                    @Override
+                    public void onRefresh() {
+                        makeTrainRequest();
+                    }
+                });
     }
 
     private void setStationTextViews(String fromStation, String toStation) {
@@ -208,6 +208,7 @@ public class StationsViewActivity extends AppCompatActivity {
         setSupportActionBar(StationsViewActivityToolbar);
         getSupportActionBar().setTitle(R.string.stationsViewTitle);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     @Override
@@ -217,6 +218,7 @@ public class StationsViewActivity extends AppCompatActivity {
         MenuItem item = menu.findItem(R.id.clearRecentAction);
         item.setVisible(false);
         return true;
+
     }
 
     public void getServiceJSON(String serviceUrl, final VolleyCallback callback) {
@@ -262,7 +264,7 @@ public class StationsViewActivity extends AppCompatActivity {
 
     private void showErrorToast() {
 
-        Toast toast = Toast.makeText(getApplicationContext(), "Network error while finding trains", Toast.LENGTH_LONG);
+        Toast toast = Toast.makeText(getApplicationContext(), R.string.networkError, Toast.LENGTH_LONG);
         toast.show();
 
     }
@@ -281,7 +283,7 @@ public class StationsViewActivity extends AppCompatActivity {
                 intent.putExtra("fromStationCode", extras.getString("toStationCode"));
                 intent.putExtra("toStationCode", extras.getString("fromStationCode"));
                 final boolean searchWithTime = getIntent().hasExtra("searchTime");
-                if(searchWithTime) {
+                if (searchWithTime) {
                     intent.putExtra("searchTime", extras.getString("searchTime"));
                 }
                 startActivity(intent);
