@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         autoCompleteTextViewFrom = findViewById(R.id.fromStation);
         autoCompleteTextViewTo = findViewById(R.id.toStation);
-        ArrayAdapter<String> stationsAdapter = new AutoSuggestAdapter(this, android.R.layout.simple_list_item_1, stationNames);
+        AutoSuggestAdapter stationsAdapter = new AutoSuggestAdapter(this, android.R.layout.simple_list_item_1, stationNames);
         autoCompleteTextViewFrom.setAdapter(stationsAdapter);
         autoCompleteTextViewTo.setAdapter(stationsAdapter);
 

@@ -16,6 +16,7 @@
     <string name="refreshAction">Refresh</string>
     <string name="networkError">Network error while finding trains</string>
     <string name="noTrainsFound">Could not find any trains</string>
+    <string name="parseError">JSON parse error</string>
     <string-array name="arrayStations">
 
         <item>ABW|Abbey Wood</item>

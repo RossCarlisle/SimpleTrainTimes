@@ -17,11 +17,11 @@ import java.util.List;
 
 public class FileOperations {
 
-    private String fileName;
+    private final String fileName;
     private Context context;
-    private int maxSearches;
+    private final int maxSearches;
 
-    public FileOperations(String fileName, int maxSearches, Context context) {
+    public FileOperations(final String fileName, final int maxSearches, Context context) {
 
         this.fileName = fileName;
         this.context = context;

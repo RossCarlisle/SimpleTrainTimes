@@ -36,7 +36,7 @@ import java.util.List;
 
 public class StationsViewActivity extends AppCompatActivity {
 
-    final int MAX_REQUESTED_TRAINS = 5;
+    final int MAX_REQUESTED_TRAINS = 7;
     private ProgressDialog progressDialog;
     private List<Train> trainList = new ArrayList<>();
     private TrainAdapter trainAdapter;
@@ -74,8 +74,7 @@ public class StationsViewActivity extends AppCompatActivity {
 
     private void makeTrainRequest() {
 
-        trainList.clear();
-        //Grab user input data from Intent, thrown from MainActivity class
+        trainList.clear(); //Clear trainList as it may be a refresh method call
         Bundle extras = getIntent().getExtras();
         final String fromStationName = extras.getString("fromStationName");
         final String toStationName = extras.getString("toStationName");
@@ -93,8 +92,8 @@ public class StationsViewActivity extends AppCompatActivity {
         queue = Volley.newRequestQueue(this);
         String url = null;
         if (searchWithTime) {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-            String currentDate = sdf.format(new Date());
+            SimpleDateFormat simpleDate = new SimpleDateFormat("yyyy-MM-dd");
+            String currentDate = simpleDate.format(new Date());
             url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/" + currentDate + "/" + searchTime + "/timetable.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger&limit=" + MAX_REQUESTED_TRAINS;
         } else {
             url = "https://transportapi.com/v3/uk/train/station/" + fromStationCode + "/live.json?app_id=" + getString(R.string.transportAppID) + "&app_key=" + getString(R.string.transportAppKey) + "&calling_at=" + toStationCode + "&darwin=false&train_status=passenger&limit=" + MAX_REQUESTED_TRAINS;
@@ -158,14 +157,16 @@ public class StationsViewActivity extends AppCompatActivity {
                                         }
 
                                     } catch (JSONException e) {
-                                        e.printStackTrace();
+                                        progressDialog.dismiss();
+                                        jsonParseError();
                                     }
                                 }
                             });
                         }
                     }
                 } catch (JSONException e) {
-                    e.printStackTrace();
+                    progressDialog.dismiss();
+                    jsonParseError();
                 }
             }
 
@@ -173,7 +174,7 @@ public class StationsViewActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 progressDialog.dismiss();
-                showErrorToast();
+                showNetworkErrorToast();
             }
         });
 
@@ -181,9 +182,16 @@ public class StationsViewActivity extends AppCompatActivity {
 
     }
 
+    private void jsonParseError() {
+
+        Toast toast = Toast.makeText(getApplicationContext(), R.string.parseError, Toast.LENGTH_LONG);
+        toast.show();
+
+    }
+
     private void swipeRefresh() {
 
-        SwipeRefreshLayout swipeLayout = findViewById(R.id.refreshView);
+        final SwipeRefreshLayout swipeLayout = findViewById(R.id.refreshView);
         swipeLayout.setOnRefreshListener(
                 new SwipeRefreshLayout.OnRefreshListener() {
                     @Override
@@ -236,7 +244,7 @@ public class StationsViewActivity extends AppCompatActivity {
 
             @Override
             public void onErrorResponse(VolleyError error) {
-                showErrorToast();
+                showNetworkErrorToast();
             }
         });
         queue.add(jsonObjReq);
@@ -251,9 +259,11 @@ public class StationsViewActivity extends AppCompatActivity {
                 return true;
 
             case R.id.menuRefresh:
-                Intent intent = getIntent();
-                finish();
-                startActivity(intent);
+                SwipeRefreshLayout swipeLayout = findViewById(R.id.refreshView);
+                if (!swipeLayout.isRefreshing()) {
+                    swipeLayout.setRefreshing(true);
+                    makeTrainRequest();
+                }
                 return true;
 
             default:
@@ -262,7 +272,7 @@ public class StationsViewActivity extends AppCompatActivity {
         }
     }
 
-    private void showErrorToast() {
+    private void showNetworkErrorToast() {
 
         Toast toast = Toast.makeText(getApplicationContext(), R.string.networkError, Toast.LENGTH_LONG);
         toast.show();
