@@ -16,6 +16,7 @@
         android:layout_marginEnd="64dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="118dp"
+        android:dropDownHeight="wrap_content"
         android:ems="10"
         android:hint="@string/hintFrom"
         android:inputType="text"
@@ -33,6 +34,7 @@
         android:layout_marginEnd="64dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="8dp"
+        android:dropDownHeight="wrap_content"
         android:ems="10"
         android:hint="@string/hintTo"
         android:inputType="text"
@@ -59,8 +61,8 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/mainActivityToolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ToolbarTheme"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
@@ -70,7 +72,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="32dp"
         android:clipToPadding="false"
         android:overScrollMode="never"
         android:padding="4dp"
@@ -79,8 +81,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/findButton"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/findButton" />
 
     <TextView
         android:id="@+id/recentTrainsEmpty"
