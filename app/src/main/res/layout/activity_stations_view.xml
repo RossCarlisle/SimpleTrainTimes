@@ -40,6 +40,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
     </android.support.v4.widget.SwipeRefreshLayout>
+
     <TextView
         android:id="@+id/toStationView"
         android:layout_width="160dp"
@@ -59,7 +60,7 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ToolbarTheme"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <Button
         android:id="@+id/swapButtonStationView"
@@ -74,5 +75,19 @@
         app:layout_constraintEnd_toStartOf="@+id/toStationView"
         app:layout_constraintStart_toEndOf="@+id/fromStationView"
         app:layout_constraintTop_toBottomOf="@+id/stationsViewActivityToolbar" />
+
+    <ProgressBar
+        android:id="@+id/stationProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="@+id/refreshView"
+        app:layout_constraintEnd_toEndOf="@+id/refreshView"
+        app:layout_constraintStart_toStartOf="@+id/refreshView"
+        app:layout_constraintTop_toTopOf="@+id/refreshView" />
 
 </android.support.constraint.ConstraintLayout>

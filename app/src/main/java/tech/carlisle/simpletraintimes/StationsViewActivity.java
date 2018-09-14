@@ -1,6 +1,5 @@
 package tech.carlisle.simpletraintimes;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -13,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
@@ -37,7 +37,7 @@ import java.util.List;
 public class StationsViewActivity extends AppCompatActivity {
 
     final int MAX_REQUESTED_TRAINS = 7;
-    private ProgressDialog progressDialog;
+    private ProgressBar progressBar;
     private List<Train> trainList = new ArrayList<>();
     private TrainAdapter trainAdapter;
     private RequestQueue queue;
@@ -45,16 +45,14 @@ public class StationsViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        //Initialise progress dialog and show
-        progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Fetching data");
-        progressDialog.setCancelable(true);
-        progressDialog.show();
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stations_view);
         setupToolbar();
         swipeRefresh();
+
+        //Initialise progress bar and show
+        progressBar = findViewById(R.id.stationProgressBar);
+        progressBar.setVisibility(View.VISIBLE);
 
         //Initialise RecyclerView components
         RecyclerView trainRecyclerView = findViewById(R.id.trainRecyclerView);
@@ -69,7 +67,6 @@ public class StationsViewActivity extends AppCompatActivity {
         trainRecyclerView.addItemDecoration(dividerItemDecoration);
 
         makeTrainRequest();
-
     }
 
     private void makeTrainRequest() {
@@ -109,7 +106,7 @@ public class StationsViewActivity extends AppCompatActivity {
 
                     if (trainDepartures.isNull(0) || !trainDepartures.getJSONObject(0).get("mode").equals("train")) {
 
-                        progressDialog.dismiss();
+                        progressBar.setVisibility(View.INVISIBLE);
                         Toast toast = Toast.makeText(getApplicationContext(), R.string.noTrainsFound, Toast.LENGTH_LONG);
                         toast.show();
 
@@ -153,11 +150,11 @@ public class StationsViewActivity extends AppCompatActivity {
                                             trainAdapter.notifyDataSetChanged();
                                             SwipeRefreshLayout swipeLayout = findViewById(R.id.refreshView);
                                             swipeLayout.setRefreshing(false);
-                                            progressDialog.dismiss();
+                                            progressBar.setVisibility(View.INVISIBLE);
                                         }
 
                                     } catch (JSONException e) {
-                                        progressDialog.dismiss();
+                                        progressBar.setVisibility(View.INVISIBLE);
                                         jsonParseError();
                                     }
                                 }
@@ -165,7 +162,7 @@ public class StationsViewActivity extends AppCompatActivity {
                         }
                     }
                 } catch (JSONException e) {
-                    progressDialog.dismiss();
+                    progressBar.setVisibility(View.INVISIBLE);
                     jsonParseError();
                 }
             }
@@ -173,7 +170,7 @@ public class StationsViewActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                progressDialog.dismiss();
+                progressBar.setVisibility(View.INVISIBLE);
                 showNetworkErrorToast();
             }
         });
@@ -196,7 +193,11 @@ public class StationsViewActivity extends AppCompatActivity {
                 new SwipeRefreshLayout.OnRefreshListener() {
                     @Override
                     public void onRefresh() {
-                        makeTrainRequest();
+                        if(progressBar.getVisibility() == View.VISIBLE) {
+                            swipeLayout.setRefreshing(false);
+                        } else {
+                            makeTrainRequest();
+                        }
                     }
                 });
     }
@@ -260,7 +261,7 @@ public class StationsViewActivity extends AppCompatActivity {
 
             case R.id.menuRefresh:
                 SwipeRefreshLayout swipeLayout = findViewById(R.id.refreshView);
-                if (!swipeLayout.isRefreshing()) {
+                if (!swipeLayout.isRefreshing() && progressBar.getVisibility() == View.INVISIBLE) {
                     swipeLayout.setRefreshing(true);
                     makeTrainRequest();
                 }
